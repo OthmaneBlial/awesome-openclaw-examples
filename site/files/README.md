@@ -4,6 +4,11 @@
 
 100 runnable OpenClaw examples built around real ClawHub skills.
 
+[![Live Docs Explorer](https://img.shields.io/badge/live-docs%20explorer-0a6b6b?style=for-the-badge)](https://othmaneblial.github.io/awesome-openclaw-examples)
+![100 Runnable Starters](https://img.shields.io/badge/100-runnable%20starters-201811?style=for-the-badge)
+![10 Quick Wins](https://img.shields.io/badge/10-quick%20wins-bb5b2c?style=for-the-badge)
+![Maintainer Tested](https://img.shields.io/badge/reviewed-maintainer%20tested-244f78?style=for-the-badge)
+
 [Live Docs Explorer](https://othmaneblial.github.io/awesome-openclaw-examples) · [Browse Full Catalog](examples/catalog.md) · [Runnable Starters](examples/runnable/README.md) · [Contributing](CONTRIBUTING.md)
 
 Awesome OpenClaw Examples is a curated library of practical OpenClaw examples, OpenClaw workflows, and ClawHub skill combinations you can actually run. If you are searching for `openclaw examples`, `openclaw workflows`, `clawhub skills examples`, `openclaw automation ideas`, or `ai agent workflow examples`, this repository is built to help you go from curiosity to first useful setup fast.
@@ -32,6 +37,16 @@ Every accepted example in this repo is expected to include:
 - Security notes
 - Failure modes and rollback
 
+Typical starter layout:
+
+```text
+examples/runnable/<id>-<slug>/
+  README.md
+  prompts/
+  scripts/
+  sample-output.md
+```
+
 ## Fast Start
 
 1. Pick a starter in `examples/runnable/`.
@@ -41,6 +56,19 @@ Every accepted example in this repo is expected to include:
 4. Apply the prompt and cron setup from that example.
 5. Review `sample-output.md` to compare expected output quality.
 6. Roll out with least privilege and human review before wider use.
+
+## Start Here By Goal
+
+If you want the fastest path to something useful, start from the workflow closest to your actual problem.
+
+| Goal | Start Here | Why |
+| --- | --- | --- |
+| Clean up PR flow | [01 - PR Radar](examples/runnable/01-pr-radar/README.md) | High-signal engineering visibility with an obvious action queue |
+| Reduce customer response risk | [02 - SLA Guardian](examples/runnable/02-sla-guardian/README.md) | A straightforward support escalation loop teams understand quickly |
+| Ship better weekly release communication | [03 - Release Notes Pilot](examples/runnable/03-release-notes-pilot/README.md) | Easy to demo, easy to judge, immediately useful |
+| Process docs and audio faster | [06 - PDF Ops Desk](examples/runnable/06-pdf-ops-desk/README.md) | Practical intake workflow with visible before-and-after value |
+| Control model usage and spend | [10 - Model Cost Command Center](examples/runnable/10-model-cost-command-center/README.md) | Good fit for AI-heavy teams that need fast operational wins |
+| Build a recurring research loop | [14 - Weekly Research Digest](examples/runnable/14-weekly-research-digest/README.md) | Strong example of monitoring, summarization, and delivery working together |
 
 ## Top 10 Quick Wins
 
