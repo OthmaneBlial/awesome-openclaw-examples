@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Awesome OpenClaw Examples Docs</title>
+    <meta
+      name="description"
+      content="Search the OpenClaw starter catalog, inspect raw prompts and scripts, and read the repository docs from a portable static site."
+    >
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="app.js"></script>
+  </head>
+  <body data-page="docs">
+    <noscript>
+      <div class="noscript-banner">
+        This site needs JavaScript and an HTTP server because it loads local JSON data from
+        <code>site/data/site-data.json</code>.
+      </div>
+    </noscript>
+
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a class="brand" href="index.html">
+          <img src="assets/logo.png" alt="Awesome OpenClaw Examples logo">
+          <span>
+            <strong>Awesome OpenClaw Examples</strong>
+            <small>repo-driven docs site</small>
+          </span>
+        </a>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container docs-page">
+      <section class="docs-intro reveal">
+        <div class="docs-intro-main">
+          <a class="text-pill" href="index.html">Back to home</a>
+          <div class="docs-intro-copy">
+            <h1>Docs Explorer</h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="docs-shell reveal">
+        <aside class="catalog-panel">
+          <div class="controls">
+            <label>
+              <span class="control-label">Search</span>
+              <input
+                id="search-input"
+                type="search"
+                placeholder="Search by title, skill, workflow, or problem"
+                autocomplete="off"
+              >
+            </label>
+
+            <label>
+              <span class="control-label">Collection</span>
+              <select id="collection-filter"></select>
+            </label>
+
+            <label>
+              <span class="control-label">Skill</span>
+              <select id="skill-filter"></select>
+            </label>
+
+            <label class="toggle-row" for="quick-wins-toggle">
+              <input id="quick-wins-toggle" type="checkbox">
+              <span>Quick wins only</span>
+            </label>
+
+            <p class="results-meta" id="results-meta"></p>
+          </div>
+
+          <div class="catalog-list" id="catalog-list"></div>
+        </aside>
+
+        <section class="detail-panel">
+          <div class="detail-note" id="detail-empty" hidden>
+            Choose a starter from the catalog to load its guide, sample output, prompt, and helper
+            scripts.
+          </div>
+
+          <article id="detail-view" hidden>
+            <div class="detail-header">
+              <div>
+                <p class="eyebrow" id="detail-range"></p>
+                <h2 id="detail-title"></h2>
+                <p class="detail-description" id="detail-description"></p>
+                <div class="chip-cloud" id="detail-meta"></div>
+              </div>
+              <div class="action-links" id="detail-links"></div>
+            </div>
+
+            <div class="detail-snapshot">
+              <section class="snapshot-card">
+                <h3>What it does</h3>
+                <ul class="list-clean compact" id="detail-highlights"></ul>
+              </section>
+              <section class="snapshot-card">
+                <h3>Key KPIs</h3>
+                <ul class="list-clean compact" id="detail-kpis"></ul>
+              </section>
+              <section class="snapshot-card">
+                <h3>Security notes</h3>
+                <ul class="list-clean compact" id="detail-security"></ul>
+              </section>
+            </div>
+
+            <div class="tab-list" id="detail-tabs"></div>
+
+            <section class="tab-panel prose" id="panel-guide"></section>
+            <section class="tab-panel prose" id="panel-sample" hidden></section>
+            <section class="tab-panel" id="panel-prompt" hidden>
+              <pre class="code-block" id="detail-prompt"></pre>
+            </section>
+            <section class="tab-panel" id="panel-scripts" hidden>
+              <div class="stack-grid" id="detail-scripts"></div>
+            </section>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p id="verification-note"></p>
+        <p>
+          <a href="index.html">home</a>
+          <span class="footer-separator">/</span>
+          <a href="files/examples/catalog.md">raw catalog</a>
+          <span class="footer-separator">/</span>
+          <a href="files/CONTRIBUTING.md">contributing</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
