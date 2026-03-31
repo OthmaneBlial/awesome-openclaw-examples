@@ -2,7 +2,7 @@
 
 ![Logo de Awesome OpenClaw Use Cases and Examples](logo.png)
 
-Lire ce README en : [English](README.md) · [Español](README.es.md) · [Deutsch](README.de.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [Português](README.pt.md) · [Русский](README.ru.md) · [Italiano](README.it.md) · [Nederlands](README.nl.md) · [Polski](README.pl.md)
+Lire ce README en : [English](README.md) · [Español](README.es.md) · [Deutsch](README.de.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [Português](README.pt.md) · [Русский](README.ru.md) · [Italiano](README.it.md) · [Nederlands](README.nl.md) · [Polski](README.pl.md) · [中文 (简体)](README.zh-CN.md) · [中文 (繁體)](README.zh-TW.md) · [한국어](README.ko.md) · [Türkçe](README.tr.md) · [العربية](README.ar.md) · [Tiếng Việt](README.vi.md) · [ไทย](README.th.md) · [Bahasa Indonesia](README.id.md) · [हिन्दी](README.hi.md) · [Čeština](README.cs.md)
 
 Si vous avez cherché `openclaw usecases` ou `openclaw examples`, vous essayez sans doute de répondre à une question simple : qu'est-ce qu'on peut vraiment faire avec OpenClaw sans tout reconstruire à partir de zéro ? Ce repo est ma réponse. Il rassemble 100 starter packs exécutables construits sur des ClawHub skills publiques, avec pour chacun les étapes de setup, les prompts, un sample output, des KPI, des notes de sécurité et une procédure de rollback.
 

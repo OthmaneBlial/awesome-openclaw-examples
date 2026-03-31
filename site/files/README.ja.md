@@ -2,7 +2,7 @@
 
 ![Awesome OpenClaw Use Cases and Examples のロゴ](logo.png)
 
-このREADMEの言語: [English](README.md) · [Español](README.es.md) · [Deutsch](README.de.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [Português](README.pt.md) · [Русский](README.ru.md) · [Italiano](README.it.md) · [Nederlands](README.nl.md) · [Polski](README.pl.md)
+このREADMEの言語: [English](README.md) · [Español](README.es.md) · [Deutsch](README.de.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [Português](README.pt.md) · [Русский](README.ru.md) · [Italiano](README.it.md) · [Nederlands](README.nl.md) · [Polski](README.pl.md) · [中文 (简体)](README.zh-CN.md) · [中文 (繁體)](README.zh-TW.md) · [한국어](README.ko.md) · [Türkçe](README.tr.md) · [العربية](README.ar.md) · [Tiếng Việt](README.vi.md) · [ไทย](README.th.md) · [Bahasa Indonesia](README.id.md) · [हिन्दी](README.hi.md) · [Čeština](README.cs.md)
 
 `openclaw usecases` や `openclaw examples` を探してここに来たなら、たぶん知りたいのは一つです。OpenClawで実際に何ができるのか。しかも全部をゼロから組まずに。これはその答えとして作ったrepoです。公開されているClawHub skillsを使った100個の実行可能なstarter packをまとめていて、それぞれにsetup手順、prompts、sample output、KPI、security notes、rollback guidanceがあります。
 

@@ -674,6 +674,11 @@ function firstParagraph(markdown) {
       continue;
     }
 
+    // Skip the language switcher block added to the multilingual READMEs.
+    if ((line.match(/\]\(/g) || []).length >= 3 && line.includes("README")) {
+      continue;
+    }
+
     if (line.startsWith("|")) {
       break;
     }
