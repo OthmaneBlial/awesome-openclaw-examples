@@ -2,6 +2,8 @@
 
 ![Awesome OpenClaw Use Cases and Examples Logo](logo.png)
 
+Read this README in: [English](README.md) · [Español](README.es.md) · [Deutsch](README.de.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [Português](README.pt.md) · [Русский](README.ru.md) · [Italiano](README.it.md) · [Nederlands](README.nl.md) · [Polski](README.pl.md)
+
 If you searched for `openclaw usecases` or `openclaw examples`, you are probably trying to answer a simple question: what can I actually do with OpenClaw without building everything from scratch? This repo is my answer. It collects 100 runnable starter packs built on public ClawHub skills, each with setup steps, prompts, sample outputs, KPIs, security notes, and rollback guidance.
 
 [![Live Docs Explorer](https://img.shields.io/badge/live-docs%20explorer-0a6b6b?style=for-the-badge)](https://othmaneblial.github.io/awesome-openclaw-examples)

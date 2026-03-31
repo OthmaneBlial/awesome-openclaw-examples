@@ -112,6 +112,12 @@ const VERIFIED_SOURCES = [
   },
 ];
 
+function listRootReadmes() {
+  return readdirSync(ROOT)
+    .filter((name) => /^README(?:\.[a-z-]+)?\.md$/i.test(name))
+    .sort((left, right) => left.localeCompare(right, "en"));
+}
+
 function main() {
   const auditOnly = process.argv.includes("--audit-only");
   const repoDocs = loadRepoDocs();
@@ -401,7 +407,7 @@ function auditRepo(repoDocs, examples) {
   }
 
   const brokenLinks = findBrokenMarkdownLinks([
-    path.join(ROOT, "README.md"),
+    ...listRootReadmes().map((name) => path.join(ROOT, name)),
     path.join(ROOT, "CONTRIBUTING.md"),
     path.join(ROOT, "examples", "README.md"),
     path.join(ROOT, "examples", "catalog.md"),
@@ -460,7 +466,9 @@ function prepareSiteDirectories() {
 }
 
 function copySourceFiles() {
-  cpSync(path.join(ROOT, "README.md"), path.join(FILES_DIR, "README.md"));
+  for (const readmeName of listRootReadmes()) {
+    cpSync(path.join(ROOT, readmeName), path.join(FILES_DIR, readmeName));
+  }
   cpSync(path.join(ROOT, "CONTRIBUTING.md"), path.join(FILES_DIR, "CONTRIBUTING.md"));
   cpSync(path.join(ROOT, "LICENSE"), path.join(FILES_DIR, "LICENSE"));
   cpSync(path.join(ROOT, "logo.png"), path.join(FILES_DIR, "logo.png"));
