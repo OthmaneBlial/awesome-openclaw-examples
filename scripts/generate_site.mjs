@@ -200,6 +200,11 @@ function loadRepoDocs() {
     status: row.Status,
   }));
   const skillStats = buildSkillStats(catalogRows);
+  const languages = listRootReadmes().map((name) => ({
+    code: readmeLanguageCode(name),
+    label: languageLabelForReadme(name),
+    rawPath: toPosix(path.join("files", "readmes", name)),
+  }));
 
   return {
     lead: firstParagraph(readme),
@@ -239,6 +244,7 @@ function loadRepoDocs() {
           path.relative(ROOT, catalogPath),
         ),
       },
+      languages,
     },
   };
 }
@@ -248,7 +254,7 @@ function loadExamples(catalogRows) {
   const examples = readdirSync(RUNNABLE_DIR, { withFileTypes: true })
     .filter((entry) => entry.isDirectory())
     .map((entry) => entry.name)
-    .sort((left, right) => left.localeCompare(right, "en"))
+    .sort((left, right) => Number.parseInt(left, 10) - Number.parseInt(right, 10))
     .map((dirName) => {
       const exampleDir = path.join(RUNNABLE_DIR, dirName);
       const readmePath = path.join(exampleDir, "README.md");
@@ -328,6 +334,41 @@ function loadExamples(catalogRows) {
     });
 
   return examples;
+}
+
+function readmeLanguageCode(readmeName) {
+  if (readmeName === "README.md") {
+    return "en";
+  }
+  const match = readmeName.match(/^README\.([^.]+(?:-[^.]+)?)\.md$/i);
+  return match ? match[1] : readmeName;
+}
+
+function languageLabelForReadme(readmeName) {
+  const labels = {
+    "README.md": "English",
+    "README.es.md": "Español",
+    "README.de.md": "Deutsch",
+    "README.ja.md": "日本語",
+    "README.fr.md": "Français",
+    "README.pt.md": "Português",
+    "README.ru.md": "Русский",
+    "README.it.md": "Italiano",
+    "README.nl.md": "Nederlands",
+    "README.pl.md": "Polski",
+    "README.zh-CN.md": "中文 (简体)",
+    "README.zh-TW.md": "中文 (繁體)",
+    "README.ko.md": "한국어",
+    "README.tr.md": "Türkçe",
+    "README.ar.md": "العربية",
+    "README.vi.md": "Tiếng Việt",
+    "README.th.md": "ไทย",
+    "README.id.md": "Bahasa Indonesia",
+    "README.hi.md": "हिन्दी",
+    "README.cs.md": "Čeština",
+  };
+
+  return labels[readmeName] || readmeName;
 }
 
 function auditRepo(repoDocs, examples) {

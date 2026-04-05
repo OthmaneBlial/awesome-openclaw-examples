@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 async function init() {
   const data = await loadSiteData();
+  renderLanguageNav(data);
   renderFooterNote(data);
 
   if (document.body.dataset.page === "home") {
@@ -40,6 +41,28 @@ function renderFooterNote(data) {
 
   const builtAt = formatLongDate(data.generatedAt);
   note.textContent = `Generated from repository sources and cross-checked against official OpenClaw documentation on ${builtAt}.`;
+}
+
+function renderLanguageNav(data) {
+  const target = document.getElementById("language-nav");
+  if (!target) {
+    return;
+  }
+
+  target.innerHTML = data.docs.languages
+    .map(
+      (language) => `
+        <a href="${language.rawPath}" target="_blank" rel="noreferrer" aria-label="Open ${escapeHtml(language.label)} README">
+          ${escapeHtml(language.label)}
+        </a>
+      `,
+    )
+    .join("");
+
+  const note = document.getElementById("docs-language-note");
+  if (note) {
+    note.textContent = `Site docs are available in ${data.docs.languages.length} README languages via the links above.`;
+  }
 }
 
 function renderHome(data) {

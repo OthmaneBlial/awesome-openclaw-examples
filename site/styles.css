@@ -138,6 +138,20 @@ pre {
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
+  align-items: center;
+}
+
+.language-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.65rem;
+  max-width: 32rem;
+  justify-content: flex-end;
+  font-size: 0.84rem;
+}
+
+.language-nav a {
+  text-decoration-thickness: 1px;
 }
 
 .nav a,
