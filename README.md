@@ -1,13 +1,13 @@
-# Awesome OpenClaw Examples: 100 Runnable OpenClaw Use Cases
+# Awesome OpenClaw Examples: 101 Runnable OpenClaw Use Cases
 
 ![Awesome OpenClaw Use Cases and Examples Logo](logo.png)
 
 Read this README in: [English](README.md) · [Español](docs/readmes/README.es.md) · [Deutsch](docs/readmes/README.de.md) · [日本語](docs/readmes/README.ja.md) · [Français](docs/readmes/README.fr.md) · [Português](docs/readmes/README.pt.md) · [Русский](docs/readmes/README.ru.md) · [Italiano](docs/readmes/README.it.md) · [Nederlands](docs/readmes/README.nl.md) · [Polski](docs/readmes/README.pl.md) · [中文 (简体)](docs/readmes/README.zh-CN.md) · [中文 (繁體)](docs/readmes/README.zh-TW.md) · [한국어](docs/readmes/README.ko.md) · [Türkçe](docs/readmes/README.tr.md) · [العربية](docs/readmes/README.ar.md) · [Tiếng Việt](docs/readmes/README.vi.md) · [ไทย](docs/readmes/README.th.md) · [Bahasa Indonesia](docs/readmes/README.id.md) · [हिन्दी](docs/readmes/README.hi.md) · [Čeština](docs/readmes/README.cs.md)
 
-If you searched for `openclaw usecases` or `openclaw examples`, you are probably trying to answer a simple question: what can I actually do with OpenClaw without building everything from scratch? This repo is my answer. It collects 100 runnable starter packs built on public ClawHub skills, each with setup steps, prompts, sample outputs, KPIs, security notes, and rollback guidance.
+If you searched for `openclaw usecases` or `openclaw examples`, you are probably trying to answer a simple question: what can I actually do with OpenClaw without building everything from scratch? This repo is my answer. It collects 101 runnable starter packs built on public ClawHub skills, each with setup steps, prompts, sample outputs, KPIs, security notes, and rollback guidance.
 
 [![Live Docs Explorer](https://img.shields.io/badge/live-docs%20explorer-0a6b6b?style=for-the-badge)](https://othmaneblial.github.io/awesome-openclaw-examples)
-![100 Runnable Starters](https://img.shields.io/badge/100-runnable%20starters-201811?style=for-the-badge)
+![101 Runnable Starters](https://img.shields.io/badge/101-runnable%20starters-201811?style=for-the-badge)
 ![10 Quick Wins](https://img.shields.io/badge/10-quick%20wins-bb5b2c?style=for-the-badge)
 ![Maintainer Tested](https://img.shields.io/badge/reviewed-maintainer%20tested-244f78?style=for-the-badge)
 
@@ -48,7 +48,7 @@ If your search was literally `openclaw usecases`, start here. These are not rand
 | Engineering | [01 - PR Radar](examples/runnable/01-pr-radar/README.md), [07 - CI Flake Doctor](examples/runnable/07-ci-flake-doctor/README.md), [37 - Repo Hygiene Janitor](examples/runnable/37-repo-hygiene-janitor/README.md), [84 - Secrets Leak Triage Digest](examples/runnable/84-secrets-leak-triage-digest/README.md) | PR visibility, flaky test review, repo cleanup, security triage |
 | Support and Inbox Ops | [02 - SLA Guardian](examples/runnable/02-sla-guardian/README.md), [11 - Inbox to Action](examples/runnable/11-inbox-to-action/README.md), [54 - VIP Inbox Watchdog](examples/runnable/54-vip-inbox-watchdog/README.md), [99 - Internal FAQ Router](examples/runnable/99-internal-faq-router/README.md) | Escalation digests, queue cleanup, VIP follow-up, internal request routing |
 | Research and Content | [14 - Weekly Research Digest](examples/runnable/14-weekly-research-digest/README.md), [63 - Competitor Launch Explainer](examples/runnable/63-competitor-launch-explainer/README.md), [65 - Webinar Repurposing Desk](examples/runnable/65-webinar-repurposing-desk/README.md), [69 - Market FAQ Synthesizer](examples/runnable/69-market-faq-synthesizer/README.md) | Monitoring, competitor tracking, repurposing, FAQ generation |
-| Marketing and SEO | [05 - Content Idea Miner](examples/runnable/05-content-idea-miner/README.md), [66 - SEO Drift Watcher](examples/runnable/66-seo-drift-watcher/README.md), [68 - Social Proof Collector](examples/runnable/68-social-proof-collector/README.md) | Topic discovery, search drift monitoring, proof gathering |
+| Marketing and SEO | [05 - Content Idea Miner](examples/runnable/05-content-idea-miner/README.md), [66 - SEO Drift Watcher](examples/runnable/66-seo-drift-watcher/README.md), [68 - Social Proof Collector](examples/runnable/68-social-proof-collector/README.md), [101 - X/Twitter Ops Desk](examples/runnable/101-x-twitter-ops-desk/README.md) | Topic discovery, search drift monitoring, proof gathering, social signal triage |
 | Revenue and Customer Success | [43 - Renewal Risk Explainer](examples/runnable/43-renewal-risk-explainer/README.md), [48 - Meeting Follow-up Enforcer](examples/runnable/48-meeting-follow-up-enforcer/README.md), [93 - Customer Renewal Meeting Prep](examples/runnable/93-customer-renewal-meeting-prep/README.md) | Renewal risk, follow-up ownership, meeting prep |
 | People and Recruiting | [72 - Hiring Pipeline Stall Radar](examples/runnable/72-hiring-pipeline-stall-radar/README.md), [73 - Onboarding Checklist Concierge](examples/runnable/73-onboarding-checklist-concierge/README.md), [75 - Interview Prep Brief](examples/runnable/75-interview-prep-brief/README.md) | Hiring bottlenecks, onboarding flow, interview context |
 | Finance and Legal | [78 - Contract Redline Summary Board](examples/runnable/78-contract-redline-summary-board/README.md), [80 - Overdue PO Follow-up Queue](examples/runnable/80-overdue-po-follow-up-queue/README.md), [82 - Board Packet Evidence Collector](examples/runnable/82-board-packet-evidence-collector/README.md) | Redline review, procurement follow-up, board prep |
@@ -56,7 +56,7 @@ If your search was literally `openclaw usecases`, start here. These are not rand
 
 ## Top 10 Quick Wins
 
-I went through the full 100-example catalog for this list. These are the ones I would hand someone first because the value shows up quickly and the output is easy to judge.
+I went through the full 101-example catalog for this list. These are the ones I would hand someone first because the value shows up quickly and the output is easy to judge.
 
 | ID | Example | Why It Is A Quick Win | Links |
 | --- | --- | --- | --- |
@@ -103,9 +103,9 @@ examples/runnable/<id>-<slug>/
 5. Apply the prompt and cron setup from that example.
 6. Start with narrow scope, draft-only delivery, and human review before wider rollout.
 
-## Runnable Starters (100 Total)
+## Runnable Starters (101 Total)
 
-The repo currently includes 100 runnable OpenClaw starter packs, grouped by the kind of job they help teams get done.
+The repo currently includes 101 runnable OpenClaw starter packs, grouped by the kind of job they help teams get done.
 
 | Range | Focus | Notes |
 | --- | --- | --- |
@@ -116,7 +116,7 @@ The repo currently includes 100 runnable OpenClaw starter packs, grouped by the 
 | 63-70 | Research, content, and market signals | Competitive intelligence, quote mining, webinar repurposing, SEO, and request routing. |
 | 71-76 | People, recruiting, and onboarding | Candidate briefs, stall tracking, onboarding, policy, and source-quality workflows. |
 | 77-82 | Finance, procurement, and board prep | Renewals, redlines, procurement, PO follow-up, expense exceptions, and board evidence. |
-| 83-100 | Security, IT, governance, and internal operations | Access review, secrets, audits, exceptions, IT intake, asset return, and meeting hygiene. |
+| 83-101 | Security, IT, governance, internal operations, and social ops | Access review, secrets, audits, exceptions, IT intake, asset return, meeting hygiene, and X/Twitter signal triage. |
 
 See the full list in [examples/catalog.md](examples/catalog.md).
 

@@ -93,12 +93,12 @@ const COLLECTIONS = [
     max: 82,
   },
   {
-    range: "83-100",
-    focus: "Security, IT, governance, and internal operations",
+    range: "83-101",
+    focus: "Security, IT, governance, internal operations, and social ops",
     notes:
-      "Access review, secrets, audits, exceptions, IT intake, asset return, and meeting hygiene.",
+      "Access review, secrets, audits, exceptions, IT intake, asset return, meeting hygiene, and X/Twitter signal triage.",
     min: 83,
-    max: 100,
+    max: 101,
   },
 ];
 const VERIFIED_SOURCES = [
@@ -187,7 +187,7 @@ function loadRepoDocs() {
     },
   );
   const collections = parseMarkdownTable(
-    extractSection(readme, "## Runnable Starters (100 Total)"),
+    extractSection(readme, "## Runnable Starters (101 Total)"),
   ).map((row) => ({
     range: row.Range,
     focus: row.Focus,
