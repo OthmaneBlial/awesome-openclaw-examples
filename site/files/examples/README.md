@@ -35,7 +35,7 @@
 - `examples/runnable/29-competitive-monitor/`
 - `examples/runnable/30-founder-daily-control-room/`
 
-## Full 100-Example Catalog
+## Full 101-Example Catalog
 
 - `examples/catalog.md`
 
