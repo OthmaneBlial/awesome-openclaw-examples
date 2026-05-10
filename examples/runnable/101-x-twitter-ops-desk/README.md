@@ -7,7 +7,6 @@ Builds a read-first X/Twitter operating desk that turns target accounts, search 
 ```bash
 npx clawhub@latest install xquik-x-twitter-scraper
 npx clawhub@latest install tweetclaw
-npx clawhub@latest install summarize
 ```
 
 ## What It Does
