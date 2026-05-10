@@ -102,4 +102,4 @@
 | 98 | Security Exception Register | notion, slack, summarize, gog | Runnable |
 | 99 | Internal FAQ Router | slack, summarize, notion | Runnable |
 | 100 | Team Ritual Planner | caldav-calendar, gog, summarize, slack | Runnable |
-| 101 | X/Twitter Ops Desk | tweetclaw, summarize | Runnable |
+| 101 | X/Twitter Ops Desk | xquik-x-twitter-scraper, tweetclaw, summarize | Runnable |
