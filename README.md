@@ -162,3 +162,5 @@ If you want the safest first run, start with [01 - PR Radar](examples/runnable/0
 ## Contributing
 
 If you want to add or improve a starter, read [CONTRIBUTING.md](CONTRIBUTING.md). The bar is simple: be reproducible, be honest, be safe by default, and show measurable value.
+
+- **[Context Kit](https://github.com/JDDavenport/context-kit)** — Personal Context Artifacts: 4 Markdown templates (wiki, mental-models, voice, protocols) + 5 Claude Code skills. Solves context amnesia — every session starts context-full. MIT, one-command install.
