@@ -120,6 +120,10 @@ The repo currently includes 101 runnable OpenClaw starter packs, grouped by the 
 
 See the full list in [examples/catalog.md](examples/catalog.md).
 
+## Related QA tooling
+
+- [Agent QA](https://github.com/vostride/agent-qa) - Open-source, self-improving QA agent for software teams, with natural-language web and mobile testing, persistent testing context, and self-healing tests. This is a companion tool rather than one of this repository's runnable ClawHub examples.
+
 ## Who this repo is for
 
 - Teams evaluating real OpenClaw use cases before building custom workflows
