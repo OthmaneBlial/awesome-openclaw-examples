@@ -1,12 +1,12 @@
-# Awesome OpenClaw Examples: 201 runnable workflows
+# Awesome OpenClaw Examples: 300 runnable workflows
 
 ![Awesome OpenClaw Examples logo](logo.png)
 
 Read this README in: [English](README.md) · [Español](docs/readmes/README.es.md) · [Deutsch](docs/readmes/README.de.md) · [日本語](docs/readmes/README.ja.md) · [Français](docs/readmes/README.fr.md) · [Português](docs/readmes/README.pt.md) · [Русский](docs/readmes/README.ru.md) · [Italiano](docs/readmes/README.it.md) · [Nederlands](docs/readmes/README.nl.md) · [Polski](docs/readmes/README.pl.md) · [中文 (简体)](docs/readmes/README.zh-CN.md) · [中文 (繁體)](docs/readmes/README.zh-TW.md) · [한국어](docs/readmes/README.ko.md) · [Türkçe](docs/readmes/README.tr.md) · [العربية](docs/readmes/README.ar.md) · [Tiếng Việt](docs/readmes/README.vi.md) · [ไทย](docs/readmes/README.th.md) · [Bahasa Indonesia](docs/readmes/README.id.md) · [हिन्दी](docs/readmes/README.hi.md) · [Čeština](docs/readmes/README.cs.md)
 
-If you searched for `openclaw examples` or `openclaw usecases`, this is a practical starting point: 201 inspectable workflow starters built around the repository's documented ClawHub skill stack. Each pack includes a scoped setup, a prompt, a smoke test, a measurable KPI, security notes, failure modes, rollback guidance, and an illustrative output contract.
+If you searched for `openclaw examples` or `openclaw usecases`, this is a practical starting point: 300 inspectable workflow starters built around the repository's documented ClawHub skill stack. Each pack includes a scoped setup, a prompt, a smoke test, a measurable KPI, security notes, failure modes, rollback guidance, and an illustrative output contract.
 
-[![Live Docs Explorer](https://img.shields.io/badge/live-docs%20explorer-0b6f68?style=for-the-badge)](https://othmaneblial.github.io/awesome-openclaw-examples) [![201 Runnable Starters](https://img.shields.io/badge/201-runnable%20starters-17252b?style=for-the-badge)](examples/catalog.md) [![10 Quick Wins](https://img.shields.io/badge/10-quick%20wins-cb5b36?style=for-the-badge)](examples/catalog.md)
+[![Live Docs Explorer](https://img.shields.io/badge/live-docs%20explorer-0b6f68?style=for-the-badge)](https://othmaneblial.github.io/awesome-openclaw-examples) [![300 Runnable Starters](https://img.shields.io/badge/300-runnable%20starters-17252b?style=for-the-badge)](examples/catalog.md) [![10 Quick Wins](https://img.shields.io/badge/10-quick%20wins-cb5b36?style=for-the-badge)](examples/catalog.md)
 
 [Live Docs Explorer](https://othmaneblial.github.io/awesome-openclaw-examples) · [Full catalog](examples/catalog.md) · [Runnable starter index](examples/runnable/README.md) · [Contributing](CONTRIBUTING.md)
 
@@ -52,7 +52,7 @@ The live [Docs Explorer](https://othmaneblial.github.io/awesome-openclaw-example
 | Marketing and content | [05 - Content Idea Miner](examples/runnable/05-content-idea-miner/README.md), [66 - SEO Drift Watcher](examples/runnable/66-seo-drift-watcher/README.md), [161 - Content Brief Quality Gate](examples/runnable/161-content-brief-quality-gate/README.md) | Source-backed briefs, drift queues, and review checklists |
 | People and collaboration | [71 - Candidate Debrief Compiler](examples/runnable/71-candidate-debrief-compiler/README.md), [73 - Onboarding Checklist Concierge](examples/runnable/73-onboarding-checklist-concierge/README.md), [48 - Meeting Follow-up Enforcer](examples/runnable/48-meeting-follow-up-enforcer/README.md) | Handoffs, checklists, agendas, and aging action lists |
 | Finance, legal, security | [78 - Contract Redline Summary Board](examples/runnable/78-contract-redline-summary-board/README.md), [84 - Secrets Leak Triage Digest](examples/runnable/84-secrets-leak-triage-digest/README.md), [98 - Security Exception Register](examples/runnable/98-security-exception-register/README.md) | Evidence packs, exception queues, and escalation-ready summaries |
-| Personal, learning, and media | [30 - Founder Daily Control Room](examples/runnable/30-founder-daily-control-room/README.md), [16 - Voice Notes to Tasks](examples/runnable/16-voice-notes-to-tasks/README.md), [15 - YouTube Research Desk](examples/runnable/15-youtube-research-desk/README.md) | Private review notes, study plans, and draft media artifacts |
+| Personal, learning, and media | [202 - Personal Weekly Review](examples/runnable/202-personal-weekly-review/README.md), [220 - Language Practice Prompt Pack](examples/runnable/220-language-practice-prompt-pack/README.md), [291 - Podcast Show Notes Drafter](examples/runnable/291-podcast-show-notes-drafter/README.md) | Private review notes, study plans, and draft media artifacts |
 
 ## Top 10 Quick Wins
 
@@ -113,7 +113,7 @@ examples/runnable/<id>-<slug>/
 
 This repository does not claim that a starter has been validated against every provider, channel, account, or model. The packs are inspectable starting points; validate integrations and permissions in your own environment.
 
-## Runnable Starters (201 Total)
+## Runnable Starters (300 Total)
 
 ### Catalog map
 
@@ -131,6 +131,10 @@ This repository does not claim that a starter has been validated against every p
 | 127-151 | Customer success, sales, and revenue execution |
 | 152-176 | Product, marketing, and content operations |
 | 177-201 | Engineering, platform, and reliability operations |
+| 202-226 | Personal admin, home, and learning workflows |
+| 227-251 | Collaboration, communications, and community workflows |
+| 252-276 | Governance, security, and IT operations |
+| 277-300 | Education, creative, and media workflows |
 
 Browse all rows in the [full catalog](examples/catalog.md), or use the [Docs Explorer](https://othmaneblial.github.io/awesome-openclaw-examples/docs.html) to filter by skill and collection.
 

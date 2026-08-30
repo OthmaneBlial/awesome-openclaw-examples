@@ -1,4 +1,4 @@
-# Full Catalog (201 Examples)
+# Full Catalog (300 Examples)
 
 Every row links to a runnable starter pack with a guide, prompt, scripts, smoke test, KPI, security notes, and illustrative sample output.
 
@@ -205,3 +205,102 @@ Every row links to a runnable starter pack with a guide, prompt, scripts, smoke 
 | 199 | Performance Budget Review | github, summarize, notion | Runnable |
 | 200 | Architecture Decision Archive | notion, github, summarize | Runnable |
 | 201 | Backport Candidate Brief | github, summarize, slack | Runnable |
+| 202 | Personal Weekly Review | gog, todoist, summarize | Runnable |
+| 203 | Morning Priority Brief | gog, todoist, summarize | Runnable |
+| 204 | Household Admin Queue | gog, todoist, summarize | Runnable |
+| 205 | Home Maintenance Calendar | gog, caldav-calendar, todoist | Runnable |
+| 206 | Travel Research Pack | tavily-search, summarize, notion | Runnable |
+| 207 | Trip Itinerary Consistency Check | gog, caldav-calendar, summarize | Runnable |
+| 208 | Packing List Builder | gog, summarize, notion | Runnable |
+| 209 | Expense Receipt Organizer | gog, summarize, notion | Runnable |
+| 210 | Subscription Renewal Watch | gog, todoist, summarize | Runnable |
+| 211 | Personal Finance Statement Digest | gog, summarize, notion | Runnable |
+| 212 | Health Appointment Prep | gog, summarize, notion | Runnable |
+| 213 | Medication Refill Reminder | gog, caldav-calendar, todoist | Runnable |
+| 214 | Family Calendar Conflict Resolver | caldav-calendar, gog, summarize | Runnable |
+| 215 | School Update Digest | gog, summarize, todoist | Runnable |
+| 216 | Volunteer Shift Coordinator | gog, caldav-calendar, todoist | Runnable |
+| 217 | Meal Plan and Grocery Draft | gog, notion, summarize | Runnable |
+| 218 | Reading Queue Curator | tavily-search, notion, summarize | Runnable |
+| 219 | Learning Sprint Planner | notion, todoist, summarize | Runnable |
+| 220 | Language Practice Prompt Pack | summarize, notion, openai-whisper | Runnable |
+| 221 | Job Search Application Tracker | gog, todoist, notion | Runnable |
+| 222 | Portfolio Review Checklist | gog, summarize, notion | Runnable |
+| 223 | Freelance Client Admin Digest | gog, todoist, summarize | Runnable |
+| 224 | Personal Knowledge Inbox | gog, summarize, notion | Runnable |
+| 225 | Digital Photo Curation Queue | gog, summarize, notion | Runnable |
+| 226 | Home Inventory Register | gog, notion, summarize | Runnable |
+| 227 | Team Weekly Check-in Synthesizer | slack, summarize, notion | Runnable |
+| 228 | Async Standup Digest | slack, summarize, todoist | Runnable |
+| 229 | Decision Log Follow-up | notion, gog, todoist | Runnable |
+| 230 | Cross-timezone Handoff Pack | slack, summarize, notion | Runnable |
+| 231 | Meeting Agenda Quality Gate | gog, notion, summarize | Runnable |
+| 232 | Workshop Facilitation Brief | gog, notion, summarize | Runnable |
+| 233 | Brainstorm Cluster Board | slack, summarize, notion | Runnable |
+| 234 | Action Item Aging Radar | todoist, gog, summarize | Runnable |
+| 235 | Stakeholder Update Composer | gog, slack, summarize | Runnable |
+| 236 | Change Management FAQ | notion, summarize, slack | Runnable |
+| 237 | Internal Newsletter Planner | gog, summarize, notion | Runnable |
+| 238 | Town Hall Question Digest | slack, summarize, notion | Runnable |
+| 239 | All-hands Rehearsal Pack | gog, notion, summarize | Runnable |
+| 240 | Team Health Signal Summary | slack, summarize, notion | Runnable |
+| 241 | Recognition Roundup | slack, summarize, notion | Runnable |
+| 242 | Pairing Match Planner | gog, caldav-calendar, notion | Runnable |
+| 243 | Focus Time Protection Brief | caldav-calendar, gog, todoist | Runnable |
+| 244 | Shared Inbox Assignment Board | gog, todoist, slack | Runnable |
+| 245 | Communication Preference Registry | gog, notion, summarize | Runnable |
+| 246 | Translation Review Queue | gog, summarize, notion | Runnable |
+| 247 | Accessibility Copy Check | gog, summarize, notion | Runnable |
+| 248 | Community Moderator Handoff | slack, summarize, notion | Runnable |
+| 249 | Customer Advisory Feedback Loop | notion, summarize, slack | Runnable |
+| 250 | Partner Meeting Brief | gog, summarize, notion | Runnable |
+| 251 | Executive Decision Memo | gog, notion, summarize | Runnable |
+| 252 | Vendor Access Review | gog, notion, summarize | Runnable |
+| 253 | Security Training Follow-up | gog, todoist, slack | Runnable |
+| 254 | Data Classification Helper | gog, summarize, notion | Runnable |
+| 255 | Policy Change Impact Map | notion, summarize, slack | Runnable |
+| 256 | Compliance Control Evidence Index | gog, notion, summarize | Runnable |
+| 257 | Risk Register Aging Review | notion, summarize, slack | Runnable |
+| 258 | Business Continuity Exercise Pack | gog, notion, summarize | Runnable |
+| 259 | Disaster Recovery Test Brief | github, notion, summarize | Runnable |
+| 260 | Incident Lessons Tracker | notion, summarize, todoist | Runnable |
+| 261 | Vulnerability Remediation Watch | github, todoist, slack | Runnable |
+| 262 | Phishing Report Triage | gog, summarize, slack | Runnable |
+| 263 | Identity Joiner Mover Leaver Queue | gog, todoist, notion | Runnable |
+| 264 | Endpoint Patch Compliance Brief | api-gateway, summarize, slack | Runnable |
+| 265 | SaaS License Reclamation Queue | api-gateway, gog, todoist | Runnable |
+| 266 | IT Service Catalog Gap Finder | notion, summarize, slack | Runnable |
+| 267 | Hardware Refresh Planner | gog, notion, todoist | Runnable |
+| 268 | Procurement Policy Q&A Router | notion, summarize, slack | Runnable |
+| 269 | Legal Request Intake Pack | gog, notion, summarize | Runnable |
+| 270 | Contract Obligation Calendar | gog, caldav-calendar, notion | Runnable |
+| 271 | Audit Interview Prep | gog, notion, summarize | Runnable |
+| 272 | Privacy Notice Change Digest | gog, summarize, notion | Runnable |
+| 273 | Records of Processing Update | notion, gog, summarize | Runnable |
+| 274 | Third-Party Risk Renewal Pack | gog, nano-pdf, summarize | Runnable |
+| 275 | Security Exception Expiry Watch | notion, todoist, slack | Runnable |
+| 276 | Governance Meeting Packet | gog, notion, summarize | Runnable |
+| 277 | Course Module Outline Builder | notion, summarize, gog | Runnable |
+| 278 | Lesson Objective Alignment Check | gog, summarize, notion | Runnable |
+| 279 | Student Question Digest | slack, summarize, notion | Runnable |
+| 280 | Assignment Feedback Theme Miner | gog, summarize, notion | Runnable |
+| 281 | Study Plan Adaptive Coach | notion, todoist, summarize | Runnable |
+| 282 | Flashcard Source Extractor | nano-pdf, summarize, notion | Runnable |
+| 283 | Lecture Notes to Revision Pack | openai-whisper, summarize, notion | Runnable |
+| 284 | Reading List Annotation Digest | gog, summarize, notion | Runnable |
+| 285 | Research Abstract Simplifier | tavily-search, summarize, notion | Runnable |
+| 286 | Grant Application Evidence Map | gog, summarize, notion | Runnable |
+| 287 | Workshop Handout Builder | gog, notion, summarize | Runnable |
+| 288 | Presentation Story Arc Reviewer | gog, summarize, notion | Runnable |
+| 289 | Speaker Notes Rehearsal Coach | openai-whisper, summarize, notion | Runnable |
+| 290 | Video Chapter Marker | youtube-watcher, summarize, notion | Runnable |
+| 291 | Podcast Show Notes Drafter | youtube-watcher, summarize, notion | Runnable |
+| 292 | Transcript Quote Index | openai-whisper, summarize, notion | Runnable |
+| 293 | Caption Quality Review | openai-whisper, summarize, notion | Runnable |
+| 294 | Editorial Fact Check Queue | tavily-search, summarize, notion | Runnable |
+| 295 | Newsletter Archive Search | gog, summarize, notion | Runnable |
+| 296 | Book Club Discussion Pack | tavily-search, summarize, notion | Runnable |
+| 297 | Museum Visit Learning Guide | tavily-search, summarize, notion | Runnable |
+| 298 | Community Resource Directory | tavily-search, summarize, notion | Runnable |
+| 299 | Open Source Maintainer Digest | github, summarize, slack | Runnable |
+| 300 | Release Retrospective Story | github, summarize, notion | Runnable |

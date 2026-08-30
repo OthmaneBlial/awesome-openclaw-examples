@@ -132,6 +132,38 @@ const COLLECTIONS = [
     min: 177,
     max: 201,
   },
+  {
+    range: "202-226",
+    focus: "Personal admin, home, and learning workflows",
+    notes:
+      "Weekly reviews, household coordination, travel research, personal admin, and study planning with private, draft-only outputs.",
+    min: 202,
+    max: 226,
+  },
+  {
+    range: "227-251",
+    focus: "Collaboration, communications, and community workflows",
+    notes:
+      "Async updates, decision follow-up, facilitation, stakeholder communication, accessibility, and community handoffs.",
+    min: 227,
+    max: 251,
+  },
+  {
+    range: "252-276",
+    focus: "Governance, security, and IT operations",
+    notes:
+      "Access reviews, evidence registers, incident learning, resilience exercises, privacy operations, and IT lifecycle queues.",
+    min: 252,
+    max: 276,
+  },
+  {
+    range: "277-300",
+    focus: "Education, creative, and media workflows",
+    notes:
+      "Course design, revision packs, research explainers, presentations, video, audio, captions, and editorial review.",
+    min: 277,
+    max: 300,
+  },
 ];
 const VERIFIED_SOURCES = [
   {

@@ -1,6 +1,6 @@
 # Runnable Starters
 
-This folder contains 201 runnable OpenClaw starter packs. Each pack keeps the workflow contract inspectable: skill install commands, setup, a prompt, smoke test, KPI, security notes, failure modes, rollback, and an illustrative sample output.
+This folder contains 300 runnable OpenClaw starter packs. Each pack keeps the workflow contract inspectable: skill install commands, setup, a prompt, smoke test, KPI, security notes, failure modes, rollback, and an illustrative sample output.
 
 ## Start with a small, reviewable workflow
 
@@ -11,18 +11,18 @@ This folder contains 201 runnable OpenClaw starter packs. Each pack keeps the wo
 
 ## A few good entry points
 
+- [01 - PR Radar](runnable/01-pr-radar/README.md)
+- [03 - Release Notes Pilot](runnable/03-release-notes-pilot/README.md)
+- [06 - PDF Ops Desk](runnable/06-pdf-ops-desk/README.md)
+- [11 - Inbox to Action](runnable/11-inbox-to-action/README.md)
+- [30 - Founder Daily Control Room](runnable/30-founder-daily-control-room/README.md)
+- [66 - SEO Drift Watcher](runnable/66-seo-drift-watcher/README.md)
+- [84 - Secrets Leak Triage Digest](runnable/84-secrets-leak-triage-digest/README.md)
 - [102 - Customer Research Repository](runnable/102-customer-research-repository/README.md)
-- [103 - Data Quality Incident Brief](runnable/103-data-quality-incident-brief/README.md)
-- [104 - KPI Definition Librarian](runnable/104-kpi-definition-librarian/README.md)
-- [105 - Spreadsheet Formula Explainer](runnable/105-spreadsheet-formula-explainer/README.md)
-- [106 - Database Query Review Desk](runnable/106-database-query-review-desk/README.md)
-- [107 - Metric Anomaly Narrator](runnable/107-metric-anomaly-narrator/README.md)
-- [108 - Experiment Results Interpreter](runnable/108-experiment-results-interpreter/README.md)
-- [109 - Survey Theme Mapper](runnable/109-survey-theme-mapper/README.md)
-- [110 - User Interview Evidence Index](runnable/110-user-interview-evidence-index/README.md)
-- [111 - Research Source Credibility Check](runnable/111-research-source-credibility-check/README.md)
-- [112 - Market Sizing Workbook Reviewer](runnable/112-market-sizing-workbook-reviewer/README.md)
-- [113 - Data Dictionary Steward](runnable/113-data-dictionary-steward/README.md)
+- [127 - Customer Onboarding Risk Radar](runnable/127-customer-onboarding-risk-radar/README.md)
+- [180 - API Contract Drift Watch](runnable/180-api-contract-drift-watch/README.md)
+- [202 - Personal Weekly Review](runnable/202-personal-weekly-review/README.md)
+- [291 - Podcast Show Notes Drafter](runnable/291-podcast-show-notes-drafter/README.md)
 
 ## Browse by Collection
 
@@ -40,6 +40,10 @@ This folder contains 201 runnable OpenClaw starter packs. Each pack keeps the wo
 | 127-151 | Customer success, sales, and revenue execution |
 | 152-176 | Product, marketing, and content operations |
 | 177-201 | Engineering, platform, and reliability operations |
+| 202-226 | Personal admin, home, and learning workflows |
+| 227-251 | Collaboration, communications, and community workflows |
+| 252-276 | Governance, security, and IT operations |
+| 277-300 | Education, creative, and media workflows |
 
 ## Full Catalog
 
