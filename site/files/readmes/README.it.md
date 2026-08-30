@@ -1,15 +1,17 @@
-# Awesome OpenClaw Examples: 100 casi d'uso OpenClaw pronti da eseguire
+# Awesome OpenClaw Examples: 300 casi d'uso OpenClaw pronti da eseguire
 
 ![Logo di Awesome OpenClaw Use Cases and Examples](../../logo.png)
 
 Leggi questo README in: [English](../../README.md) · [Español](README.es.md) · [Deutsch](README.de.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [Português](README.pt.md) · [Русский](README.ru.md) · [Italiano](README.it.md) · [Nederlands](README.nl.md) · [Polski](README.pl.md) · [中文 (简体)](README.zh-CN.md) · [中文 (繁體)](README.zh-TW.md) · [한국어](README.ko.md) · [Türkçe](README.tr.md) · [العربية](README.ar.md) · [Tiếng Việt](README.vi.md) · [ไทย](README.th.md) · [Bahasa Indonesia](README.id.md) · [हिन्दी](README.hi.md) · [Čeština](README.cs.md)
 
-Se hai cercato `openclaw usecases` o `openclaw examples`, probabilmente stai cercando di rispondere a una domanda semplice: cosa si può fare davvero con OpenClaw senza costruire tutto da zero? Questo repo è la mia risposta. Raccoglie 100 starter pack eseguibili basati su ClawHub skills pubbliche, ciascuno con passaggi di setup, prompts, sample output, KPI, note di sicurezza e indicazioni di rollback.
+> Questa panoramica tradotta è sincronizzata con un catalogo di 300 starter. Il README inglese e il catalogo completo sono i riferimenti canonici.
+
+Se hai cercato `openclaw usecases` o `openclaw examples`, probabilmente stai cercando di rispondere a una domanda semplice: cosa si può fare davvero con OpenClaw senza costruire tutto da zero? Questo repo è la mia risposta. Raccoglie 300 starter pack eseguibili basati su ClawHub skills pubbliche, ciascuno con passaggi di setup, prompts, sample output, KPI, note di sicurezza e indicazioni di rollback.
 
 [![Live Docs Explorer](https://img.shields.io/badge/live-docs%20explorer-0a6b6b?style=for-the-badge)](https://othmaneblial.github.io/awesome-openclaw-examples)
-![100 Runnable Starters](https://img.shields.io/badge/100-runnable%20starters-201811?style=for-the-badge)
+![300 Runnable Starters](https://img.shields.io/badge/300-runnable%20starters-201811?style=for-the-badge)
 ![10 Quick Wins](https://img.shields.io/badge/10-quick%20wins-bb5b2c?style=for-the-badge)
-![Maintainer Tested](https://img.shields.io/badge/reviewed-maintainer%20tested-244f78?style=for-the-badge)
+![Research Informed](https://img.shields.io/badge/research-informed-ff8360?style=for-the-badge)
 
 [Live Docs Explorer](https://othmaneblial.github.io/awesome-openclaw-examples) · [Browse Full Catalog](../../examples/catalog.md) · [Runnable Starters](../../examples/runnable/README.md) · [Contributing](../../CONTRIBUTING.md)
 
@@ -56,7 +58,7 @@ Se hai cercato proprio `openclaw usecases`, inizia da qui. Non è una raccolta c
 
 ## Top 10 Quick Wins
 
-Per questa lista ho passato in rassegna tutto il catalogo dei 100 esempi. Sono quelli che darei per primi a qualcuno, perché il valore si vede in fretta e l'output è facile da giudicare.
+Per questa lista ho passato in rassegna tutto il catalogo dei 300 esempi. Sono quelli che darei per primi a qualcuno, perché il valore si vede in fretta e l'output è facile da giudicare.
 
 | ID | Esempio | Perché è un quick win | Links |
 | --- | --- | --- | --- |
@@ -97,15 +99,15 @@ examples/runnable/<id>-<slug>/
 ## Avvio rapido
 
 1. Scegli l'esempio più vicino a un problema reale che si ripete ogni settimana, non il titolo più appariscente.
-2. Installa le skills necessarie con `npx clawhub@latest install <skill-slug>`.
+2. Installa le skills necessarie con `openclaw skills verify <skill-slug> && openclaw skills install <skill-slug>`.
 3. Esegui `scripts/check_prereqs.sh` dell'esempio.
 4. Guarda `sample-output.md` per capire come dovrebbe apparire un buon output.
 5. Applica il prompt e il setup cron di quell'esempio.
 6. Parti con scope ridotto, delivery in draft-only e review umana prima di allargare l'uso.
 
-## Runnable starters (100 in totale)
+## Runnable starters (300 in totale)
 
-Il repo include attualmente 100 starter pack OpenClaw eseguibili, raggruppati per il tipo di lavoro che aiutano a gestire.
+Il repo include attualmente 300 starter pack OpenClaw eseguibili, raggruppati per il tipo di lavoro che aiutano a gestire.
 
 | Intervallo | Focus | Note |
 | --- | --- | --- |
@@ -116,7 +118,15 @@ Il repo include attualmente 100 starter pack OpenClaw eseguibili, raggruppati pe
 | 63-70 | Research, content e market signals | Competitive intelligence, quote mining, webinar repurposing, SEO e request routing. |
 | 71-76 | People, recruiting e onboarding | Candidate briefs, stall tracking, onboarding, policy e source quality. |
 | 77-82 | Finance, procurement e board prep | Renewals, redlines, procurement, PO follow-up, expense exceptions e board evidence. |
-| 83-100 | Security, IT, governance e internal operations | Access review, secrets, audits, exceptions, IT intake, asset return e meeting hygiene. |
+| 83-101 | Security, IT, governance e internal operations | Access review, secrets, audits, exceptions, IT intake, asset return e meeting hygiene. |
+| 102-126 | Data, metrics, and knowledge operations |
+| 127-151 | Customer success, sales, and revenue execution |
+| 152-176 | Product, marketing, and content operations |
+| 177-201 | Engineering, platform, and reliability operations |
+| 202-226 | Personal admin, home, and learning workflows |
+| 227-251 | Collaboration, communications, and community workflows |
+| 252-276 | Governance, security, and IT operations |
+| 277-300 | Education, creative, and media workflows |
 
 Vedi l'elenco completo in [examples/catalog.md](../../examples/catalog.md).
 
@@ -129,7 +139,7 @@ Vedi l'elenco completo in [examples/catalog.md](../../examples/catalog.md).
 
 ## Note importanti
 
-- Questi esempi vengono revisionati e testati dal maintainer prima di essere inclusi.
+- Sono starter contract informati dalla ricerca, non una certificazione del maintainer; valida ogni workflow nel tuo ambiente.
 - Questo è un repo mantenuto in modo indipendente, non un programma ufficiale OpenClaw.
 - Feedback, fixes ed esempi migliori sono benvenuti.
 - Questo repo non accetta workflow crypto o trading.

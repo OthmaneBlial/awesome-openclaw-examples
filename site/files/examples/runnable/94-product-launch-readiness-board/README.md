@@ -5,10 +5,10 @@ Builds a recurring launch readiness board from launch blockers, approvals, and r
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install github
-npx clawhub@latest install notion
-npx clawhub@latest install slack
-npx clawhub@latest install summarize
+openclaw skills install github
+openclaw skills install notion
+openclaw skills install slack
+openclaw skills install summarize
 ```
 
 ## What It Does

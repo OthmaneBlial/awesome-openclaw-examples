@@ -2,5 +2,5 @@
 set -euo pipefail
 
 for skill in gog summarize todoist; do
-  npx clawhub@latest install "$skill"
+  openclaw skills install "$skill"
 done

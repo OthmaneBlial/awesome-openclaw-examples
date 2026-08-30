@@ -1,15 +1,17 @@
-# Awesome OpenClaw Examples: 100 حالة استخدام لـ OpenClaw جاهزة للتشغيل
+# Awesome OpenClaw Examples: 300 حالة استخدام لـ OpenClaw جاهزة للتشغيل
 
 ![شعار Awesome OpenClaw Use Cases and Examples](../../logo.png)
 
 اقرأ هذا README بهذه اللغات: [English](../../README.md) · [Español](README.es.md) · [Deutsch](README.de.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [Português](README.pt.md) · [Русский](README.ru.md) · [Italiano](README.it.md) · [Nederlands](README.nl.md) · [Polski](README.pl.md) · [中文 (简体)](README.zh-CN.md) · [中文 (繁體)](README.zh-TW.md) · [한국어](README.ko.md) · [Türkçe](README.tr.md) · [العربية](README.ar.md) · [Tiếng Việt](README.vi.md) · [ไทย](README.th.md) · [Bahasa Indonesia](README.id.md) · [हिन्दी](README.hi.md) · [Čeština](README.cs.md)
 
-إذا كنت تبحث عن `openclaw usecases` أو `openclaw examples`، فغالباً أنت تحاول الإجابة عن سؤال بسيط: ماذا يمكن أن أفعل فعلاً باستخدام OpenClaw من دون أن أبني كل شيء من الصفر؟ هذا الـ repo هو إجابتي على ذلك. ستجد هنا 100 starter packs قابلة للتشغيل مبنية على ClawHub skills عامة، وكل واحدة تتضمن خطوات setup، وprompts، وsample outputs، وKPI، وsecurity notes، وrollback guidance.
+> تمت مزامنة هذا الملخص المترجم مع كتالوج يضم 300 starter. README الإنجليزي والكتالوج الكامل هما المرجع الأساسي.
+
+إذا كنت تبحث عن `openclaw usecases` أو `openclaw examples`، فغالباً أنت تحاول الإجابة عن سؤال بسيط: ماذا يمكن أن أفعل فعلاً باستخدام OpenClaw من دون أن أبني كل شيء من الصفر؟ هذا الـ repo هو إجابتي على ذلك. ستجد هنا 300 starter packs قابلة للتشغيل مبنية على ClawHub skills عامة، وكل واحدة تتضمن خطوات setup، وprompts، وsample outputs، وKPI، وsecurity notes، وrollback guidance.
 
 [![Live Docs Explorer](https://img.shields.io/badge/live-docs%20explorer-0a6b6b?style=for-the-badge)](https://othmaneblial.github.io/awesome-openclaw-examples)
-![100 Runnable Starters](https://img.shields.io/badge/100-runnable%20starters-201811?style=for-the-badge)
+![300 Runnable Starters](https://img.shields.io/badge/300-runnable%20starters-201811?style=for-the-badge)
 ![10 Quick Wins](https://img.shields.io/badge/10-quick%20wins-bb5b2c?style=for-the-badge)
-![Maintainer Tested](https://img.shields.io/badge/reviewed-maintainer%20tested-244f78?style=for-the-badge)
+![Research Informed](https://img.shields.io/badge/research-informed-ff8360?style=for-the-badge)
 
 [Live Docs Explorer](https://othmaneblial.github.io/awesome-openclaw-examples) · [Browse Full Catalog](../../examples/catalog.md) · [Runnable Starters](../../examples/runnable/README.md) · [Contributing](../../CONTRIBUTING.md)
 
@@ -56,7 +58,7 @@
 
 ## Top 10 Quick Wins
 
-راجعت الكتالوج الكامل الذي يحتوي على 100 مثال قبل أن أضع هذه القائمة. هذه هي العناصر التي سأعطيها لشخص ما أولاً، لأن قيمتها تظهر بسرعة، كما أن جودة الـ output فيها سهلة التقييم.
+راجعت الكتالوج الكامل الذي يحتوي على 300 مثال قبل أن أضع هذه القائمة. هذه هي العناصر التي سأعطيها لشخص ما أولاً، لأن قيمتها تظهر بسرعة، كما أن جودة الـ output فيها سهلة التقييم.
 
 | ID | المثال | لماذا يُعد quick win | Links |
 | --- | --- | --- | --- |
@@ -97,15 +99,15 @@ examples/runnable/<id>-<slug>/
 ## بداية سريعة
 
 1. اختر المثال الأقرب إلى مشكلة حقيقية تتكرر كل أسبوع، لا المثال الذي يملك العنوان الأكثر لفتاً للنظر.
-2. ثبّت skills المطلوبة باستخدام `npx clawhub@latest install <skill-slug>`.
+2. ثبّت skills المطلوبة باستخدام `openclaw skills verify <skill-slug> && openclaw skills install <skill-slug>`.
 3. شغّل `scripts/check_prereqs.sh` الخاص بذلك المثال.
 4. راجع `sample-output.md` أولاً حتى تعرف كيف يبدو output الجيد.
 5. طبّق الـ prompt وcron setup من ذلك المثال.
 6. ابدأ بـ scope ضيق، وdraft-only delivery، ومراجعة بشرية قبل التوسّع.
 
-## Runnable starters (100 بالمجموع)
+## Runnable starters (300 بالمجموع)
 
-يحتوي هذا الـ repo حالياً على 100 OpenClaw starter packs قابلة للتشغيل، مجمّعة بحسب نوع العمل الذي تساعد الفرق على إنجازه.
+يحتوي هذا الـ repo حالياً على 300 OpenClaw starter packs قابلة للتشغيل، مجمّعة بحسب نوع العمل الذي تساعد الفرق على إنجازه.
 
 | النطاق | التركيز | ملاحظات |
 | --- | --- | --- |
@@ -116,7 +118,15 @@ examples/runnable/<id>-<slug>/
 | 63-70 | Research وcontent وmarket signals | competitive intelligence، وquote mining، وwebinar repurposing، وSEO، وrequest routing. |
 | 71-76 | People وrecruiting وonboarding | candidate briefs، وstall tracking، وonboarding، وpolicy، وsource quality. |
 | 77-82 | Finance وprocurement وboard prep | renewals، وredlines، وprocurement، وPO follow-up، وexpense exceptions، وboard evidence. |
-| 83-100 | Security وIT وgovernance وinternal operations | access review، وsecrets، وaudits، وexceptions، وIT intake، وasset return، وmeeting hygiene. |
+| 83-101 | Security وIT وgovernance وinternal operations | access review، وsecrets، وaudits، وexceptions، وIT intake، وasset return، وmeeting hygiene. |
+| 102-126 | Data, metrics, and knowledge operations |
+| 127-151 | Customer success, sales, and revenue execution |
+| 152-176 | Product, marketing, and content operations |
+| 177-201 | Engineering, platform, and reliability operations |
+| 202-226 | Personal admin, home, and learning workflows |
+| 227-251 | Collaboration, communications, and community workflows |
+| 252-276 | Governance, security, and IT operations |
+| 277-300 | Education, creative, and media workflows |
 
 للاطلاع على القائمة الكاملة انظر [examples/catalog.md](../../examples/catalog.md).
 
@@ -129,7 +139,7 @@ examples/runnable/<id>-<slug>/
 
 ## ملاحظات مهمة
 
-- تتم مراجعة هذه الأمثلة واختبارها من قِبل maintainer قبل إضافتها.
+- هذه starter contracts مستندة إلى research وليست شهادة من maintainer؛ تحقّق من كل workflow في بيئتك الخاصة.
 - هذا repo يُدار بشكل مستقل، وليس برنامجاً رسمياً من OpenClaw.
 - Feedback وfixes والأمثلة الأفضل مرحّب بها دائماً.
 - هذا الـ repo لا يقبل workflows تخص crypto أو trading.

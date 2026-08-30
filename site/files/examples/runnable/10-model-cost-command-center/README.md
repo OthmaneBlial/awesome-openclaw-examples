@@ -5,9 +5,9 @@ Daily model-usage and spend anomaly monitoring.
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install model-usage
-npx clawhub@latest install summarize
-npx clawhub@latest install slack
+openclaw skills install model-usage
+openclaw skills install summarize
+openclaw skills install slack
 ```
 
 ## What It Does

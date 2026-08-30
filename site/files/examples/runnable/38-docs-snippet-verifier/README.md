@@ -5,9 +5,9 @@ Builds a recurring docs verification packet from documentation snippets that may
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install github
-npx clawhub@latest install notion
-npx clawhub@latest install summarize
+openclaw skills install github
+openclaw skills install notion
+openclaw skills install summarize
 ```
 
 ## What It Does

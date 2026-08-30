@@ -1,15 +1,17 @@
-# Awesome OpenClaw Examples: 100 praktických use cases pro OpenClaw, které lze rovnou spustit
+# Awesome OpenClaw Examples: 300 praktických use cases pro OpenClaw, které lze rovnou spustit
 
 ![Logo Awesome OpenClaw Use Cases and Examples](../../logo.png)
 
 Přečtěte si toto README v jazyce: [English](../../README.md) · [Español](README.es.md) · [Deutsch](README.de.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [Português](README.pt.md) · [Русский](README.ru.md) · [Italiano](README.it.md) · [Nederlands](README.nl.md) · [Polski](README.pl.md) · [中文 (简体)](README.zh-CN.md) · [中文 (繁體)](README.zh-TW.md) · [한국어](README.ko.md) · [Türkçe](README.tr.md) · [العربية](README.ar.md) · [Tiếng Việt](README.vi.md) · [ไทย](README.th.md) · [Bahasa Indonesia](README.id.md) · [हिन्दी](README.hi.md) · [Čeština](README.cs.md)
 
-Pokud jste hledali `openclaw usecases` nebo `openclaw examples`, pravděpodobně si chcete odpovědět na jednoduchou otázku: co se dá s OpenClaw opravdu dělat, aniž byste všechno stavěli od nuly? Tohle repo je moje odpověď. Shromažďuje 100 spustitelných starter packs postavených na veřejných ClawHub skills. Každý z nich obsahuje setup steps, prompts, sample outputs, KPI, security notes a rollback guidance.
+> Tento přeložený přehled je synchronizován s katalogem 300 starterů. Anglický README a úplný katalog jsou kanonické.
+
+Pokud jste hledali `openclaw usecases` nebo `openclaw examples`, pravděpodobně si chcete odpovědět na jednoduchou otázku: co se dá s OpenClaw opravdu dělat, aniž byste všechno stavěli od nuly? Tohle repo je moje odpověď. Shromažďuje 300 spustitelných starter packs postavených na veřejných ClawHub skills. Každý z nich obsahuje setup steps, prompts, sample outputs, KPI, security notes a rollback guidance.
 
 [![Live Docs Explorer](https://img.shields.io/badge/live-docs%20explorer-0a6b6b?style=for-the-badge)](https://othmaneblial.github.io/awesome-openclaw-examples)
-![100 Runnable Starters](https://img.shields.io/badge/100-runnable%20starters-201811?style=for-the-badge)
+![300 Runnable Starters](https://img.shields.io/badge/300-runnable%20starters-201811?style=for-the-badge)
 ![10 Quick Wins](https://img.shields.io/badge/10-quick%20wins-bb5b2c?style=for-the-badge)
-![Maintainer Tested](https://img.shields.io/badge/reviewed-maintainer%20tested-244f78?style=for-the-badge)
+![Research Informed](https://img.shields.io/badge/research-informed-ff8360?style=for-the-badge)
 
 [Live Docs Explorer](https://othmaneblial.github.io/awesome-openclaw-examples) · [Browse Full Catalog](../../examples/catalog.md) · [Runnable Starters](../../examples/runnable/README.md) · [Contributing](../../CONTRIBUTING.md)
 
@@ -56,7 +58,7 @@ Pokud jste doslova hledali `openclaw usecases`, začněte tady. Není to náhodn
 
 ## Top 10 Quick Wins
 
-Kvůli tomuto seznamu jsem prošel celý katalog 100 příkladů. Jsou to položky, které bych někomu dal jako první, protože jejich hodnota se ukáže rychle a kvalita output se dá snadno posoudit.
+Kvůli tomuto seznamu jsem prošel celý katalog 300 příkladů. Jsou to položky, které bych někomu dal jako první, protože jejich hodnota se ukáže rychle a kvalita output se dá snadno posoudit.
 
 | ID | Příklad | Proč je to quick win | Links |
 | --- | --- | --- | --- |
@@ -97,15 +99,15 @@ examples/runnable/<id>-<slug>/
 ## Rychlý start
 
 1. Vyberte příklad, který je nejblíž vašemu skutečnému opakovanému problému, ne ten s nejvýraznějším názvem.
-2. Nainstalujte potřebné skills pomocí `npx clawhub@latest install <skill-slug>`.
+2. Nainstalujte potřebné skills pomocí `openclaw skills verify <skill-slug> && openclaw skills install <skill-slug>`.
 3. Spusťte `scripts/check_prereqs.sh` u daného příkladu.
 4. Podívejte se nejdřív na `sample-output.md`, ať víte, jak má dobrý output vypadat.
 5. Použijte prompt a cron setup z daného příkladu.
 6. Začněte s úzkým scope, draft-only delivery a lidským review, teprve potom rozšiřujte.
 
-## Runnable starters (celkem 100)
+## Runnable starters (celkem 300)
 
-Repo teď obsahuje 100 spustitelných OpenClaw starter packs, seskupených podle typu práce, kterou týmům pomáhají řešit.
+Repo teď obsahuje 300 spustitelných OpenClaw starter packs, seskupených podle typu práce, kterou týmům pomáhají řešit.
 
 | Rozsah | Zaměření | Poznámky |
 | --- | --- | --- |
@@ -116,7 +118,15 @@ Repo teď obsahuje 100 spustitelných OpenClaw starter packs, seskupených podle
 | 63-70 | Research, content a market signals | competitive intelligence, quote mining, webinar repurposing, SEO a request routing. |
 | 71-76 | People, recruiting a onboarding | candidate briefs, stall tracking, onboarding, policy a source quality. |
 | 77-82 | Finance, procurement a board prep | renewals, redlines, procurement, PO follow-up, expense exceptions a board evidence. |
-| 83-100 | Security, IT, governance a internal operations | access review, secrets, audits, exceptions, IT intake, asset return a meeting hygiene. |
+| 83-101 | Security, IT, governance a internal operations | access review, secrets, audits, exceptions, IT intake, asset return a meeting hygiene. |
+| 102-126 | Data, metrics, and knowledge operations |
+| 127-151 | Customer success, sales, and revenue execution |
+| 152-176 | Product, marketing, and content operations |
+| 177-201 | Engineering, platform, and reliability operations |
+| 202-226 | Personal admin, home, and learning workflows |
+| 227-251 | Collaboration, communications, and community workflows |
+| 252-276 | Governance, security, and IT operations |
+| 277-300 | Education, creative, and media workflows |
 
 Plný seznam najdete v [examples/catalog.md](../../examples/catalog.md).
 
@@ -129,7 +139,7 @@ Plný seznam najdete v [examples/catalog.md](../../examples/catalog.md).
 
 ## Důležité poznámky
 
-- Tyto příklady procházejí review a testováním od maintainer, než se do repo dostanou.
+- Jde o starter contracts vycházející z research, nikoli o certifikaci maintainerem; každý workflow ověřte ve vlastním prostředí.
 - Jde o nezávisle udržované repo, ne o oficiální program OpenClaw.
 - Feedback, fixes a lepší příklady jsou vítány.
 - Toto repo nepřijímá crypto ani trading workflows.

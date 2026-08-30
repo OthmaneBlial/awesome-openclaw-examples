@@ -5,9 +5,9 @@ Coordinates design sprint inputs and outputs into a single decision-ready brief.
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install frontend-design
-npx clawhub@latest install notion
-npx clawhub@latest install slack
+openclaw skills install frontend-design
+openclaw skills install notion
+openclaw skills install slack
 ```
 
 ## What It Does

@@ -5,9 +5,9 @@ Builds a recurring champion-change alert brief from stakeholder or champion chan
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install gog
-npx clawhub@latest install summarize
-npx clawhub@latest install slack
+openclaw skills install gog
+openclaw skills install summarize
+openclaw skills install slack
 ```
 
 ## What It Does

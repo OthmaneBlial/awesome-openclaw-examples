@@ -5,9 +5,9 @@ Builds a recurring voice memo briefing packet from voice memos that need convers
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install openai-whisper
-npx clawhub@latest install summarize
-npx clawhub@latest install notion
+openclaw skills install openai-whisper
+openclaw skills install summarize
+openclaw skills install notion
 ```
 
 ## What It Does

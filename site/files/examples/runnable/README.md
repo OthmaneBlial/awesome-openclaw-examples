@@ -1,6 +1,6 @@
 # Runnable Starters
 
-This folder now contains 100 runnable starter packs. Every example includes a README, prompts, scripts, and `sample-output.md`.
+This folder now contains 300 runnable starter packs. Every example includes a README, prompts, scripts, and `sample-output.md`.
 
 ## Browse by Collection
 
@@ -13,7 +13,15 @@ This folder now contains 100 runnable starter packs. Every example includes a RE
 | 63-70 | Research, content, and market signals | Competitive intelligence, quote mining, webinar repurposing, SEO, and request routing. |
 | 71-76 | People, recruiting, and onboarding | Candidate briefs, stall tracking, onboarding, policy, and source-quality workflows. |
 | 77-82 | Finance, procurement, and board prep | Renewals, redlines, procurement, PO follow-up, expense exceptions, and board evidence. |
-| 83-100 | Security, IT, governance, and internal operations | Access review, secrets, audits, exceptions, IT intake, asset return, and meeting hygiene. |
+| 83-101 | Security, IT, governance, and internal operations | Access review, secrets, audits, exceptions, IT intake, asset return, and meeting hygiene. |
+| 102-126 | Data, metrics, and knowledge operations | Customer research, dashboards, evidence repositories, taxonomy, and knowledge freshness. |
+| 127-151 | Customer success, sales, and revenue execution | Onboarding risk, renewals, QBRs, proposals, win/loss, and revenue handoffs. |
+| 152-176 | Product, marketing, and content operations | Feedback, launches, content, SEO, interviews, and creative review queues. |
+| 177-201 | Engineering, platform, and reliability operations | Ownership, API contracts, incidents, cost, observability, and release readiness. |
+| 202-226 | Personal admin, home, and learning workflows | Weekly reviews, household coordination, study, travel, and personal knowledge. |
+| 227-251 | Collaboration, communications, and community workflows | Async updates, decisions, facilitation, accessibility, and community handoffs. |
+| 252-276 | Governance, security, and IT operations | Access reviews, evidence registers, resilience, privacy, and lifecycle queues. |
+| 277-300 | Education, creative, and media workflows | Course design, revision packs, research explainers, video, audio, and editorial review. |
 
 ## Full Catalog
 
@@ -22,5 +30,5 @@ This folder now contains 100 runnable starter packs. Every example includes a RE
 ## Skill Install Pattern
 
 ```bash
-npx clawhub@latest install <skill-slug>
+openclaw skills install <skill-slug>
 ```

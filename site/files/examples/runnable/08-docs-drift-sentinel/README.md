@@ -5,8 +5,8 @@ Detects code/documentation drift before it becomes support debt.
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install github
-npx clawhub@latest install notion
+openclaw skills install github
+openclaw skills install notion
 ```
 
 ## What It Does

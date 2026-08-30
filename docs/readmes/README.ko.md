@@ -1,15 +1,17 @@
-# Awesome OpenClaw Examples: 바로 실행할 수 있는 OpenClaw 활용 사례 100선
+# Awesome OpenClaw Examples: 바로 실행할 수 있는 OpenClaw 활용 사례 300선
 
 ![Awesome OpenClaw Use Cases and Examples 로고](../../logo.png)
 
 이 README를 다른 언어로 읽기: [English](../../README.md) · [Español](README.es.md) · [Deutsch](README.de.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [Português](README.pt.md) · [Русский](README.ru.md) · [Italiano](README.it.md) · [Nederlands](README.nl.md) · [Polski](README.pl.md) · [中文 (简体)](README.zh-CN.md) · [中文 (繁體)](README.zh-TW.md) · [한국어](README.ko.md) · [Türkçe](README.tr.md) · [العربية](README.ar.md) · [Tiếng Việt](README.vi.md) · [ไทย](README.th.md) · [Bahasa Indonesia](README.id.md) · [हिन्दी](README.hi.md) · [Čeština](README.cs.md)
 
-`openclaw usecases` 또는 `openclaw examples`를 찾고 있었다면, 아마 아주 단순한 질문에 답하고 싶은 것일 겁니다. OpenClaw로 실제로 무엇을 할 수 있는가, 그리고 그걸 전부 처음부터 직접 만들지 않고도 가능한가. 이 repo는 그 질문에 대한 제 답입니다. 공개된 ClawHub skills를 바탕으로 만든 100개의 실행 가능한 starter packs를 모아 두었고, 각각에 setup 단계, prompts, sample outputs, KPI, security notes, rollback guidance가 들어 있습니다.
+> 이 번역 개요는 300개 starter 카탈로그와 동기화되어 있습니다. 전체 카탈로그와 영어 README가 기준 문서입니다.
+
+`openclaw usecases` 또는 `openclaw examples`를 찾고 있었다면, 아마 아주 단순한 질문에 답하고 싶은 것일 겁니다. OpenClaw로 실제로 무엇을 할 수 있는가, 그리고 그걸 전부 처음부터 직접 만들지 않고도 가능한가. 이 repo는 그 질문에 대한 제 답입니다. 공개된 ClawHub skills를 바탕으로 만든 300개의 실행 가능한 starter packs를 모아 두었고, 각각에 setup 단계, prompts, sample outputs, KPI, security notes, rollback guidance가 들어 있습니다.
 
 [![Live Docs Explorer](https://img.shields.io/badge/live-docs%20explorer-0a6b6b?style=for-the-badge)](https://othmaneblial.github.io/awesome-openclaw-examples)
-![100 Runnable Starters](https://img.shields.io/badge/100-runnable%20starters-201811?style=for-the-badge)
+![300 Runnable Starters](https://img.shields.io/badge/300-runnable%20starters-201811?style=for-the-badge)
 ![10 Quick Wins](https://img.shields.io/badge/10-quick%20wins-bb5b2c?style=for-the-badge)
-![Maintainer Tested](https://img.shields.io/badge/reviewed-maintainer%20tested-244f78?style=for-the-badge)
+![Research Informed](https://img.shields.io/badge/research-informed-ff8360?style=for-the-badge)
 
 [Live Docs Explorer](https://othmaneblial.github.io/awesome-openclaw-examples) · [Browse Full Catalog](../../examples/catalog.md) · [Runnable Starters](../../examples/runnable/README.md) · [Contributing](../../CONTRIBUTING.md)
 
@@ -56,7 +58,7 @@
 
 ## Top 10 Quick Wins
 
-이 목록은 전체 100개 예제를 다 보고 고른 것입니다. 가치가 빨리 드러나고, output의 품질도 비교적 쉽게 판단할 수 있어서 먼저 권하기 좋은 항목들입니다.
+이 목록은 전체 300개 예제를 다 보고 고른 것입니다. 가치가 빨리 드러나고, output의 품질도 비교적 쉽게 판단할 수 있어서 먼저 권하기 좋은 항목들입니다.
 
 | ID | 예제 | 왜 quick win인가 | Links |
 | --- | --- | --- | --- |
@@ -97,15 +99,15 @@ examples/runnable/<id>-<slug>/
 ## 빠르게 시작하기
 
 1. 가장 눈에 띄는 제목이 아니라, 실제로 매주 겪는 문제와 가장 가까운 예제를 고릅니다.
-2. 필요한 skills를 `npx clawhub@latest install <skill-slug>` 로 설치합니다.
+2. 필요한 skills를 `openclaw skills verify <skill-slug> && openclaw skills install <skill-slug>` 로 설치합니다.
 3. 해당 예제의 `scripts/check_prereqs.sh` 를 실행합니다.
 4. `sample-output.md` 를 먼저 읽고 좋은 output이 어떤 모습인지 파악합니다.
 5. 그 예제의 prompt와 cron setup을 적용합니다.
 6. 작은 scope, draft-only delivery, 사람의 review부터 시작한 뒤 점차 넓힙니다.
 
-## Runnable starters (총 100개)
+## Runnable starters (총 300개)
 
-이 repo에는 현재 100개의 실행 가능한 OpenClaw starter packs가 있고, 팀이 처리해야 하는 업무 유형별로 묶여 있습니다.
+이 repo에는 현재 300개의 실행 가능한 OpenClaw starter packs가 있고, 팀이 처리해야 하는 업무 유형별로 묶여 있습니다.
 
 | 구간 | 초점 | 설명 |
 | --- | --- | --- |
@@ -116,7 +118,15 @@ examples/runnable/<id>-<slug>/
 | 63-70 | Research, content 및 market signals | competitive intelligence, quote mining, webinar repurposing, SEO, request routing입니다. |
 | 71-76 | People, recruiting 및 onboarding | candidate briefs, stall tracking, onboarding, policy, source quality입니다. |
 | 77-82 | Finance, procurement 및 board prep | renewals, redlines, procurement, PO follow-up, expense exceptions, board evidence입니다. |
-| 83-100 | Security, IT, governance 및 internal operations | access review, secrets, audits, exceptions, IT intake, asset return, meeting hygiene입니다. |
+| 83-101 | Security, IT, governance 및 internal operations | access review, secrets, audits, exceptions, IT intake, asset return, meeting hygiene입니다. |
+| 102-126 | Data, metrics, and knowledge operations |
+| 127-151 | Customer success, sales, and revenue execution |
+| 152-176 | Product, marketing, and content operations |
+| 177-201 | Engineering, platform, and reliability operations |
+| 202-226 | Personal admin, home, and learning workflows |
+| 227-251 | Collaboration, communications, and community workflows |
+| 252-276 | Governance, security, and IT operations |
+| 277-300 | Education, creative, and media workflows |
 
 전체 목록은 [examples/catalog.md](../../examples/catalog.md) 에서 볼 수 있습니다.
 
@@ -129,7 +139,7 @@ examples/runnable/<id>-<slug>/
 
 ## 중요한 메모
 
-- 이 예제들은 repo에 들어오기 전에 maintainer가 review하고 테스트합니다.
+- 이 예제는 research-informed starter contract이며 maintainer 인증이 아닙니다. 각 workflow를 자신의 환경에서 검증하세요.
 - 이것은 독립적으로 운영되는 repo이며, OpenClaw 공식 프로그램이 아닙니다.
 - feedback, fixes, 더 나은 예제 제안은 언제나 환영입니다.
 - 이 repo는 crypto나 trading workflows를 받지 않습니다.

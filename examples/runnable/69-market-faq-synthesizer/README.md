@@ -5,9 +5,9 @@ Builds a recurring market FAQ packet from frequently asked market questions and 
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install tavily-search
-npx clawhub@latest install summarize
-npx clawhub@latest install notion
+openclaw skills install tavily-search
+openclaw skills install summarize
+openclaw skills install notion
 ```
 
 ## What It Does

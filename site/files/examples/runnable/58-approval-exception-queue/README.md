@@ -5,9 +5,9 @@ Builds a recurring approval exception board from approvals that are stalled or m
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install gog
-npx clawhub@latest install notion
-npx clawhub@latest install slack
+openclaw skills install gog
+openclaw skills install notion
+openclaw skills install slack
 ```
 
 ## What It Does

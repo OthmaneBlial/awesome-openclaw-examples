@@ -2,5 +2,5 @@
 set -euo pipefail
 
 for skill in openai-whisper summarize notion; do
-  npx clawhub@latest install "$skill"
+  openclaw skills install "$skill"
 done

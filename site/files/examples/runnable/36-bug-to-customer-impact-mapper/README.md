@@ -5,9 +5,9 @@ Builds a recurring customer-impact bug board from open bugs with customer-facing
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install github
-npx clawhub@latest install slack
-npx clawhub@latest install notion
+openclaw skills install github
+openclaw skills install slack
+openclaw skills install notion
 ```
 
 ## What It Does

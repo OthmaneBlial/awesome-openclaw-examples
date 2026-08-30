@@ -5,9 +5,9 @@ Builds a recurring task rollover digest from overdue tasks and unfinished carry-
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install todoist
-npx clawhub@latest install summarize
-npx clawhub@latest install slack
+openclaw skills install todoist
+openclaw skills install summarize
+openclaw skills install slack
 ```
 
 ## What It Does

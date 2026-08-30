@@ -1,15 +1,17 @@
-# Awesome OpenClaw Examples：100 個可直接執行的 OpenClaw 用例
+# Awesome OpenClaw Examples：300 個可直接執行的 OpenClaw 用例
 
 ![Awesome OpenClaw Use Cases and Examples 標誌](../../logo.png)
 
 閱讀此 README： [English](../../README.md) · [Español](README.es.md) · [Deutsch](README.de.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [Português](README.pt.md) · [Русский](README.ru.md) · [Italiano](README.it.md) · [Nederlands](README.nl.md) · [Polski](README.pl.md) · [中文 (简体)](README.zh-CN.md) · [中文 (繁體)](README.zh-TW.md) · [한국어](README.ko.md) · [Türkçe](README.tr.md) · [العربية](README.ar.md) · [Tiếng Việt](README.vi.md) · [ไทย](README.th.md) · [Bahasa Indonesia](README.id.md) · [हिन्दी](README.hi.md) · [Čeština](README.cs.md)
 
-如果你搜尋的是 `openclaw usecases` 或 `openclaw examples`，那你多半是在問一個很直接的問題：不用從零開始整套重建，OpenClaw 到底能做什麼？這個 repo 就是我的答案。這裡整理了 100 個基於公開 ClawHub skills 的可執行 starter packs，每個都包含 setup 步驟、prompts、sample outputs、KPI、security notes 和 rollback guidance。
+> 這份翻譯版概覽已與包含 300 個 starter 的目錄同步。英文 README 與完整目錄是 canonical reference。
+
+如果你搜尋的是 `openclaw usecases` 或 `openclaw examples`，那你多半是在問一個很直接的問題：不用從零開始整套重建，OpenClaw 到底能做什麼？這個 repo 就是我的答案。這裡整理了 300 個基於公開 ClawHub skills 的可執行 starter packs，每個都包含 setup 步驟、prompts、sample outputs、KPI、security notes 和 rollback guidance。
 
 [![Live Docs Explorer](https://img.shields.io/badge/live-docs%20explorer-0a6b6b?style=for-the-badge)](https://othmaneblial.github.io/awesome-openclaw-examples)
-![100 Runnable Starters](https://img.shields.io/badge/100-runnable%20starters-201811?style=for-the-badge)
+![300 Runnable Starters](https://img.shields.io/badge/300-runnable%20starters-201811?style=for-the-badge)
 ![10 Quick Wins](https://img.shields.io/badge/10-quick%20wins-bb5b2c?style=for-the-badge)
-![Maintainer Tested](https://img.shields.io/badge/reviewed-maintainer%20tested-244f78?style=for-the-badge)
+![Research Informed](https://img.shields.io/badge/research-informed-ff8360?style=for-the-badge)
 
 [Live Docs Explorer](https://othmaneblial.github.io/awesome-openclaw-examples) · [Browse Full Catalog](../../examples/catalog.md) · [Runnable Starters](../../examples/runnable/README.md) · [Contributing](../../CONTRIBUTING.md)
 
@@ -56,7 +58,7 @@
 
 ## Top 10 Quick Wins
 
-我看完整個 100 篇範例目錄後，才整理出這份清單。這些是我最願意先拿給別人試的項目，因為價值出現得快，output 的品質也很容易判斷。
+我看完整個 300 篇範例目錄後，才整理出這份清單。這些是我最願意先拿給別人試的項目，因為價值出現得快，output 的品質也很容易判斷。
 
 | ID | 範例 | 為什麼它是 quick win | Links |
 | --- | --- | --- | --- |
@@ -97,15 +99,15 @@ examples/runnable/<id>-<slug>/
 ## 快速開始
 
 1. 選最接近你真實每週問題的範例，而不是標題最花俏的那個。
-2. 用 `npx clawhub@latest install <skill-slug>` 安裝需要的 skills。
+2. 用 `openclaw skills verify <skill-slug> && openclaw skills install <skill-slug>` 安裝需要的 skills。
 3. 執行該範例的 `scripts/check_prereqs.sh`。
 4. 先看 `sample-output.md`，確認好的 output 應該長什麼樣子。
 5. 套用該範例的 prompt 和 cron setup。
 6. 先從小 scope、draft-only delivery 和人工 review 開始，再逐步擴大。
 
-## Runnable starters（共 100 個）
+## Runnable starters（共 300 個）
 
-這個 repo 目前包含 100 個可執行的 OpenClaw starter packs，依照它們幫助團隊完成的工作類型來分組。
+這個 repo 目前包含 300 個可執行的 OpenClaw starter packs，依照它們幫助團隊完成的工作類型來分組。
 
 | 範圍 | 重點 | 說明 |
 | --- | --- | --- |
@@ -116,7 +118,15 @@ examples/runnable/<id>-<slug>/
 | 63-70 | Research、content 與 market signals | competitive intelligence、quote mining、webinar repurposing、SEO 和 request routing。 |
 | 71-76 | People、recruiting 與 onboarding | candidate briefs、stall tracking、onboarding、policy 和 source quality。 |
 | 77-82 | Finance、procurement 與 board prep | renewals、redlines、procurement、PO follow-up、expense exceptions 和 board evidence。 |
-| 83-100 | Security、IT、governance 與 internal operations | access review、secrets、audits、exceptions、IT intake、asset return 和 meeting hygiene。 |
+| 83-101 | Security、IT、governance 與 internal operations | access review、secrets、audits、exceptions、IT intake、asset return 和 meeting hygiene。 |
+| 102-126 | Data, metrics, and knowledge operations |
+| 127-151 | Customer success, sales, and revenue execution |
+| 152-176 | Product, marketing, and content operations |
+| 177-201 | Engineering, platform, and reliability operations |
+| 202-226 | Personal admin, home, and learning workflows |
+| 227-251 | Collaboration, communications, and community workflows |
+| 252-276 | Governance, security, and IT operations |
+| 277-300 | Education, creative, and media workflows |
 
 完整清單請見 [examples/catalog.md](../../examples/catalog.md)。
 
@@ -129,7 +139,7 @@ examples/runnable/<id>-<slug>/
 
 ## 重要說明
 
-- 這些範例在收錄前都會由 maintainer review 並測試。
+- 這些是以 research 為基礎的 starter contract，不代表 maintainer 認證；請在自己的環境中驗證每個 workflow。
 - 這是一個獨立維護的 repo，不是 OpenClaw 官方專案。
 - 歡迎 feedback、fixes 和更好的範例。
 - 這個 repo 不接受 crypto 或 trading workflows。

@@ -5,9 +5,9 @@ Builds a recurring incident postmortem draft from incident timelines, issue link
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install github
-npx clawhub@latest install summarize
-npx clawhub@latest install notion
+openclaw skills install github
+openclaw skills install summarize
+openclaw skills install notion
 ```
 
 ## What It Does

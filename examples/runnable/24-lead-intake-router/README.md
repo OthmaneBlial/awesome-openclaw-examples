@@ -5,9 +5,9 @@ Routes new leads by fit and urgency, with a clear follow-up queue.
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install typeform
-npx clawhub@latest install notion
-npx clawhub@latest install slack
+openclaw skills install typeform
+openclaw skills install notion
+openclaw skills install slack
 ```
 
 ## What It Does

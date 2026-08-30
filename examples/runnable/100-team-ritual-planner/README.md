@@ -5,10 +5,10 @@ Builds a recurring team ritual packet from team rituals, meeting hygiene, and op
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install caldav-calendar
-npx clawhub@latest install gog
-npx clawhub@latest install summarize
-npx clawhub@latest install slack
+openclaw skills install caldav-calendar
+openclaw skills install gog
+openclaw skills install summarize
+openclaw skills install slack
 ```
 
 ## What It Does

@@ -5,9 +5,9 @@ Builds a recurring clean bug intake queue from incoming bug reports that need cl
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install typeform
-npx clawhub@latest install summarize
-npx clawhub@latest install todoist
+openclaw skills install typeform
+openclaw skills install summarize
+openclaw skills install todoist
 ```
 
 ## What It Does

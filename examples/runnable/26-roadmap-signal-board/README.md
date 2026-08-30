@@ -5,10 +5,10 @@ Transforms external signal noise into prioritized roadmap opportunities.
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install tavily-search
-npx clawhub@latest install summarize
-npx clawhub@latest install notion
-npx clawhub@latest install slack
+openclaw skills install tavily-search
+openclaw skills install summarize
+openclaw skills install notion
+openclaw skills install slack
 ```
 
 ## What It Does

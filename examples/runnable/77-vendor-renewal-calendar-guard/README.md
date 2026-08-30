@@ -5,9 +5,9 @@ Builds a recurring vendor renewal alert brief from vendor renewals and upcoming 
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install gog
-npx clawhub@latest install notion
-npx clawhub@latest install slack
+openclaw skills install gog
+openclaw skills install notion
+openclaw skills install slack
 ```
 
 ## What It Does

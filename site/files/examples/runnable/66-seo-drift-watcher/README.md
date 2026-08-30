@@ -5,9 +5,9 @@ Builds a recurring SEO drift memo from SEO and search-result drift around priori
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install tavily-search
-npx clawhub@latest install notion
-npx clawhub@latest install slack
+openclaw skills install tavily-search
+openclaw skills install notion
+openclaw skills install slack
 ```
 
 ## What It Does

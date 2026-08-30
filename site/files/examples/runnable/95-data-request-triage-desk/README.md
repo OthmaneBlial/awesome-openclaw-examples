@@ -5,10 +5,10 @@ Builds a recurring data request queue from data access or export requests enteri
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install typeform
-npx clawhub@latest install notion
-npx clawhub@latest install slack
-npx clawhub@latest install summarize
+openclaw skills install typeform
+openclaw skills install notion
+openclaw skills install slack
+openclaw skills install summarize
 ```
 
 ## What It Does

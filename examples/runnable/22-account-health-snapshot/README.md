@@ -5,9 +5,9 @@ Builds recurring account-risk snapshots from product and support signals.
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install api-gateway
-npx clawhub@latest install notion
-npx clawhub@latest install slack
+openclaw skills install api-gateway
+openclaw skills install notion
+openclaw skills install slack
 ```
 
 ## What It Does

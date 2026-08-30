@@ -1,15 +1,17 @@
-# Awesome OpenClaw Examples: 100 uitvoerbare OpenClaw-use-cases
+# Awesome OpenClaw Examples: 300 uitvoerbare OpenClaw-use-cases
 
 ![Logo van Awesome OpenClaw Use Cases and Examples](../../logo.png)
 
 Lees deze README in: [English](../../README.md) · [Español](README.es.md) · [Deutsch](README.de.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [Português](README.pt.md) · [Русский](README.ru.md) · [Italiano](README.it.md) · [Nederlands](README.nl.md) · [Polski](README.pl.md) · [中文 (简体)](README.zh-CN.md) · [中文 (繁體)](README.zh-TW.md) · [한국어](README.ko.md) · [Türkçe](README.tr.md) · [العربية](README.ar.md) · [Tiếng Việt](README.vi.md) · [ไทย](README.th.md) · [Bahasa Indonesia](README.id.md) · [हिन्दी](README.hi.md) · [Čeština](README.cs.md)
 
-Als je op `openclaw usecases` of `openclaw examples` hebt gezocht, probeer je waarschijnlijk een eenvoudige vraag te beantwoorden: wat kun je met OpenClaw echt doen zonder alles vanaf nul op te bouwen? Dit repo is mijn antwoord daarop. Het bundelt 100 uitvoerbare starter packs op basis van publieke ClawHub skills, elk met setup-stappen, prompts, sample output, KPI, security notes en rollback-richtlijnen.
+> Dit vertaalde overzicht is gesynchroniseerd met een catalogus van 300 starters. De Engelse README en de volledige catalogus zijn leidend.
+
+Als je op `openclaw usecases` of `openclaw examples` hebt gezocht, probeer je waarschijnlijk een eenvoudige vraag te beantwoorden: wat kun je met OpenClaw echt doen zonder alles vanaf nul op te bouwen? Dit repo is mijn antwoord daarop. Het bundelt 300 uitvoerbare starter packs op basis van publieke ClawHub skills, elk met setup-stappen, prompts, sample output, KPI, security notes en rollback-richtlijnen.
 
 [![Live Docs Explorer](https://img.shields.io/badge/live-docs%20explorer-0a6b6b?style=for-the-badge)](https://othmaneblial.github.io/awesome-openclaw-examples)
-![100 Runnable Starters](https://img.shields.io/badge/100-runnable%20starters-201811?style=for-the-badge)
+![300 Runnable Starters](https://img.shields.io/badge/300-runnable%20starters-201811?style=for-the-badge)
 ![10 Quick Wins](https://img.shields.io/badge/10-quick%20wins-bb5b2c?style=for-the-badge)
-![Maintainer Tested](https://img.shields.io/badge/reviewed-maintainer%20tested-244f78?style=for-the-badge)
+![Research Informed](https://img.shields.io/badge/research-informed-ff8360?style=for-the-badge)
 
 [Live Docs Explorer](https://othmaneblial.github.io/awesome-openclaw-examples) · [Browse Full Catalog](../../examples/catalog.md) · [Runnable Starters](../../examples/runnable/README.md) · [Contributing](../../CONTRIBUTING.md)
 
@@ -56,7 +58,7 @@ Als je letterlijk op `openclaw usecases` zocht, begin dan hier. Dit is geen loss
 
 ## Top 10 Quick Wins
 
-Ik heb voor deze lijst de volledige catalogus met 100 voorbeelden doorgelopen. Dit zijn de items die ik als eerste zou geven, omdat de waarde snel zichtbaar is en de output makkelijk te beoordelen blijft.
+Ik heb voor deze lijst de volledige catalogus met 300 voorbeelden doorgelopen. Dit zijn de items die ik als eerste zou geven, omdat de waarde snel zichtbaar is en de output makkelijk te beoordelen blijft.
 
 | ID | Voorbeeld | Waarom dit een quick win is | Links |
 | --- | --- | --- | --- |
@@ -97,15 +99,15 @@ examples/runnable/<id>-<slug>/
 ## Snel starten
 
 1. Kies het voorbeeld dat het dichtst bij een echt wekelijks probleem ligt, niet de titel die het hardst schreeuwt.
-2. Installeer de benodigde skills met `npx clawhub@latest install <skill-slug>`.
+2. Installeer de benodigde skills met `openclaw skills verify <skill-slug> && openclaw skills install <skill-slug>`.
 3. Voer `scripts/check_prereqs.sh` uit voor dat voorbeeld.
 4. Lees `sample-output.md`, zodat je vooraf weet hoe goede output eruitziet.
 5. Neem de prompt en cron-setup van dat voorbeeld over.
 6. Begin met een kleine scope, draft-only delivery en menselijke review voordat je opschaalt.
 
-## Runnable starters (100 totaal)
+## Runnable starters (300 totaal)
 
-Het repo bevat nu 100 uitvoerbare OpenClaw starter packs, gegroepeerd op het soort werk dat ze teams helpen doen.
+Het repo bevat nu 300 uitvoerbare OpenClaw starter packs, gegroepeerd op het soort werk dat ze teams helpen doen.
 
 | Reeks | Focus | Notities |
 | --- | --- | --- |
@@ -116,7 +118,15 @@ Het repo bevat nu 100 uitvoerbare OpenClaw starter packs, gegroepeerd op het soo
 | 63-70 | Research, content en market signals | Competitive intelligence, quote mining, webinar repurposing, SEO en request routing. |
 | 71-76 | People, recruiting en onboarding | Candidate briefs, stall tracking, onboarding, policy en source quality. |
 | 77-82 | Finance, procurement en board prep | Renewals, redlines, procurement, PO follow-up, expense exceptions en board evidence. |
-| 83-100 | Security, IT, governance en internal operations | Access review, secrets, audits, exceptions, IT intake, asset return en meeting hygiene. |
+| 83-101 | Security, IT, governance en internal operations | Access review, secrets, audits, exceptions, IT intake, asset return en meeting hygiene. |
+| 102-126 | Data, metrics, and knowledge operations |
+| 127-151 | Customer success, sales, and revenue execution |
+| 152-176 | Product, marketing, and content operations |
+| 177-201 | Engineering, platform, and reliability operations |
+| 202-226 | Personal admin, home, and learning workflows |
+| 227-251 | Collaboration, communications, and community workflows |
+| 252-276 | Governance, security, and IT operations |
+| 277-300 | Education, creative, and media workflows |
 
 De volledige lijst staat in [examples/catalog.md](../../examples/catalog.md).
 
@@ -129,7 +139,7 @@ De volledige lijst staat in [examples/catalog.md](../../examples/catalog.md).
 
 ## Belangrijke notities
 
-- Deze voorbeelden worden door de maintainer gereviewd en getest voordat ze worden opgenomen.
+- Dit zijn research-informed starter contracts, geen certificering door de maintainer; valideer elke workflow in je eigen omgeving.
 - Dit is een onafhankelijk onderhouden repo, geen officieel OpenClaw-programma.
 - Feedback, fixes en betere voorbeelden zijn welkom.
 - Dit repo accepteert geen crypto- of tradingworkflows.

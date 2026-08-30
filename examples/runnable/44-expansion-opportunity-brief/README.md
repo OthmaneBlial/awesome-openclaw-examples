@@ -5,9 +5,9 @@ Builds a recurring expansion shortlist brief from accounts with clear expansion 
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install api-gateway
-npx clawhub@latest install summarize
-npx clawhub@latest install slack
+openclaw skills install api-gateway
+openclaw skills install summarize
+openclaw skills install slack
 ```
 
 ## What It Does

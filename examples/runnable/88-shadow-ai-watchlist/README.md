@@ -5,9 +5,9 @@ Builds a recurring shadow-AI watch queue from shadow-AI usage or unapproved tool
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install slack
-npx clawhub@latest install summarize
-npx clawhub@latest install todoist
+openclaw skills install slack
+openclaw skills install summarize
+openclaw skills install todoist
 ```
 
 ## What It Does

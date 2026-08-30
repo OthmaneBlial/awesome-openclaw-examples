@@ -5,9 +5,9 @@ Builds a recurring weekly wins digest from notable weekly wins and forward momen
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install slack
-npx clawhub@latest install summarize
-npx clawhub@latest install notion
+openclaw skills install slack
+openclaw skills install summarize
+openclaw skills install notion
 ```
 
 ## What It Does

@@ -5,8 +5,8 @@ Builds a read-first X/Twitter operating desk that turns target accounts, search 
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install xquik-x-twitter-scraper
-npx clawhub@latest install tweetclaw
+openclaw skills install xquik-x-twitter-scraper
+openclaw skills install tweetclaw
 ```
 
 ## What It Does

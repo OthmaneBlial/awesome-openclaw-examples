@@ -5,9 +5,9 @@ Builds a recurring lost-deal pattern memo from closed-lost deals and objection p
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install gog
-npx clawhub@latest install summarize
-npx clawhub@latest install notion
+openclaw skills install gog
+openclaw skills install summarize
+openclaw skills install notion
 ```
 
 ## What It Does

@@ -5,10 +5,10 @@ Builds a recurring board evidence packet from board-prep evidence pulled from fi
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install github
-npx clawhub@latest install gog
-npx clawhub@latest install notion
-npx clawhub@latest install summarize
+openclaw skills install github
+openclaw skills install gog
+openclaw skills install notion
+openclaw skills install summarize
 ```
 
 ## What It Does

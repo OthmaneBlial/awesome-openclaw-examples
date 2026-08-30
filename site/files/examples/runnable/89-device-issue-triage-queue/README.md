@@ -5,9 +5,9 @@ Builds a recurring IT issue triage queue from incoming device and workplace IT i
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install typeform
-npx clawhub@latest install slack
-npx clawhub@latest install todoist
+openclaw skills install typeform
+openclaw skills install slack
+openclaw skills install todoist
 ```
 
 ## What It Does

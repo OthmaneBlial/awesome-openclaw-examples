@@ -5,9 +5,9 @@ Builds a recurring meeting follow-up queue from sales meetings missing explicit 
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install gog
-npx clawhub@latest install todoist
-npx clawhub@latest install summarize
+openclaw skills install gog
+openclaw skills install todoist
+openclaw skills install summarize
 ```
 
 ## What It Does

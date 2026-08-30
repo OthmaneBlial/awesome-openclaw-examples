@@ -1,15 +1,17 @@
-# Awesome OpenClaw Examples: Çalıştırılabilir 100 OpenClaw kullanım senaryosu
+# Awesome OpenClaw Examples: Çalıştırılabilir 300 OpenClaw kullanım senaryosu
 
 ![Awesome OpenClaw Use Cases and Examples logosu](../../logo.png)
 
 Bu README'yi şu dillerde okuyun: [English](../../README.md) · [Español](README.es.md) · [Deutsch](README.de.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [Português](README.pt.md) · [Русский](README.ru.md) · [Italiano](README.it.md) · [Nederlands](README.nl.md) · [Polski](README.pl.md) · [中文 (简体)](README.zh-CN.md) · [中文 (繁體)](README.zh-TW.md) · [한국어](README.ko.md) · [Türkçe](README.tr.md) · [العربية](README.ar.md) · [Tiếng Việt](README.vi.md) · [ไทย](README.th.md) · [Bahasa Indonesia](README.id.md) · [हिन्दी](README.hi.md) · [Čeština](README.cs.md)
 
-`openclaw usecases` ya da `openclaw examples` diye aradıysanız, muhtemelen tek bir soruya cevap arıyorsunuz: Her şeyi sıfırdan kurmadan OpenClaw ile gerçekten ne yapılabilir? Bu repo benim buna verdiğim cevap. Burada, herkese açık ClawHub skills üzerine kurulu 100 çalıştırılabilir starter packs var; her birinde setup adımları, prompts, sample outputs, KPI, security notes ve rollback guidance bulunuyor.
+> Bu çevrilmiş özet 300 starter içeren katalogla senkronizedir. İngilizce README ve tam katalog kanonik referanstır.
+
+`openclaw usecases` ya da `openclaw examples` diye aradıysanız, muhtemelen tek bir soruya cevap arıyorsunuz: Her şeyi sıfırdan kurmadan OpenClaw ile gerçekten ne yapılabilir? Bu repo benim buna verdiğim cevap. Burada, herkese açık ClawHub skills üzerine kurulu 300 çalıştırılabilir starter packs var; her birinde setup adımları, prompts, sample outputs, KPI, security notes ve rollback guidance bulunuyor.
 
 [![Live Docs Explorer](https://img.shields.io/badge/live-docs%20explorer-0a6b6b?style=for-the-badge)](https://othmaneblial.github.io/awesome-openclaw-examples)
-![100 Runnable Starters](https://img.shields.io/badge/100-runnable%20starters-201811?style=for-the-badge)
+![300 Runnable Starters](https://img.shields.io/badge/300-runnable%20starters-201811?style=for-the-badge)
 ![10 Quick Wins](https://img.shields.io/badge/10-quick%20wins-bb5b2c?style=for-the-badge)
-![Maintainer Tested](https://img.shields.io/badge/reviewed-maintainer%20tested-244f78?style=for-the-badge)
+![Research Informed](https://img.shields.io/badge/research-informed-ff8360?style=for-the-badge)
 
 [Live Docs Explorer](https://othmaneblial.github.io/awesome-openclaw-examples) · [Browse Full Catalog](../../examples/catalog.md) · [Runnable Starters](../../examples/runnable/README.md) · [Contributing](../../CONTRIBUTING.md)
 
@@ -56,7 +58,7 @@ Eğer gerçekten `openclaw usecases` diye aradıysanız, önce buraya bakın. Bu
 
 ## Top 10 Quick Wins
 
-Bu liste için 100 örneğin tamamını gözden geçirdim. Bunlar birine önce vereceğim örnekler olurdu, çünkü değer hızlı ortaya çıkıyor ve output kalitesi kolay değerlendiriliyor.
+Bu liste için 300 örneğin tamamını gözden geçirdim. Bunlar birine önce vereceğim örnekler olurdu, çünkü değer hızlı ortaya çıkıyor ve output kalitesi kolay değerlendiriliyor.
 
 | ID | Örnek | Neden quick win | Links |
 | --- | --- | --- | --- |
@@ -97,15 +99,15 @@ examples/runnable/<id>-<slug>/
 ## Hızlı başlangıç
 
 1. En gösterişli başlığı değil, her hafta yaşadığınız gerçek probleme en yakın örneği seçin.
-2. Gerekli skills'i `npx clawhub@latest install <skill-slug>` ile kurun.
+2. Gerekli skills'i `openclaw skills verify <skill-slug> && openclaw skills install <skill-slug>` ile kurun.
 3. Örneğin `scripts/check_prereqs.sh` dosyasını çalıştırın.
 4. İyi bir output nasıl görünmeli önce anlamak için `sample-output.md` dosyasına bakın.
 5. O örnekteki prompt ve cron setup'ı uygulayın.
 6. Önce dar scope, draft-only delivery ve insan review ile başlayın; sonra genişletin.
 
-## Runnable starters (toplam 100)
+## Runnable starters (toplam 300)
 
-Repo şu anda, ekiplerin yaptığı iş türlerine göre gruplanmış 100 çalıştırılabilir OpenClaw starter packs içeriyor.
+Repo şu anda, ekiplerin yaptığı iş türlerine göre gruplanmış 300 çalıştırılabilir OpenClaw starter packs içeriyor.
 
 | Aralık | Odak | Notlar |
 | --- | --- | --- |
@@ -116,7 +118,15 @@ Repo şu anda, ekiplerin yaptığı iş türlerine göre gruplanmış 100 çalı
 | 63-70 | Research, content ve market signals | competitive intelligence, quote mining, webinar repurposing, SEO ve request routing. |
 | 71-76 | People, recruiting ve onboarding | candidate briefs, stall tracking, onboarding, policy ve source quality. |
 | 77-82 | Finance, procurement ve board prep | renewals, redlines, procurement, PO follow-up, expense exceptions ve board evidence. |
-| 83-100 | Security, IT, governance ve internal operations | access review, secrets, audits, exceptions, IT intake, asset return ve meeting hygiene. |
+| 83-101 | Security, IT, governance ve internal operations | access review, secrets, audits, exceptions, IT intake, asset return ve meeting hygiene. |
+| 102-126 | Data, metrics, and knowledge operations |
+| 127-151 | Customer success, sales, and revenue execution |
+| 152-176 | Product, marketing, and content operations |
+| 177-201 | Engineering, platform, and reliability operations |
+| 202-226 | Personal admin, home, and learning workflows |
+| 227-251 | Collaboration, communications, and community workflows |
+| 252-276 | Governance, security, and IT operations |
+| 277-300 | Education, creative, and media workflows |
 
 Tam liste için [examples/catalog.md](../../examples/catalog.md) dosyasına bakın.
 
@@ -129,7 +139,7 @@ Tam liste için [examples/catalog.md](../../examples/catalog.md) dosyasına bak�
 
 ## Önemli notlar
 
-- Bu örnekler repoya girmeden önce maintainer tarafından review edilir ve test edilir.
+- Bunlar research-informed starter contract örnekleridir, maintainer sertifikası değildir; her workflowu kendi ortamınızda doğrulayın.
 - Bu bağımsız olarak sürdürülen bir repo; resmi bir OpenClaw programı değil.
 - Feedback, fixes ve daha iyi örnekler her zaman memnuniyetle karşılanır.
 - Bu repo crypto ya da trading workflows kabul etmez.

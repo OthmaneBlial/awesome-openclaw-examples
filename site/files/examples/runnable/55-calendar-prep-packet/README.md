@@ -5,9 +5,9 @@ Builds a recurring calendar prep packet from next-day calendars, notes, and pre-
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install gog
-npx clawhub@latest install caldav-calendar
-npx clawhub@latest install summarize
+openclaw skills install gog
+openclaw skills install caldav-calendar
+openclaw skills install summarize
 ```
 
 ## What It Does

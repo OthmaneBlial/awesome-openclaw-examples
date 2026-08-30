@@ -2,5 +2,5 @@
 set -euo pipefail
 
 for skill in nano-pdf summarize openai-whisper; do
-  npx clawhub@latest install "$skill"
+  openclaw skills install "$skill"
 done

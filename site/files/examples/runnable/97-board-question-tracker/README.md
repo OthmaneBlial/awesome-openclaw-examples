@@ -5,10 +5,10 @@ Builds a recurring board question queue from open board questions and unanswered
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install notion
-npx clawhub@latest install todoist
-npx clawhub@latest install slack
-npx clawhub@latest install summarize
+openclaw skills install notion
+openclaw skills install todoist
+openclaw skills install slack
+openclaw skills install summarize
 ```
 
 ## What It Does

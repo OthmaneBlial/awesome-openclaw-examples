@@ -5,9 +5,9 @@ Builds a recurring campaign request queue from campaign asset requests that need
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install typeform
-npx clawhub@latest install notion
-npx clawhub@latest install slack
+openclaw skills install typeform
+openclaw skills install notion
+openclaw skills install slack
 ```
 
 ## What It Does

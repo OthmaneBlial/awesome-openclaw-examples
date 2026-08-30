@@ -1,15 +1,17 @@
-# Awesome OpenClaw Examples: 100 gotowych do uruchomienia przypadków użycia OpenClaw
+# Awesome OpenClaw Examples: 300 gotowych do uruchomienia przypadków użycia OpenClaw
 
 ![Logo Awesome OpenClaw Use Cases and Examples](../../logo.png)
 
 Przeczytaj ten README w języku: [English](../../README.md) · [Español](README.es.md) · [Deutsch](README.de.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [Português](README.pt.md) · [Русский](README.ru.md) · [Italiano](README.it.md) · [Nederlands](README.nl.md) · [Polski](README.pl.md) · [中文 (简体)](README.zh-CN.md) · [中文 (繁體)](README.zh-TW.md) · [한국어](README.ko.md) · [Türkçe](README.tr.md) · [العربية](README.ar.md) · [Tiếng Việt](README.vi.md) · [ไทย](README.th.md) · [Bahasa Indonesia](README.id.md) · [हिन्दी](README.hi.md) · [Čeština](README.cs.md)
 
-Jeśli szukałeś `openclaw usecases` albo `openclaw examples`, to pewnie próbujesz odpowiedzieć sobie na proste pytanie: co da się naprawdę zrobić z OpenClaw bez budowania wszystkiego od zera? To repo jest moją odpowiedzią. Zbiera 100 wykonywalnych starter packs opartych na publicznych ClawHub skills, a każdy z nich ma kroki setup, prompts, sample output, KPI, security notes i wskazówki rollback.
+> To tłumaczone omówienie jest zsynchronizowane z katalogiem 300 starterów. Angielski README i pełny katalog są kanonicznym źródłem.
+
+Jeśli szukałeś `openclaw usecases` albo `openclaw examples`, to pewnie próbujesz odpowiedzieć sobie na proste pytanie: co da się naprawdę zrobić z OpenClaw bez budowania wszystkiego od zera? To repo jest moją odpowiedzią. Zbiera 300 wykonywalnych starter packs opartych na publicznych ClawHub skills, a każdy z nich ma kroki setup, prompts, sample output, KPI, security notes i wskazówki rollback.
 
 [![Live Docs Explorer](https://img.shields.io/badge/live-docs%20explorer-0a6b6b?style=for-the-badge)](https://othmaneblial.github.io/awesome-openclaw-examples)
-![100 Runnable Starters](https://img.shields.io/badge/100-runnable%20starters-201811?style=for-the-badge)
+![300 Runnable Starters](https://img.shields.io/badge/300-runnable%20starters-201811?style=for-the-badge)
 ![10 Quick Wins](https://img.shields.io/badge/10-quick%20wins-bb5b2c?style=for-the-badge)
-![Maintainer Tested](https://img.shields.io/badge/reviewed-maintainer%20tested-244f78?style=for-the-badge)
+![Research Informed](https://img.shields.io/badge/research-informed-ff8360?style=for-the-badge)
 
 [Live Docs Explorer](https://othmaneblial.github.io/awesome-openclaw-examples) · [Browse Full Catalog](../../examples/catalog.md) · [Runnable Starters](../../examples/runnable/README.md) · [Contributing](../../CONTRIBUTING.md)
 
@@ -56,7 +58,7 @@ Jeśli wpisałeś dokładnie `openclaw usecases`, zacznij tutaj. To nie jest los
 
 ## Top 10 Quick Wins
 
-Przejrzałem pełny katalog 100 przykładów, żeby zbudować tę listę. To pozycje, które dałbym komuś najpierw, bo wartość pojawia się szybko, a jakość output łatwo ocenić.
+Przejrzałem pełny katalog 300 przykładów, żeby zbudować tę listę. To pozycje, które dałbym komuś najpierw, bo wartość pojawia się szybko, a jakość output łatwo ocenić.
 
 | ID | Przykład | Dlaczego to quick win | Links |
 | --- | --- | --- | --- |
@@ -97,15 +99,15 @@ examples/runnable/<id>-<slug>/
 ## Szybki start
 
 1. Wybierz przykład najbliższy prawdziwemu cotygodniowemu problemowi, a nie ten z najgłośniejszym tytułem.
-2. Zainstaluj potrzebne skills poleceniem `npx clawhub@latest install <skill-slug>`.
+2. Zainstaluj potrzebne skills poleceniem `openclaw skills verify <skill-slug> && openclaw skills install <skill-slug>`.
 3. Uruchom `scripts/check_prereqs.sh` dla wybranego przykładu.
 4. Przeczytaj `sample-output.md`, żeby wiedzieć, jak powinien wyglądać dobry output.
 5. Zastosuj prompt i cron setup z tego przykładu.
 6. Zacznij od małego scope, draft-only delivery i ludzkiego review, zanim rozszerzysz użycie.
 
-## Runnable starters (łącznie 100)
+## Runnable starters (łącznie 300)
 
-Repo zawiera obecnie 100 wykonywalnych starter packs OpenClaw, pogrupowanych według rodzaju pracy, którą pomagają zespołom wykonać.
+Repo zawiera obecnie 300 wykonywalnych starter packs OpenClaw, pogrupowanych według rodzaju pracy, którą pomagają zespołom wykonać.
 
 | Zakres | Focus | Notatki |
 | --- | --- | --- |
@@ -116,7 +118,15 @@ Repo zawiera obecnie 100 wykonywalnych starter packs OpenClaw, pogrupowanych wed
 | 63-70 | Research, content i market signals | Competitive intelligence, quote mining, webinar repurposing, SEO i request routing. |
 | 71-76 | People, recruiting i onboarding | Candidate briefs, stall tracking, onboarding, policy i source quality. |
 | 77-82 | Finance, procurement i board prep | Renewals, redlines, procurement, PO follow-up, expense exceptions i board evidence. |
-| 83-100 | Security, IT, governance i internal operations | Access review, secrets, audits, exceptions, IT intake, asset return i meeting hygiene. |
+| 83-101 | Security, IT, governance i internal operations | Access review, secrets, audits, exceptions, IT intake, asset return i meeting hygiene. |
+| 102-126 | Data, metrics, and knowledge operations |
+| 127-151 | Customer success, sales, and revenue execution |
+| 152-176 | Product, marketing, and content operations |
+| 177-201 | Engineering, platform, and reliability operations |
+| 202-226 | Personal admin, home, and learning workflows |
+| 227-251 | Collaboration, communications, and community workflows |
+| 252-276 | Governance, security, and IT operations |
+| 277-300 | Education, creative, and media workflows |
 
 Pełną listę znajdziesz w [examples/catalog.md](../../examples/catalog.md).
 
@@ -129,7 +139,7 @@ Pełną listę znajdziesz w [examples/catalog.md](../../examples/catalog.md).
 
 ## Ważne uwagi
 
-- Te przykłady są reviewowane i testowane przez maintainera przed dodaniem do repo.
+- To research-informed starter contracts, a nie certyfikacja maintainera; zweryfikuj każdy workflow we własnym środowisku.
 - To niezależnie utrzymywane repo, a nie oficjalny program OpenClaw.
 - Feedback, fixes i lepsze przykłady są mile widziane.
 - Repo nie przyjmuje workflow związanych z crypto ani tradingiem.

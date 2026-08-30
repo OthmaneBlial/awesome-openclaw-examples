@@ -5,8 +5,8 @@ Generates concise partner updates from recent internal activity and milestones.
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install gog
-npx clawhub@latest install summarize
+openclaw skills install gog
+openclaw skills install summarize
 ```
 
 ## What It Does

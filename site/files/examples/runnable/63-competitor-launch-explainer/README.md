@@ -5,9 +5,9 @@ Builds a recurring competitive launch brief from competitor launches, pricing mo
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install tavily-search
-npx clawhub@latest install summarize
-npx clawhub@latest install slack
+openclaw skills install tavily-search
+openclaw skills install summarize
+openclaw skills install slack
 ```
 
 ## What It Does

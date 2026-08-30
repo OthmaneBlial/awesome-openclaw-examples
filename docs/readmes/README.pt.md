@@ -1,15 +1,17 @@
-# Awesome OpenClaw Examples: 100 casos de uso de OpenClaw prontos para executar
+# Awesome OpenClaw Examples: 300 casos de uso de OpenClaw prontos para executar
 
 ![Logo de Awesome OpenClaw Use Cases and Examples](../../logo.png)
 
 Leia este README em: [English](../../README.md) · [Español](README.es.md) · [Deutsch](README.de.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [Português](README.pt.md) · [Русский](README.ru.md) · [Italiano](README.it.md) · [Nederlands](README.nl.md) · [Polski](README.pl.md) · [中文 (简体)](README.zh-CN.md) · [中文 (繁體)](README.zh-TW.md) · [한국어](README.ko.md) · [Türkçe](README.tr.md) · [العربية](README.ar.md) · [Tiếng Việt](README.vi.md) · [ไทย](README.th.md) · [Bahasa Indonesia](README.id.md) · [हिन्दी](README.hi.md) · [Čeština](README.cs.md)
 
-Se você buscou `openclaw usecases` ou `openclaw examples`, provavelmente está tentando responder a uma pergunta simples: o que dá para fazer com OpenClaw de verdade sem montar tudo do zero? Este repo é a minha resposta. Ele reúne 100 starter packs executáveis baseados em ClawHub skills públicas, cada um com passos de setup, prompts, sample output, KPI, notas de segurança e orientação de rollback.
+> Este resumo traduzido está sincronizado com um catálogo de 300 starters. O README em inglês e o catálogo completo são a referência canônica.
+
+Se você buscou `openclaw usecases` ou `openclaw examples`, provavelmente está tentando responder a uma pergunta simples: o que dá para fazer com OpenClaw de verdade sem montar tudo do zero? Este repo é a minha resposta. Ele reúne 300 starter packs executáveis baseados em ClawHub skills públicas, cada um com passos de setup, prompts, sample output, KPI, notas de segurança e orientação de rollback.
 
 [![Live Docs Explorer](https://img.shields.io/badge/live-docs%20explorer-0a6b6b?style=for-the-badge)](https://othmaneblial.github.io/awesome-openclaw-examples)
-![100 Runnable Starters](https://img.shields.io/badge/100-runnable%20starters-201811?style=for-the-badge)
+![300 Runnable Starters](https://img.shields.io/badge/300-runnable%20starters-201811?style=for-the-badge)
 ![10 Quick Wins](https://img.shields.io/badge/10-quick%20wins-bb5b2c?style=for-the-badge)
-![Maintainer Tested](https://img.shields.io/badge/reviewed-maintainer%20tested-244f78?style=for-the-badge)
+![Research Informed](https://img.shields.io/badge/research-informed-ff8360?style=for-the-badge)
 
 [Live Docs Explorer](https://othmaneblial.github.io/awesome-openclaw-examples) · [Browse Full Catalog](../../examples/catalog.md) · [Runnable Starters](../../examples/runnable/README.md) · [Contributing](../../CONTRIBUTING.md)
 
@@ -56,7 +58,7 @@ Se a sua busca foi literalmente `openclaw usecases`, comece aqui. Não é uma co
 
 ## Top 10 Quick Wins
 
-Eu revisei o catálogo completo de 100 exemplos para montar esta lista. São os itens que eu mostraria primeiro para alguém, porque o valor aparece rápido e o output é fácil de julgar.
+Eu revisei o catálogo completo de 300 exemplos para montar esta lista. São os itens que eu mostraria primeiro para alguém, porque o valor aparece rápido e o output é fácil de julgar.
 
 | ID | Exemplo | Por que é um quick win | Links |
 | --- | --- | --- | --- |
@@ -97,15 +99,15 @@ examples/runnable/<id>-<slug>/
 ## Início rápido
 
 1. Escolha o exemplo mais próximo de um problema semanal real, não o título mais chamativo.
-2. Instale as skills necessárias com `npx clawhub@latest install <skill-slug>`.
+2. Instale as skills necessárias com `openclaw skills verify <skill-slug> && openclaw skills install <skill-slug>`.
 3. Rode o `scripts/check_prereqs.sh` do exemplo.
 4. Leia `sample-output.md` para entender como um bom output deve parecer.
 5. Aplique o prompt e o setup de cron desse exemplo.
 6. Comece com escopo pequeno, delivery em modo rascunho e revisão humana antes de ampliar.
 
-## Runnable starters (100 no total)
+## Runnable starters (300 no total)
 
-O repo hoje inclui 100 starter packs executáveis de OpenClaw, agrupados pelo tipo de trabalho que ajudam as equipes a fazer.
+O repo hoje inclui 300 starter packs executáveis de OpenClaw, agrupados pelo tipo de trabalho que ajudam as equipes a fazer.
 
 | Faixa | Foco | Notas |
 | --- | --- | --- |
@@ -116,7 +118,15 @@ O repo hoje inclui 100 starter packs executáveis de OpenClaw, agrupados pelo ti
 | 63-70 | Research, content e market signals | Competitive intelligence, quote mining, webinar repurposing, SEO e request routing. |
 | 71-76 | People, recruiting e onboarding | Candidate briefs, stall tracking, onboarding, policy e source quality. |
 | 77-82 | Finance, procurement e board prep | Renewals, redlines, procurement, PO follow-up, expense exceptions e board evidence. |
-| 83-100 | Security, IT, governance e internal operations | Access review, secrets, audits, exceptions, IT intake, asset return e meeting hygiene. |
+| 83-101 | Security, IT, governance e internal operations | Access review, secrets, audits, exceptions, IT intake, asset return e meeting hygiene. |
+| 102-126 | Data, metrics, and knowledge operations |
+| 127-151 | Customer success, sales, and revenue execution |
+| 152-176 | Product, marketing, and content operations |
+| 177-201 | Engineering, platform, and reliability operations |
+| 202-226 | Personal admin, home, and learning workflows |
+| 227-251 | Collaboration, communications, and community workflows |
+| 252-276 | Governance, security, and IT operations |
+| 277-300 | Education, creative, and media workflows |
 
 Veja a lista completa em [examples/catalog.md](../../examples/catalog.md).
 
@@ -129,7 +139,7 @@ Veja a lista completa em [examples/catalog.md](../../examples/catalog.md).
 
 ## Notas importantes
 
-- Esses exemplos são revisados e testados pelo maintainer antes de entrar no repo.
+- Estes são starter contracts informados por research, não uma certificação do maintainer; valide cada workflow no seu ambiente.
 - Este é um repo mantido de forma independente; não é um programa oficial da OpenClaw.
 - Feedback, fixes e exemplos melhores são bem-vindos.
 - Este repo não aceita workflows de crypto nem de trading.

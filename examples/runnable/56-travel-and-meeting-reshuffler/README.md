@@ -5,9 +5,9 @@ Builds a recurring travel conflict queue from travel plans and meeting collision
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install gog
-npx clawhub@latest install caldav-calendar
-npx clawhub@latest install todoist
+openclaw skills install gog
+openclaw skills install caldav-calendar
+openclaw skills install todoist
 ```
 
 ## What It Does

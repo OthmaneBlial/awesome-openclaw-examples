@@ -1,15 +1,17 @@
-# Awesome OpenClaw Examples: 100 กรณีใช้งาน OpenClaw ที่รันได้จริง
+# Awesome OpenClaw Examples: 300 กรณีใช้งาน OpenClaw ที่รันได้จริง
 
 ![โลโก้ Awesome OpenClaw Use Cases and Examples](../../logo.png)
 
 อ่าน README นี้เป็นภาษา: [English](../../README.md) · [Español](README.es.md) · [Deutsch](README.de.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [Português](README.pt.md) · [Русский](README.ru.md) · [Italiano](README.it.md) · [Nederlands](README.nl.md) · [Polski](README.pl.md) · [中文 (简体)](README.zh-CN.md) · [中文 (繁體)](README.zh-TW.md) · [한국어](README.ko.md) · [Türkçe](README.tr.md) · [العربية](README.ar.md) · [Tiếng Việt](README.vi.md) · [ไทย](README.th.md) · [Bahasa Indonesia](README.id.md) · [हिन्दी](README.hi.md) · [Čeština](README.cs.md)
 
-ถ้าคุณค้นหา `openclaw usecases` หรือ `openclaw examples` คุณน่าจะกำลังพยายามตอบคำถามง่าย ๆ ข้อหนึ่ง: จริง ๆ แล้ว OpenClaw เอาไปทำอะไรได้บ้าง โดยไม่ต้องสร้างทุกอย่างใหม่ตั้งแต่ต้น? repo นี้คือคำตอบของผม มันรวบรวม starter packs ที่รันได้จริง 100 ชุด ซึ่งสร้างบน ClawHub skills แบบสาธารณะ และแต่ละชุดมี setup steps, prompts, sample outputs, KPI, security notes และ rollback guidance ครบ
+> ภาพรวมฉบับแปลนี้ซิงค์กับแคตตาล็อกที่มี starter 300 รายการ โดย English README และแคตตาล็อกฉบับเต็มเป็นแหล่งอ้างอิงหลัก
+
+ถ้าคุณค้นหา `openclaw usecases` หรือ `openclaw examples` คุณน่าจะกำลังพยายามตอบคำถามง่าย ๆ ข้อหนึ่ง: จริง ๆ แล้ว OpenClaw เอาไปทำอะไรได้บ้าง โดยไม่ต้องสร้างทุกอย่างใหม่ตั้งแต่ต้น? repo นี้คือคำตอบของผม มันรวบรวม starter packs ที่รันได้จริง 300 ชุด ซึ่งสร้างบน ClawHub skills แบบสาธารณะ และแต่ละชุดมี setup steps, prompts, sample outputs, KPI, security notes และ rollback guidance ครบ
 
 [![Live Docs Explorer](https://img.shields.io/badge/live-docs%20explorer-0a6b6b?style=for-the-badge)](https://othmaneblial.github.io/awesome-openclaw-examples)
-![100 Runnable Starters](https://img.shields.io/badge/100-runnable%20starters-201811?style=for-the-badge)
+![300 Runnable Starters](https://img.shields.io/badge/300-runnable%20starters-201811?style=for-the-badge)
 ![10 Quick Wins](https://img.shields.io/badge/10-quick%20wins-bb5b2c?style=for-the-badge)
-![Maintainer Tested](https://img.shields.io/badge/reviewed-maintainer%20tested-244f78?style=for-the-badge)
+![Research Informed](https://img.shields.io/badge/research-informed-ff8360?style=for-the-badge)
 
 [Live Docs Explorer](https://othmaneblial.github.io/awesome-openclaw-examples) · [Browse Full Catalog](../../examples/catalog.md) · [Runnable Starters](../../examples/runnable/README.md) · [Contributing](../../CONTRIBUTING.md)
 
@@ -56,7 +58,7 @@
 
 ## Top 10 Quick Wins
 
-ผมดู catalog ครบทั้ง 100 ตัวอย่างก่อนคัดรายการนี้ออกมา นี่คือชุดที่ผมจะหยิบให้คนลองก่อน เพราะเห็นคุณค่าเร็ว และคุณภาพของ output ก็ตัดสินได้ง่าย
+ผมดู catalog ครบทั้ง 300 ตัวอย่างก่อนคัดรายการนี้ออกมา นี่คือชุดที่ผมจะหยิบให้คนลองก่อน เพราะเห็นคุณค่าเร็ว และคุณภาพของ output ก็ตัดสินได้ง่าย
 
 | ID | ตัวอย่าง | ทำไมถึงเป็น quick win | Links |
 | --- | --- | --- | --- |
@@ -97,15 +99,15 @@ examples/runnable/<id>-<slug>/
 ## เริ่มต้นอย่างรวดเร็ว
 
 1. เลือกตัวอย่างที่ใกล้กับปัญหาจริงที่เกิดซ้ำทุกสัปดาห์ที่สุด ไม่ใช่ตัวที่มีชื่อหวือหวาที่สุด
-2. ติดตั้ง skills ที่ต้องใช้ด้วย `npx clawhub@latest install <skill-slug>`.
+2. ติดตั้ง skills ที่ต้องใช้ด้วย `openclaw skills verify <skill-slug> && openclaw skills install <skill-slug>`.
 3. รัน `scripts/check_prereqs.sh` ของตัวอย่างนั้น
 4. ดู `sample-output.md` ก่อนเพื่อเข้าใจว่า output ที่ดีควรหน้าตาแบบไหน
 5. ใช้ prompt และ cron setup ของตัวอย่างนั้น
 6. เริ่มจาก scope แคบ, draft-only delivery และ review โดยมนุษย์ก่อน แล้วค่อยขยาย
 
-## Runnable starters (ทั้งหมด 100 รายการ)
+## Runnable starters (ทั้งหมด 300 รายการ)
 
-repo นี้ตอนนี้มี OpenClaw starter packs ที่รันได้จริง 100 รายการ และจัดกลุ่มตามประเภทงานที่มันช่วยทีมทำ
+repo นี้ตอนนี้มี OpenClaw starter packs ที่รันได้จริง 300 รายการ และจัดกลุ่มตามประเภทงานที่มันช่วยทีมทำ
 
 | ช่วง | โฟกัส | หมายเหตุ |
 | --- | --- | --- |
@@ -116,7 +118,15 @@ repo นี้ตอนนี้มี OpenClaw starter packs ที่รัน
 | 63-70 | Research, content และ market signals | competitive intelligence, quote mining, webinar repurposing, SEO และ request routing |
 | 71-76 | People, recruiting และ onboarding | candidate briefs, stall tracking, onboarding, policy และ source quality |
 | 77-82 | Finance, procurement และ board prep | renewals, redlines, procurement, PO follow-up, expense exceptions และ board evidence |
-| 83-100 | Security, IT, governance และ internal operations | access review, secrets, audits, exceptions, IT intake, asset return และ meeting hygiene |
+| 83-101 | Security, IT, governance และ internal operations | access review, secrets, audits, exceptions, IT intake, asset return และ meeting hygiene |
+| 102-126 | Data, metrics, and knowledge operations |
+| 127-151 | Customer success, sales, and revenue execution |
+| 152-176 | Product, marketing, and content operations |
+| 177-201 | Engineering, platform, and reliability operations |
+| 202-226 | Personal admin, home, and learning workflows |
+| 227-251 | Collaboration, communications, and community workflows |
+| 252-276 | Governance, security, and IT operations |
+| 277-300 | Education, creative, and media workflows |
 
 ดูรายการทั้งหมดได้ที่ [examples/catalog.md](../../examples/catalog.md)
 
@@ -129,7 +139,7 @@ repo นี้ตอนนี้มี OpenClaw starter packs ที่รัน
 
 ## หมายเหตุสำคัญ
 
-- ตัวอย่างเหล่านี้จะถูก review และทดสอบโดย maintainer ก่อนเข้ามาใน repo
+- ตัวอย่างเหล่านี้เป็น research-informed starter contracts ไม่ใช่การรับรองจาก maintainer โปรด validate ทุก workflow ใน environment ของคุณเอง
 - นี่คือ repo ที่ดูแลแบบอิสระ ไม่ใช่โปรแกรมทางการของ OpenClaw
 - Feedback, fixes และตัวอย่างที่ดีกว่ายินดีเสมอ
 - repo นี้ไม่รับ workflows ด้าน crypto หรือ trading

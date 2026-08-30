@@ -5,10 +5,10 @@ Weekly content pipeline that turns fresh web/video signals into production-ready
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install tavily-search
-npx clawhub@latest install youtube-watcher
-npx clawhub@latest install summarize
-npx clawhub@latest install notion
+openclaw skills install tavily-search
+openclaw skills install youtube-watcher
+openclaw skills install summarize
+openclaw skills install notion
 ```
 
 ## What It Does

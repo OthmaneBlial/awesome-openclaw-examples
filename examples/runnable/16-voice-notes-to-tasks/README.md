@@ -5,9 +5,9 @@ Converts fresh voice notes into actionable, prioritized task queues.
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install openai-whisper
-npx clawhub@latest install summarize
-npx clawhub@latest install todoist
+openclaw skills install openai-whisper
+openclaw skills install summarize
+openclaw skills install todoist
 ```
 
 ## What It Does

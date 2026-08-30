@@ -5,9 +5,9 @@ Builds a recurring account rescue packet from priority accounts that require coo
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install api-gateway
-npx clawhub@latest install slack
-npx clawhub@latest install notion
+openclaw skills install api-gateway
+openclaw skills install slack
+openclaw skills install notion
 ```
 
 ## What It Does

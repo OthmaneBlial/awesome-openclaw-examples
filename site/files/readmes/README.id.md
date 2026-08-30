@@ -1,15 +1,17 @@
-# Awesome OpenClaw Examples: 100 use case OpenClaw yang bisa langsung dijalankan
+# Awesome OpenClaw Examples: 300 use case OpenClaw yang bisa langsung dijalankan
 
 ![Logo Awesome OpenClaw Use Cases and Examples](../../logo.png)
 
 Baca README ini dalam: [English](../../README.md) · [Español](README.es.md) · [Deutsch](README.de.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [Português](README.pt.md) · [Русский](README.ru.md) · [Italiano](README.it.md) · [Nederlands](README.nl.md) · [Polski](README.pl.md) · [中文 (简体)](README.zh-CN.md) · [中文 (繁體)](README.zh-TW.md) · [한국어](README.ko.md) · [Türkçe](README.tr.md) · [العربية](README.ar.md) · [Tiếng Việt](README.vi.md) · [ไทย](README.th.md) · [Bahasa Indonesia](README.id.md) · [हिन्दी](README.hi.md) · [Čeština](README.cs.md)
 
-Kalau Anda mencari `openclaw usecases` atau `openclaw examples`, kemungkinan Anda sedang mencoba menjawab satu pertanyaan sederhana: apa yang benar-benar bisa dilakukan dengan OpenClaw tanpa membangun semuanya dari nol? Repo ini adalah jawaban saya. Di sini ada 100 starter packs yang bisa dijalankan, dibangun di atas ClawHub skills publik, dan masing-masing dilengkapi setup steps, prompts, sample outputs, KPI, security notes, dan rollback guidance.
+> Ringkasan terjemahan ini disinkronkan dengan katalog berisi 300 starter. README bahasa Inggris dan katalog lengkap adalah referensi kanonik.
+
+Kalau Anda mencari `openclaw usecases` atau `openclaw examples`, kemungkinan Anda sedang mencoba menjawab satu pertanyaan sederhana: apa yang benar-benar bisa dilakukan dengan OpenClaw tanpa membangun semuanya dari nol? Repo ini adalah jawaban saya. Di sini ada 300 starter packs yang bisa dijalankan, dibangun di atas ClawHub skills publik, dan masing-masing dilengkapi setup steps, prompts, sample outputs, KPI, security notes, dan rollback guidance.
 
 [![Live Docs Explorer](https://img.shields.io/badge/live-docs%20explorer-0a6b6b?style=for-the-badge)](https://othmaneblial.github.io/awesome-openclaw-examples)
-![100 Runnable Starters](https://img.shields.io/badge/100-runnable%20starters-201811?style=for-the-badge)
+![300 Runnable Starters](https://img.shields.io/badge/300-runnable%20starters-201811?style=for-the-badge)
 ![10 Quick Wins](https://img.shields.io/badge/10-quick%20wins-bb5b2c?style=for-the-badge)
-![Maintainer Tested](https://img.shields.io/badge/reviewed-maintainer%20tested-244f78?style=for-the-badge)
+![Research Informed](https://img.shields.io/badge/research-informed-ff8360?style=for-the-badge)
 
 [Live Docs Explorer](https://othmaneblial.github.io/awesome-openclaw-examples) · [Browse Full Catalog](../../examples/catalog.md) · [Runnable Starters](../../examples/runnable/README.md) · [Contributing](../../CONTRIBUTING.md)
 
@@ -56,7 +58,7 @@ Kalau yang Anda cari memang `openclaw usecases`, mulailah dari sini. Ini bukan t
 
 ## Top 10 Quick Wins
 
-Saya meninjau katalog lengkap yang berisi 100 contoh untuk menyusun daftar ini. Inilah yang paling layak saya berikan lebih dulu ke seseorang, karena nilainya cepat terlihat dan kualitas output-nya juga mudah dinilai.
+Saya meninjau katalog lengkap yang berisi 300 contoh untuk menyusun daftar ini. Inilah yang paling layak saya berikan lebih dulu ke seseorang, karena nilainya cepat terlihat dan kualitas output-nya juga mudah dinilai.
 
 | ID | Contoh | Kenapa ini quick win | Links |
 | --- | --- | --- | --- |
@@ -97,15 +99,15 @@ examples/runnable/<id>-<slug>/
 ## Mulai cepat
 
 1. Pilih contoh yang paling dekat dengan masalah nyata mingguan Anda, bukan yang judulnya paling mencolok.
-2. Instal skills yang diperlukan dengan `npx clawhub@latest install <skill-slug>`.
+2. Instal skills yang diperlukan dengan `openclaw skills verify <skill-slug> && openclaw skills install <skill-slug>`.
 3. Jalankan `scripts/check_prereqs.sh` untuk contoh tersebut.
 4. Lihat `sample-output.md` lebih dulu supaya Anda tahu seperti apa output yang baik.
 5. Terapkan prompt dan cron setup dari contoh itu.
 6. Mulai dengan scope kecil, draft-only delivery, dan review manusia sebelum diperluas.
 
-## Runnable starters (100 total)
+## Runnable starters (300 total)
 
-Repo ini sekarang berisi 100 OpenClaw starter packs yang bisa dijalankan, dikelompokkan berdasarkan jenis pekerjaan yang mereka bantu selesaikan.
+Repo ini sekarang berisi 300 OpenClaw starter packs yang bisa dijalankan, dikelompokkan berdasarkan jenis pekerjaan yang mereka bantu selesaikan.
 
 | Rentang | Fokus | Catatan |
 | --- | --- | --- |
@@ -116,7 +118,15 @@ Repo ini sekarang berisi 100 OpenClaw starter packs yang bisa dijalankan, dikelo
 | 63-70 | Research, content, dan market signals | competitive intelligence, quote mining, webinar repurposing, SEO, dan request routing. |
 | 71-76 | People, recruiting, dan onboarding | candidate briefs, stall tracking, onboarding, policy, dan source quality. |
 | 77-82 | Finance, procurement, dan board prep | renewals, redlines, procurement, PO follow-up, expense exceptions, dan board evidence. |
-| 83-100 | Security, IT, governance, dan internal operations | access review, secrets, audits, exceptions, IT intake, asset return, dan meeting hygiene. |
+| 83-101 | Security, IT, governance, dan internal operations | access review, secrets, audits, exceptions, IT intake, asset return, dan meeting hygiene. |
+| 102-126 | Data, metrics, and knowledge operations |
+| 127-151 | Customer success, sales, and revenue execution |
+| 152-176 | Product, marketing, and content operations |
+| 177-201 | Engineering, platform, and reliability operations |
+| 202-226 | Personal admin, home, and learning workflows |
+| 227-251 | Collaboration, communications, and community workflows |
+| 252-276 | Governance, security, and IT operations |
+| 277-300 | Education, creative, and media workflows |
 
 Lihat daftar lengkapnya di [examples/catalog.md](../../examples/catalog.md).
 
@@ -129,7 +139,7 @@ Lihat daftar lengkapnya di [examples/catalog.md](../../examples/catalog.md).
 
 ## Catatan penting
 
-- Contoh-contoh ini direview dan diuji oleh maintainer sebelum dimasukkan.
+- Ini adalah starter contract berbasis research, bukan sertifikasi maintainer; validasi setiap workflow di environment Anda sendiri.
 - Ini repo yang dipelihara secara independen, bukan program resmi OpenClaw.
 - Feedback, fixes, dan contoh yang lebih baik sangat diterima.
 - Repo ini tidak menerima crypto atau trading workflows.

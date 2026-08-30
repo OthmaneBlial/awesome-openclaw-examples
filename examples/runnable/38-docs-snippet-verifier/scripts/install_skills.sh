@@ -2,5 +2,5 @@
 set -euo pipefail
 
 for skill in github notion summarize; do
-  npx clawhub@latest install "$skill"
+  openclaw skills install "$skill"
 done

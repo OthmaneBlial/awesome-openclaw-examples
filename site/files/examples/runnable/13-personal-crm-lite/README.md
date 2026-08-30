@@ -5,9 +5,9 @@ Builds a lightweight contact memory system from recent email and calendar activi
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install gog
-npx clawhub@latest install summarize
-npx clawhub@latest install notion
+openclaw skills install gog
+openclaw skills install summarize
+openclaw skills install notion
 ```
 
 ## What It Does

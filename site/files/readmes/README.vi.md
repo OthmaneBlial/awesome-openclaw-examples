@@ -1,15 +1,17 @@
-# Awesome OpenClaw Examples: 100 trường hợp sử dụng OpenClaw có thể chạy ngay
+# Awesome OpenClaw Examples: 300 trường hợp sử dụng OpenClaw có thể chạy ngay
 
 ![Logo Awesome OpenClaw Use Cases and Examples](../../logo.png)
 
 Đọc README này bằng: [English](../../README.md) · [Español](README.es.md) · [Deutsch](README.de.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [Português](README.pt.md) · [Русский](README.ru.md) · [Italiano](README.it.md) · [Nederlands](README.nl.md) · [Polski](README.pl.md) · [中文 (简体)](README.zh-CN.md) · [中文 (繁體)](README.zh-TW.md) · [한국어](README.ko.md) · [Türkçe](README.tr.md) · [العربية](README.ar.md) · [Tiếng Việt](README.vi.md) · [ไทย](README.th.md) · [Bahasa Indonesia](README.id.md) · [हिन्दी](README.hi.md) · [Čeština](README.cs.md)
 
-Nếu bạn tìm `openclaw usecases` hoặc `openclaw examples`, có lẽ bạn đang cố trả lời một câu hỏi rất đơn giản: thật ra có thể làm gì với OpenClaw mà không phải xây mọi thứ từ đầu? Repo này là câu trả lời của tôi. Nó gom lại 100 starter packs có thể chạy được, dựa trên các ClawHub skills công khai, và mỗi cái đều có setup steps, prompts, sample outputs, KPI, security notes và rollback guidance.
+> Phần tổng quan đã dịch này được đồng bộ với catalog gồm 300 starter. README tiếng Anh và catalog đầy đủ là nguồn chuẩn.
+
+Nếu bạn tìm `openclaw usecases` hoặc `openclaw examples`, có lẽ bạn đang cố trả lời một câu hỏi rất đơn giản: thật ra có thể làm gì với OpenClaw mà không phải xây mọi thứ từ đầu? Repo này là câu trả lời của tôi. Nó gom lại 300 starter packs có thể chạy được, dựa trên các ClawHub skills công khai, và mỗi cái đều có setup steps, prompts, sample outputs, KPI, security notes và rollback guidance.
 
 [![Live Docs Explorer](https://img.shields.io/badge/live-docs%20explorer-0a6b6b?style=for-the-badge)](https://othmaneblial.github.io/awesome-openclaw-examples)
-![100 Runnable Starters](https://img.shields.io/badge/100-runnable%20starters-201811?style=for-the-badge)
+![300 Runnable Starters](https://img.shields.io/badge/300-runnable%20starters-201811?style=for-the-badge)
 ![10 Quick Wins](https://img.shields.io/badge/10-quick%20wins-bb5b2c?style=for-the-badge)
-![Maintainer Tested](https://img.shields.io/badge/reviewed-maintainer%20tested-244f78?style=for-the-badge)
+![Research Informed](https://img.shields.io/badge/research-informed-ff8360?style=for-the-badge)
 
 [Live Docs Explorer](https://othmaneblial.github.io/awesome-openclaw-examples) · [Browse Full Catalog](../../examples/catalog.md) · [Runnable Starters](../../examples/runnable/README.md) · [Contributing](../../CONTRIBUTING.md)
 
@@ -56,7 +58,7 @@ Nếu bạn thật sự gõ đúng `openclaw usecases`, hãy bắt đầu từ �
 
 ## Top 10 Quick Wins
 
-Tôi đã xem toàn bộ catalog 100 ví dụ để làm danh sách này. Đây là những thứ tôi sẽ đưa cho ai đó trước, vì giá trị của chúng xuất hiện nhanh và chất lượng output cũng dễ đánh giá.
+Tôi đã xem toàn bộ catalog 300 ví dụ để làm danh sách này. Đây là những thứ tôi sẽ đưa cho ai đó trước, vì giá trị của chúng xuất hiện nhanh và chất lượng output cũng dễ đánh giá.
 
 | ID | Ví dụ | Vì sao đây là quick win | Links |
 | --- | --- | --- | --- |
@@ -97,15 +99,15 @@ examples/runnable/<id>-<slug>/
 ## Bắt đầu nhanh
 
 1. Chọn ví dụ gần nhất với một vấn đề thật đang lặp lại hằng tuần, đừng chọn chỉ vì tiêu đề nghe hay.
-2. Cài các skills cần thiết bằng `npx clawhub@latest install <skill-slug>`.
+2. Cài các skills cần thiết bằng `openclaw skills verify <skill-slug> && openclaw skills install <skill-slug>`.
 3. Chạy `scripts/check_prereqs.sh` của ví dụ đó.
 4. Đọc `sample-output.md` trước để biết một output tốt sẽ trông như thế nào.
 5. Áp dụng prompt và cron setup của ví dụ đó.
 6. Bắt đầu với scope hẹp, draft-only delivery và review của con người trước khi mở rộng.
 
-## Runnable starters (tổng cộng 100)
+## Runnable starters (tổng cộng 300)
 
-Repo hiện có 100 OpenClaw starter packs có thể chạy được, được nhóm theo loại công việc mà chúng giúp các team xử lý.
+Repo hiện có 300 OpenClaw starter packs có thể chạy được, được nhóm theo loại công việc mà chúng giúp các team xử lý.
 
 | Khoảng | Trọng tâm | Ghi chú |
 | --- | --- | --- |
@@ -116,7 +118,15 @@ Repo hiện có 100 OpenClaw starter packs có thể chạy được, được n
 | 63-70 | Research, content và market signals | competitive intelligence, quote mining, webinar repurposing, SEO và request routing. |
 | 71-76 | People, recruiting và onboarding | candidate briefs, stall tracking, onboarding, policy và source quality. |
 | 77-82 | Finance, procurement và board prep | renewals, redlines, procurement, PO follow-up, expense exceptions và board evidence. |
-| 83-100 | Security, IT, governance và internal operations | access review, secrets, audits, exceptions, IT intake, asset return và meeting hygiene. |
+| 83-101 | Security, IT, governance và internal operations | access review, secrets, audits, exceptions, IT intake, asset return và meeting hygiene. |
+| 102-126 | Data, metrics, and knowledge operations |
+| 127-151 | Customer success, sales, and revenue execution |
+| 152-176 | Product, marketing, and content operations |
+| 177-201 | Engineering, platform, and reliability operations |
+| 202-226 | Personal admin, home, and learning workflows |
+| 227-251 | Collaboration, communications, and community workflows |
+| 252-276 | Governance, security, and IT operations |
+| 277-300 | Education, creative, and media workflows |
 
 Xem danh sách đầy đủ tại [examples/catalog.md](../../examples/catalog.md).
 
@@ -129,7 +139,7 @@ Xem danh sách đầy đủ tại [examples/catalog.md](../../examples/catalog.m
 
 ## Ghi chú quan trọng
 
-- Các ví dụ này được maintainer review và test trước khi đưa vào repo.
+- Đây là starter contract dựa trên research, không phải chứng nhận của maintainer; hãy validate từng workflow trong môi trường của bạn.
 - Đây là repo được duy trì độc lập, không phải chương trình chính thức của OpenClaw.
 - Feedback, fixes và ví dụ tốt hơn đều được chào đón.
 - Repo này không nhận crypto hay trading workflows.

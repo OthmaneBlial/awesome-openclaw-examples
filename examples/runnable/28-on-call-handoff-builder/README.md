@@ -5,9 +5,9 @@ Generates shift handoff summaries with unresolved risk and action continuity.
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install github
-npx clawhub@latest install summarize
-npx clawhub@latest install slack
+openclaw skills install github
+openclaw skills install summarize
+openclaw skills install slack
 ```
 
 ## What It Does

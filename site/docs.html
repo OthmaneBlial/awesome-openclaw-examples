@@ -3,15 +3,25 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Awesome OpenClaw Examples Docs</title>
+    <meta name="theme-color" content="#102124">
+    <meta name="robots" content="index, follow">
+    <title>Docs Explorer · Awesome OpenClaw Examples</title>
     <meta
       name="description"
-      content="Search the OpenClaw starter catalog, inspect raw prompts and scripts, and read the repository docs from a portable static site."
+      content="Search 300 OpenClaw workflow starters by problem, collection, skill, or quick-win status."
     >
+    <link rel="canonical" href="https://othmaneblial.github.io/awesome-openclaw-examples/docs.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Docs Explorer · Awesome OpenClaw Examples">
+    <meta property="og:description" content="Search 300 reviewable OpenClaw workflow starters.">
+    <meta property="og:url" content="https://othmaneblial.github.io/awesome-openclaw-examples/docs.html">
+    <meta property="og:image" content="https://othmaneblial.github.io/awesome-openclaw-examples/assets/logo.png">
+    <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="styles.css">
     <script type="module" src="app.js"></script>
   </head>
   <body data-page="docs">
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <noscript>
       <div class="noscript-banner">
         This site needs JavaScript and an HTTP server because it loads local JSON data from
@@ -21,40 +31,49 @@
 
     <header class="topbar">
       <div class="container topbar-inner">
-        <a class="brand" href="index.html">
-          <img src="assets/logo.png" alt="Awesome OpenClaw Examples logo">
-          <span>
-            <strong>Awesome OpenClaw Examples</strong>
-            <small>repo-driven docs site</small>
+        <a class="brand" href="index.html" aria-label="Awesome OpenClaw Examples home">
+          <span class="brand-mark" aria-hidden="true">OC</span>
+          <span class="brand-copy">
+            <strong>Awesome OpenClaw</strong>
+            <small>workflow field guide</small>
           </span>
         </a>
-        <nav class="nav">
+        <nav class="nav" aria-label="Primary navigation">
           <div class="language-nav" id="language-nav"></div>
-          <a href="index.html">Home</a>
+          <a class="nav-cta" href="index.html">Back to home <span aria-hidden="true">↗</span></a>
         </nav>
       </div>
     </header>
 
-    <main class="container docs-page">
+    <main id="main-content" class="container docs-page">
       <section class="docs-intro reveal">
         <div class="docs-intro-main">
-          <a class="text-pill" href="index.html">Back to home</a>
+          <span class="eyebrow"><span class="eyebrow-dot"></span> Search the signal</span>
           <div class="docs-intro-copy">
-            <h1>Docs Explorer</h1>
+            <h1>Find the smallest useful workflow.</h1>
             <p class="docs-note" id="docs-language-note"></p>
           </div>
         </div>
+        <div class="docs-intro-stats" aria-label="Explorer coverage">
+          <strong>300</strong><span>starters</span>
+          <strong>16</strong><span>collections</span>
+          <strong>19</strong><span>skills</span>
+        </div>
       </section>
 
-      <section class="docs-shell reveal">
+      <section class="docs-shell reveal" aria-label="Workflow explorer">
         <aside class="catalog-panel">
+          <div class="catalog-panel-head">
+            <span class="panel-label">Catalog index</span>
+            <span class="panel-count">01—300</span>
+          </div>
           <div class="controls">
             <label>
-              <span class="control-label">Search</span>
+              <span class="control-label">Search the catalog</span>
               <input
                 id="search-input"
                 type="search"
-                placeholder="Search by title, skill, workflow, or problem"
+                placeholder="Title, problem, or skill"
                 autocomplete="off"
               >
             </label>
@@ -71,16 +90,16 @@
 
             <label class="toggle-row" for="quick-wins-toggle">
               <input id="quick-wins-toggle" type="checkbox">
-              <span>Quick wins only</span>
+              <span>Show quick wins only</span>
             </label>
 
-            <p class="results-meta" id="results-meta"></p>
+            <p class="results-meta" id="results-meta" aria-live="polite"></p>
           </div>
 
           <div class="catalog-list" id="catalog-list"></div>
         </aside>
 
-        <section class="detail-panel">
+        <section class="detail-panel" aria-live="polite">
           <div class="detail-note" id="detail-empty" hidden>
             Choose a starter from the catalog to load its guide, sample output, prompt, and helper
             scripts.
@@ -94,7 +113,7 @@
                 <p class="detail-description" id="detail-description"></p>
                 <div class="chip-cloud" id="detail-meta"></div>
               </div>
-              <div class="action-links" id="detail-links"></div>
+              <div class="action-links" id="detail-links" aria-label="Raw source links"></div>
             </div>
 
             <div class="detail-snapshot">
@@ -112,14 +131,14 @@
               </section>
             </div>
 
-            <div class="tab-list" id="detail-tabs"></div>
+            <div class="tab-list" id="detail-tabs" role="tablist" aria-label="Starter materials"></div>
 
-            <section class="tab-panel prose" id="panel-guide"></section>
-            <section class="tab-panel prose" id="panel-sample" hidden></section>
-            <section class="tab-panel" id="panel-prompt" hidden>
+            <section class="tab-panel prose" id="panel-guide" role="tabpanel" tabindex="0" aria-label="Guide"></section>
+            <section class="tab-panel prose" id="panel-sample" role="tabpanel" tabindex="0" aria-label="Sample output" hidden></section>
+            <section class="tab-panel" id="panel-prompt" role="tabpanel" tabindex="0" aria-label="Prompt" hidden>
               <pre class="code-block" id="detail-prompt"></pre>
             </section>
-            <section class="tab-panel" id="panel-scripts" hidden>
+            <section class="tab-panel" id="panel-scripts" role="tabpanel" tabindex="0" aria-label="Scripts" hidden>
               <div class="stack-grid" id="detail-scripts"></div>
             </section>
           </article>
@@ -132,9 +151,9 @@
         <p id="verification-note"></p>
         <p>
           <a href="index.html">home</a>
-          <span class="footer-separator">/</span>
+          <span class="footer-separator">·</span>
           <a href="files/examples/catalog.md">raw catalog</a>
-          <span class="footer-separator">/</span>
+          <span class="footer-separator">·</span>
           <a href="files/CONTRIBUTING.md">contributing</a>
         </p>
       </div>

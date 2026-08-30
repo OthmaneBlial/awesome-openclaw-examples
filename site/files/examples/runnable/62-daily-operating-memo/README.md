@@ -5,10 +5,10 @@ Builds a recurring daily operating memo from daily operating signals across sche
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install gog
-npx clawhub@latest install github
-npx clawhub@latest install todoist
-npx clawhub@latest install slack
+openclaw skills install gog
+openclaw skills install github
+openclaw skills install todoist
+openclaw skills install slack
 ```
 
 ## What It Does

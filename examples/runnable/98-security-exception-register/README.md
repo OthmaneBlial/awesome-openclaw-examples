@@ -5,10 +5,10 @@ Builds a recurring security exception board from approved and pending security e
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install notion
-npx clawhub@latest install slack
-npx clawhub@latest install summarize
-npx clawhub@latest install gog
+openclaw skills install notion
+openclaw skills install slack
+openclaw skills install summarize
+openclaw skills install gog
 ```
 
 ## What It Does

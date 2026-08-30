@@ -5,9 +5,9 @@ Tracks competitor product moves and creates action-ready response suggestions.
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install tavily-search
-npx clawhub@latest install summarize
-npx clawhub@latest install todoist
+openclaw skills install tavily-search
+openclaw skills install summarize
+openclaw skills install todoist
 ```
 
 ## What It Does

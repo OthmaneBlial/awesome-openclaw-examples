@@ -1,15 +1,17 @@
-# Awesome OpenClaw Examples: 100のすぐ実行できるOpenClawユースケース
+# Awesome OpenClaw Examples: 300のすぐ実行できるOpenClawユースケース
 
 ![Awesome OpenClaw Use Cases and Examples のロゴ](../../logo.png)
 
 このREADMEの言語: [English](../../README.md) · [Español](README.es.md) · [Deutsch](README.de.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [Português](README.pt.md) · [Русский](README.ru.md) · [Italiano](README.it.md) · [Nederlands](README.nl.md) · [Polski](README.pl.md) · [中文 (简体)](README.zh-CN.md) · [中文 (繁體)](README.zh-TW.md) · [한국어](README.ko.md) · [Türkçe](README.tr.md) · [العربية](README.ar.md) · [Tiếng Việt](README.vi.md) · [ไทย](README.th.md) · [Bahasa Indonesia](README.id.md) · [हिन्दी](README.hi.md) · [Čeština](README.cs.md)
 
-`openclaw usecases` や `openclaw examples` を探してここに来たなら、たぶん知りたいのは一つです。OpenClawで実際に何ができるのか。しかも全部をゼロから組まずに。これはその答えとして作ったrepoです。公開されているClawHub skillsを使った100個の実行可能なstarter packをまとめていて、それぞれにsetup手順、prompts、sample output、KPI、security notes、rollback guidanceがあります。
+> この翻訳版の概要は300個のstarter catalogと同期しています。完全なcatalogと英語READMEがcanonical referenceです。
+
+`openclaw usecases` や `openclaw examples` を探してここに来たなら、たぶん知りたいのは一つです。OpenClawで実際に何ができるのか。しかも全部をゼロから組まずに。これはその答えとして作ったrepoです。公開されているClawHub skillsを使った300個の実行可能なstarter packをまとめていて、それぞれにsetup手順、prompts、sample output、KPI、security notes、rollback guidanceがあります。
 
 [![Live Docs Explorer](https://img.shields.io/badge/live-docs%20explorer-0a6b6b?style=for-the-badge)](https://othmaneblial.github.io/awesome-openclaw-examples)
-![100 Runnable Starters](https://img.shields.io/badge/100-runnable%20starters-201811?style=for-the-badge)
+![300 Runnable Starters](https://img.shields.io/badge/300-runnable%20starters-201811?style=for-the-badge)
 ![10 Quick Wins](https://img.shields.io/badge/10-quick%20wins-bb5b2c?style=for-the-badge)
-![Maintainer Tested](https://img.shields.io/badge/reviewed-maintainer%20tested-244f78?style=for-the-badge)
+![Research Informed](https://img.shields.io/badge/research-informed-ff8360?style=for-the-badge)
 
 [Live Docs Explorer](https://othmaneblial.github.io/awesome-openclaw-examples) · [Browse Full Catalog](../../examples/catalog.md) · [Runnable Starters](../../examples/runnable/README.md) · [Contributing](../../CONTRIBUTING.md)
 
@@ -56,7 +58,7 @@
 
 ## Top 10 Quick Wins
 
-この一覧は100例すべてを見たうえで選びました。価値がすぐ見えて、outputの良し悪しも判断しやすいものを先に置いています。
+この一覧は300例すべてを見たうえで選びました。価値がすぐ見えて、outputの良し悪しも判断しやすいものを先に置いています。
 
 | ID | 例 | Quick Winである理由 | Links |
 | --- | --- | --- | --- |
@@ -97,15 +99,15 @@ examples/runnable/<id>-<slug>/
 ## クイックスタート
 
 1. いちばん派手なタイトルではなく、実際に毎週起きている問題に近い例を選びます。
-2. 必要なskillsを `npx clawhub@latest install <skill-slug>` で入れます。
+2. 必要なskillsを `openclaw skills verify <skill-slug> && openclaw skills install <skill-slug>` で入れます。
 3. その例の `scripts/check_prereqs.sh` を実行します。
 4. `sample-output.md` を見て、良いoutputの形を先に把握します。
 5. その例のpromptとcron setupを適用します。
 6. まずはscopeを狭くし、draft-only deliveryと人のレビュー前提で始めてから広げます。
 
-## Runnable Starters（合計100）
+## Runnable Starters（合計300）
 
-このrepoには、チームの実務に合わせて使える100個のOpenClaw starter packがあります。
+このrepoには、チームの実務に合わせて使える300個のOpenClaw starter packがあります。
 
 | 範囲 | フォーカス | メモ |
 | --- | --- | --- |
@@ -116,7 +118,15 @@ examples/runnable/<id>-<slug>/
 | 63-70 | Research、content と market signals | competitive intelligence、quote mining、webinar repurposing、SEO、request routingです。 |
 | 71-76 | People、recruiting と onboarding | candidate briefs、stall tracking、onboarding、policy、source qualityです。 |
 | 77-82 | Finance、procurement と board prep | renewals、redlines、procurement、PO follow-up、expense exceptions、board evidenceです。 |
-| 83-100 | Security、IT、governance と internal operations | access review、secrets、audits、exceptions、IT intake、asset return、meeting hygieneです。 |
+| 83-101 | Security、IT、governance と internal operations | access review、secrets、audits、exceptions、IT intake、asset return、meeting hygieneです。 |
+| 102-126 | Data, metrics, and knowledge operations |
+| 127-151 | Customer success, sales, and revenue execution |
+| 152-176 | Product, marketing, and content operations |
+| 177-201 | Engineering, platform, and reliability operations |
+| 202-226 | Personal admin, home, and learning workflows |
+| 227-251 | Collaboration, communications, and community workflows |
+| 252-276 | Governance, security, and IT operations |
+| 277-300 | Education, creative, and media workflows |
 
 一覧全体は [examples/catalog.md](../../examples/catalog.md) を見てください。
 
@@ -129,7 +139,7 @@ examples/runnable/<id>-<slug>/
 
 ## 重要な注意点
 
-- これらの例はrepoに入る前にmaintainerがレビューとテストを行います。
+- これはresearchに基づくstarter contractであり、maintainerによる認証ではありません。各workflowを自分の環境で検証してください。
 - これは独立して運営しているrepoで、OpenClaw公式プログラムではありません。
 - feedback、fixes、より良い例の提案は歓迎です。
 - このrepoではcryptoやtradingのworkflowは受け付けません。

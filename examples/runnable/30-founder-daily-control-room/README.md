@@ -5,10 +5,10 @@ Daily executive operating brief across product, operations, and scheduling.
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install gog
-npx clawhub@latest install github
-npx clawhub@latest install todoist
-npx clawhub@latest install weather
+openclaw skills install gog
+openclaw skills install github
+openclaw skills install todoist
+openclaw skills install weather
 ```
 
 ## What It Does

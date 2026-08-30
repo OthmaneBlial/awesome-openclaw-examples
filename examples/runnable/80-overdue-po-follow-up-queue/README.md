@@ -5,9 +5,9 @@ Builds a recurring overdue PO queue from purchase orders that are overdue or blo
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install gog
-npx clawhub@latest install todoist
-npx clawhub@latest install slack
+openclaw skills install gog
+openclaw skills install todoist
+openclaw skills install slack
 ```
 
 ## What It Does

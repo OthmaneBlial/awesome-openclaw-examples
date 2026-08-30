@@ -5,9 +5,9 @@ Builds a recurring incident comms draft from incident updates that need customer
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install slack
-npx clawhub@latest install summarize
-npx clawhub@latest install notion
+openclaw skills install slack
+openclaw skills install summarize
+openclaw skills install notion
 ```
 
 ## What It Does

@@ -5,9 +5,9 @@ Detects unresolved support threads and builds an urgency-ranked escalation diges
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install slack
-npx clawhub@latest install summarize
-npx clawhub@latest install todoist
+openclaw skills install slack
+openclaw skills install summarize
+openclaw skills install todoist
 ```
 
 ## What It Does

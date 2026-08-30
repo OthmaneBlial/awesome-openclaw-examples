@@ -5,9 +5,9 @@ Builds a recurring hiring stall queue from hiring pipeline stages that are going
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install gog
-npx clawhub@latest install todoist
-npx clawhub@latest install slack
+openclaw skills install gog
+openclaw skills install todoist
+openclaw skills install slack
 ```
 
 ## What It Does

@@ -5,9 +5,9 @@ Automated document intake flow for PDF/audio-heavy operations.
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install nano-pdf
-npx clawhub@latest install summarize
-npx clawhub@latest install openai-whisper
+openclaw skills install nano-pdf
+openclaw skills install summarize
+openclaw skills install openai-whisper
 ```
 
 ## What It Does

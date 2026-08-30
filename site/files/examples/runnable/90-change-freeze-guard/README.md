@@ -5,9 +5,9 @@ Builds a recurring change freeze alert brief from changes that collide with a fr
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install github
-npx clawhub@latest install slack
-npx clawhub@latest install summarize
+openclaw skills install github
+openclaw skills install slack
+openclaw skills install summarize
 ```
 
 ## What It Does

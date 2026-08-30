@@ -5,9 +5,9 @@ Builds a recurring invoice dispute board from invoice disputes, aging, and conte
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install stripe-api
-npx clawhub@latest install gog
-npx clawhub@latest install notion
+openclaw skills install stripe-api
+openclaw skills install gog
+openclaw skills install notion
 ```
 
 ## What It Does

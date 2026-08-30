@@ -5,9 +5,9 @@ Builds a recurring VIP inbox alert brief from VIP inbox threads that need fast a
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install gog
-npx clawhub@latest install summarize
-npx clawhub@latest install slack
+openclaw skills install gog
+openclaw skills install summarize
+openclaw skills install slack
 ```
 
 ## What It Does

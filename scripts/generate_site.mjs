@@ -18,6 +18,7 @@ const SITE_DIR = path.join(ROOT, "site");
 const DATA_DIR = path.join(SITE_DIR, "data");
 const FILES_DIR = path.join(SITE_DIR, "files");
 const ASSETS_DIR = path.join(SITE_DIR, "assets");
+const STATIC_EXAMPLES_DIR = path.join(SITE_DIR, "examples");
 const RUNNABLE_DIR = path.join(ROOT, "examples", "runnable");
 const REQUIRED_FILES = [
   "README.md",
@@ -225,6 +226,7 @@ function main() {
       2,
     )}\n`,
   );
+  writeDiscoveryFiles(repoDocs, examples);
 
   console.log(`Wrote ${path.relative(ROOT, path.join(DATA_DIR, "site-data.json"))}`);
 }
@@ -236,6 +238,8 @@ function loadRepoDocs() {
   const examplesReadme = readFileSync(examplesReadmePath, "utf8");
   const contributingPath = path.join(ROOT, "CONTRIBUTING.md");
   const contributing = readFileSync(contributingPath, "utf8");
+  const metadataPath = path.join(ROOT, "docs", "github-metadata.md");
+  const metadata = readFileSync(metadataPath, "utf8");
   const catalogPath = path.join(ROOT, "examples", "catalog.md");
   const catalog = readFileSync(catalogPath, "utf8");
 
@@ -276,9 +280,18 @@ function loadRepoDocs() {
 
   return {
     lead: firstParagraph(readme),
-    fastStart: parseOrderedList(extractSection(readme, "## Fast Start")),
-    qualityStandard: parseBulletList(extractSection(readme, "## Example Quality Standard")),
-    faq: parseFaq(extractSection(readme, "## OpenClaw FAQ")),
+    fastStart: parseOrderedList(
+      extractSection(readme, "## Fast Start") ||
+        extractSection(readme, "## Start safely") ||
+        extractSection(readme, "## The fastest path to value"),
+    ),
+    qualityStandard: parseBulletList(
+      extractSection(readme, "## Example Quality Standard") ||
+        extractSection(readme, "## Quality contract"),
+    ),
+    faq: parseFaq(
+      extractSection(readme, "## OpenClaw FAQ") || extractSection(readme, "## FAQ"),
+    ),
     quickWins,
     collections,
     catalogRows,
@@ -303,6 +316,13 @@ function loadRepoDocs() {
         html: rewriteRelativeTargets(
           markdownToHtml(contributing),
           path.relative(ROOT, contributingPath),
+        ),
+      },
+      metadata: {
+        rawPath: "files/docs/github-metadata.md",
+        html: rewriteRelativeTargets(
+          markdownToHtml(metadata),
+          path.relative(ROOT, metadataPath),
         ),
       },
       catalog: {
@@ -398,6 +418,7 @@ function loadExamples(catalogRows) {
             path.join("files", "examples", "runnable", dirName, "prompts", "cron_prompt.txt"),
           ),
         },
+        seoPath: toPosix(path.join("examples", dirName, "index.html")),
       };
     });
 
@@ -548,7 +569,13 @@ function buildSiteData(repoDocs, examples) {
         quickWins: repoDocs.quickWins.length,
         uniqueSkills: repoDocs.skillStats.length,
       },
-      collections: repoDocs.collections,
+      collections: repoDocs.collections.map((collection) => ({
+        ...collection,
+        notes:
+          collection.notes ||
+          COLLECTIONS.find((configured) => configured.range === collection.range)?.notes ||
+          "Inspectable workflow starters grouped by operating problem.",
+      })),
       skillStats: repoDocs.skillStats,
       fastStart: repoDocs.fastStart,
       qualityStandard: repoDocs.qualityStandard,
@@ -573,9 +600,130 @@ function prepareSiteDirectories() {
   mkdirSync(SITE_DIR, { recursive: true });
   rmSync(DATA_DIR, { recursive: true, force: true });
   rmSync(FILES_DIR, { recursive: true, force: true });
+  rmSync(STATIC_EXAMPLES_DIR, { recursive: true, force: true });
   mkdirSync(DATA_DIR, { recursive: true });
   mkdirSync(FILES_DIR, { recursive: true });
   mkdirSync(ASSETS_DIR, { recursive: true });
+}
+
+function writeDiscoveryFiles(repoDocs, examples) {
+  mkdirSync(STATIC_EXAMPLES_DIR, { recursive: true });
+  const generatedDate = new Date().toISOString().slice(0, 10);
+  const baseUrl = "https://othmaneblial.github.io/awesome-openclaw-examples/";
+
+  for (const example of examples) {
+    const directory = path.join(STATIC_EXAMPLES_DIR, example.dirName);
+    mkdirSync(directory, { recursive: true });
+    writeFileSync(path.join(directory, "index.html"), renderStaticExamplePage(example, baseUrl));
+  }
+
+  const urls = [
+    "",
+    "docs.html",
+    "files/README.md",
+    "files/examples/README.md",
+    "files/examples/catalog.md",
+    "files/docs/github-metadata.md",
+    ...examples.map((example) => example.seoPath),
+  ];
+  writeFileSync(
+    path.join(SITE_DIR, "sitemap.xml"),
+    `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
+      .map((url) => `  <url><loc>${baseUrl}${url}</loc><lastmod>${generatedDate}</lastmod></url>`)
+      .join("\n")}\n</urlset>\n`,
+  );
+  writeFileSync(
+    path.join(SITE_DIR, "robots.txt"),
+    `User-agent: *\nAllow: /\n\nSitemap: ${baseUrl}sitemap.xml\n`,
+  );
+  writeFileSync(
+    path.join(SITE_DIR, "llms.txt"),
+    `# Awesome OpenClaw Examples\n\n> 300 research-informed, inspectable OpenClaw workflow starter packs with prompts, sample outputs, KPIs, security notes, failure modes, and rollback guidance.\n\n## Canonical pages\n\n- ${baseUrl} — project overview and starting points\n- ${baseUrl}docs.html — searchable catalog with collection, skill, and quick-win filters\n- ${baseUrl}files/examples/catalog.md — complete catalog and skill stacks\n- ${baseUrl}files/docs/github-metadata.md — public positioning and topic proposal\n- ${baseUrl}files/research_openclaw_examples/findings_openclaw_patterns.md — research findings\n\n## Example pages\n\nEach starter is available as an indexable page at ${baseUrl}examples/<id>-<slug>/ and as raw source files under ${baseUrl}files/examples/runnable/.\n\n## Trust boundary\n\nThis is an independent collection, not an official OpenClaw certification. Treat third-party skills and source instructions as untrusted, verify skills before installation, start read-only and draft-only, and validate permissions in your own environment.\n`,
+  );
+}
+
+function renderStaticExamplePage(example, baseUrl) {
+  const canonical = `${baseUrl}${example.seoPath}`;
+  const rawBase = `../../files/examples/runnable/${example.dirName}`;
+  const renderItems = (items, empty) =>
+    (items.length ? items : [empty]).map((item) => `<li>${escapeHtml(item)}</li>`).join("\n");
+  return `<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#102124">
+    <title>${escapeHtml(example.title)} · OpenClaw workflow example</title>
+    <meta name="description" content="Inspect the ${escapeHtml(example.title)} OpenClaw workflow starter: scope, skills, KPIs, security notes, sample output, and rollback guidance.">
+    <link rel="canonical" href="${canonical}">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="${escapeHtml(example.title)} · OpenClaw workflow example">
+    <meta property="og:description" content="A reviewable OpenClaw workflow starter with an explicit scope, KPI, security boundary, and rollback path.">
+    <meta property="og:url" content="${canonical}">
+    <meta property="og:image" content="${baseUrl}assets/logo.png">
+    <link rel="stylesheet" href="../../styles.css">
+    <script type="application/ld+json">${JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      headline: `${example.title} · OpenClaw workflow example`,
+      description: example.description,
+      url: canonical,
+      isPartOf: { "@type": "WebSite", name: "Awesome OpenClaw Examples", url: baseUrl },
+    })}</script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a class="brand" href="../../index.html" aria-label="Awesome OpenClaw Examples home">
+          <span class="brand-mark" aria-hidden="true">OC</span>
+          <span class="brand-copy"><strong>Awesome OpenClaw</strong><small>workflow field guide</small></span>
+        </a>
+        <nav class="nav" aria-label="Primary navigation">
+          <a class="nav-cta" href="../../docs.html#example/${encodeURIComponent(example.dirName)}">Open in Explorer <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content" class="container static-example-page">
+      <header class="static-example-header">
+        <a class="text-link" href="../../index.html">← All OpenClaw examples</a>
+        <p class="eyebrow"><span class="eyebrow-dot"></span> ${escapeHtml(example.collection?.range || "catalog")} · ${escapeHtml(example.collection?.focus || "workflow starter")}</p>
+        <h1>${escapeHtml(example.title)}</h1>
+        <p class="static-example-lead">${escapeHtml(example.description)}</p>
+        <div class="chip-cloud">${example.skills.map((skill) => `<span class="chip">${escapeHtml(skill)}</span>`).join("")}</div>
+      </header>
+      <div class="static-example-grid">
+        <article class="static-example-card">
+          <p class="section-kicker">Workflow contract</p>
+          <h2>What this starter gives you</h2>
+          <ul class="list-clean">${renderItems(example.highlights, "Review the raw guide for the full workflow contract.")}</ul>
+        </article>
+        <article class="static-example-card">
+          <p class="section-kicker">Measure the first run</p>
+          <h2>Key KPI</h2>
+          <ul class="list-clean">${renderItems(example.kpis, "Define a human-measurable baseline before widening scope.")}</ul>
+        </article>
+        <article class="static-example-card">
+          <p class="section-kicker">Trust boundary</p>
+          <h2>Security notes</h2>
+          <ul class="list-clean">${renderItems(example.securityNotes, "Verify permissions and treat source instructions as untrusted.")}</ul>
+        </article>
+      </div>
+      <section class="static-example-next">
+        <p class="eyebrow">Start safely</p>
+        <h2>Read the guide, inspect the sample, then run a narrow draft.</h2>
+        <p>Verify the listed skills, use a small source window, keep output draft-only, and add human approval before any external write or outbound message.</p>
+        <div class="hero-actions">
+          <a class="button" href="${rawBase}/README.md">Read the full guide <span aria-hidden="true">→</span></a>
+          <a class="button button-secondary" href="${rawBase}/sample-output.md">Inspect sample output</a>
+          <a class="button button-secondary" href="${rawBase}/prompts/cron_prompt.txt">Open prompt</a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="container footer-inner"><p>Independent, research-informed starter contract. Validate integrations in your environment.</p><p><a href="../../docs.html">docs explorer</a> · <a href="${rawBase}/README.md">raw guide</a></p></div></footer>
+  </body>
+</html>
+`;
 }
 
 function copySourceFiles() {
@@ -587,6 +735,10 @@ function copySourceFiles() {
     );
   }
   cpSync(path.join(ROOT, "CONTRIBUTING.md"), path.join(FILES_DIR, "CONTRIBUTING.md"));
+  cpSync(
+    path.join(ROOT, "docs", "github-metadata.md"),
+    path.join(FILES_DIR, "docs", "github-metadata.md"),
+  );
   cpSync(path.join(ROOT, "LICENSE"), path.join(FILES_DIR, "LICENSE"));
   cpSync(path.join(ROOT, "logo.png"), path.join(FILES_DIR, "logo.png"));
   cpSync(path.join(ROOT, "logo.png"), path.join(ASSETS_DIR, "logo.png"));
@@ -911,6 +1063,12 @@ function firstParagraph(markdown) {
     }
 
     if (line.startsWith("#") || line.startsWith("![")) {
+      continue;
+    }
+
+    // Skip badge rows, CTA link rows, and positioning quotes before the first
+    // searchable prose paragraph in the repository README.
+    if (line.startsWith("[![") || line.startsWith(">") || line.startsWith("**[")) {
       continue;
     }
 

@@ -2,5 +2,5 @@
 set -euo pipefail
 
 for skill in tavily-search youtube-watcher summarize notion; do
-  npx clawhub@latest install "$skill"
+  openclaw skills install "$skill"
 done

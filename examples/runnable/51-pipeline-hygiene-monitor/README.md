@@ -5,9 +5,9 @@ Builds a recurring pipeline hygiene queue from stale opportunities and missing p
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install gog
-npx clawhub@latest install summarize
-npx clawhub@latest install todoist
+openclaw skills install gog
+openclaw skills install summarize
+openclaw skills install todoist
 ```
 
 ## What It Does

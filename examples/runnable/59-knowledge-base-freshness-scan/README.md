@@ -5,9 +5,9 @@ Builds a recurring knowledge freshness queue from knowledge articles that may be
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install nano-pdf
-npx clawhub@latest install summarize
-npx clawhub@latest install notion
+openclaw skills install nano-pdf
+openclaw skills install summarize
+openclaw skills install notion
 ```
 
 ## What It Does

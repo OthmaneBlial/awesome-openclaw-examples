@@ -5,10 +5,10 @@ Builds a recurring webinar repurposing packet from webinar recordings that can b
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install youtube-watcher
-npx clawhub@latest install summarize
-npx clawhub@latest install notion
-npx clawhub@latest install slack
+openclaw skills install youtube-watcher
+openclaw skills install summarize
+openclaw skills install notion
+openclaw skills install slack
 ```
 
 ## What It Does

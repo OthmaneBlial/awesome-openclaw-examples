@@ -5,9 +5,9 @@ Builds a recurring quote bank board from high-signal quotes and takeaways from i
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install youtube-watcher
-npx clawhub@latest install summarize
-npx clawhub@latest install notion
+openclaw skills install youtube-watcher
+openclaw skills install summarize
+openclaw skills install notion
 ```
 
 ## What It Does

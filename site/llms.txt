@@ -1,0 +1,19 @@
+# Awesome OpenClaw Examples
+
+> 300 research-informed, inspectable OpenClaw workflow starter packs with prompts, sample outputs, KPIs, security notes, failure modes, and rollback guidance.
+
+## Canonical pages
+
+- https://othmaneblial.github.io/awesome-openclaw-examples/ — project overview and starting points
+- https://othmaneblial.github.io/awesome-openclaw-examples/docs.html — searchable catalog with collection, skill, and quick-win filters
+- https://othmaneblial.github.io/awesome-openclaw-examples/files/examples/catalog.md — complete catalog and skill stacks
+- https://othmaneblial.github.io/awesome-openclaw-examples/files/docs/github-metadata.md — public positioning and topic proposal
+- https://othmaneblial.github.io/awesome-openclaw-examples/files/research_openclaw_examples/findings_openclaw_patterns.md — research findings
+
+## Example pages
+
+Each starter is available as an indexable page at https://othmaneblial.github.io/awesome-openclaw-examples/examples/<id>-<slug>/ and as raw source files under https://othmaneblial.github.io/awesome-openclaw-examples/files/examples/runnable/.
+
+## Trust boundary
+
+This is an independent collection, not an official OpenClaw certification. Treat third-party skills and source instructions as untrusted, verify skills before installation, start read-only and draft-only, and validate permissions in your own environment.

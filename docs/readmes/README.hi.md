@@ -1,15 +1,17 @@
-# Awesome OpenClaw Examples: OpenClaw के 100 ऐसे use cases जो सीधे चलाए जा सकते हैं
+# Awesome OpenClaw Examples: OpenClaw के 300 ऐसे use cases जो सीधे चलाए जा सकते हैं
 
 ![Awesome OpenClaw Use Cases and Examples का लोगो](../../logo.png)
 
 यह README इन भाषाओं में पढ़ें: [English](../../README.md) · [Español](README.es.md) · [Deutsch](README.de.md) · [日本語](README.ja.md) · [Français](README.fr.md) · [Português](README.pt.md) · [Русский](README.ru.md) · [Italiano](README.it.md) · [Nederlands](README.nl.md) · [Polski](README.pl.md) · [中文 (简体)](README.zh-CN.md) · [中文 (繁體)](README.zh-TW.md) · [한국어](README.ko.md) · [Türkçe](README.tr.md) · [العربية](README.ar.md) · [Tiếng Việt](README.vi.md) · [ไทย](README.th.md) · [Bahasa Indonesia](README.id.md) · [हिन्दी](README.hi.md) · [Čeština](README.cs.md)
 
-अगर आपने `openclaw usecases` या `openclaw examples` खोजा है, तो संभव है कि आप एक सीधा सवाल पूछ रहे हों: OpenClaw से वास्तव में क्या किया जा सकता है, वह भी बिना सब कुछ शुरू से बनाए? यही repo उस सवाल का मेरा जवाब है। इसमें 100 runnable starter packs हैं, जो public ClawHub skills पर बने हैं, और हर एक में setup steps, prompts, sample outputs, KPI, security notes और rollback guidance शामिल हैं।
+> यह अनुवादित overview 300 starters वाले catalog के साथ sync है। पूरा catalog और English README canonical reference हैं।
+
+अगर आपने `openclaw usecases` या `openclaw examples` खोजा है, तो संभव है कि आप एक सीधा सवाल पूछ रहे हों: OpenClaw से वास्तव में क्या किया जा सकता है, वह भी बिना सब कुछ शुरू से बनाए? यही repo उस सवाल का मेरा जवाब है। इसमें 300 runnable starter packs हैं, जो public ClawHub skills पर बने हैं, और हर एक में setup steps, prompts, sample outputs, KPI, security notes और rollback guidance शामिल हैं।
 
 [![Live Docs Explorer](https://img.shields.io/badge/live-docs%20explorer-0a6b6b?style=for-the-badge)](https://othmaneblial.github.io/awesome-openclaw-examples)
-![100 Runnable Starters](https://img.shields.io/badge/100-runnable%20starters-201811?style=for-the-badge)
+![300 Runnable Starters](https://img.shields.io/badge/300-runnable%20starters-201811?style=for-the-badge)
 ![10 Quick Wins](https://img.shields.io/badge/10-quick%20wins-bb5b2c?style=for-the-badge)
-![Maintainer Tested](https://img.shields.io/badge/reviewed-maintainer%20tested-244f78?style=for-the-badge)
+![Research Informed](https://img.shields.io/badge/research-informed-ff8360?style=for-the-badge)
 
 [Live Docs Explorer](https://othmaneblial.github.io/awesome-openclaw-examples) · [Browse Full Catalog](../../examples/catalog.md) · [Runnable Starters](../../examples/runnable/README.md) · [Contributing](../../CONTRIBUTING.md)
 
@@ -56,7 +58,7 @@
 
 ## Top 10 Quick Wins
 
-मैंने यह list बनाने से पहले पूरे 100-example catalog को देखा। ये वही entries हैं जिन्हें मैं सबसे पहले किसी को दूँगा, क्योंकि इनकी value जल्दी दिखती है और output की quality भी आसानी से judge की जा सकती है।
+मैंने यह list बनाने से पहले पूरे 300-example catalog को देखा। ये वही entries हैं जिन्हें मैं सबसे पहले किसी को दूँगा, क्योंकि इनकी value जल्दी दिखती है और output की quality भी आसानी से judge की जा सकती है।
 
 | ID | Example | यह quick win क्यों है | Links |
 | --- | --- | --- | --- |
@@ -97,15 +99,15 @@ examples/runnable/<id>-<slug>/
 ## Quick start
 
 1. वह example चुनें जो आपके real weekly problem के सबसे करीब हो, न कि सिर्फ सबसे flashy title वाला।
-2. ज़रूरी skills को `npx clawhub@latest install <skill-slug>` से install करें।
+2. ज़रूरी skills को `openclaw skills verify <skill-slug> && openclaw skills install <skill-slug>` से install करें।
 3. उस example का `scripts/check_prereqs.sh` चलाएँ।
 4. पहले `sample-output.md` देखें, ताकि समझ सकें कि अच्छा output कैसा दिखना चाहिए।
 5. उसी example का prompt और cron setup लागू करें।
 6. पहले छोटा scope, draft-only delivery और human review रखें, फिर धीरे-धीरे expand करें।
 
-## Runnable starters (कुल 100)
+## Runnable starters (कुल 300)
 
-इस repo में अभी 100 runnable OpenClaw starter packs हैं, जिन्हें उस तरह के काम के हिसाब से group किया गया है जिसे वे teams के लिए आसान बनाते हैं।
+इस repo में अभी 300 runnable OpenClaw starter packs हैं, जिन्हें उस तरह के काम के हिसाब से group किया गया है जिसे वे teams के लिए आसान बनाते हैं।
 
 | Range | Focus | Notes |
 | --- | --- | --- |
@@ -116,7 +118,15 @@ examples/runnable/<id>-<slug>/
 | 63-70 | Research, content और market signals | competitive intelligence, quote mining, webinar repurposing, SEO और request routing |
 | 71-76 | People, recruiting और onboarding | candidate briefs, stall tracking, onboarding, policy और source quality |
 | 77-82 | Finance, procurement और board prep | renewals, redlines, procurement, PO follow-up, expense exceptions और board evidence |
-| 83-100 | Security, IT, governance और internal operations | access review, secrets, audits, exceptions, IT intake, asset return और meeting hygiene |
+| 83-101 | Security, IT, governance और internal operations | access review, secrets, audits, exceptions, IT intake, asset return और meeting hygiene |
+| 102-126 | Data, metrics, and knowledge operations |
+| 127-151 | Customer success, sales, and revenue execution |
+| 152-176 | Product, marketing, and content operations |
+| 177-201 | Engineering, platform, and reliability operations |
+| 202-226 | Personal admin, home, and learning workflows |
+| 227-251 | Collaboration, communications, and community workflows |
+| 252-276 | Governance, security, and IT operations |
+| 277-300 | Education, creative, and media workflows |
 
 पूरी सूची [examples/catalog.md](../../examples/catalog.md) में देखें।
 
@@ -129,7 +139,7 @@ examples/runnable/<id>-<slug>/
 
 ## ज़रूरी notes
 
-- इन examples को repo में आने से पहले maintainer review और test करता है।
+- ये research-informed starter contracts हैं, maintainer certification नहीं; हर workflow को अपने environment में validate करें।
 - यह independently maintained repo है, कोई official OpenClaw program नहीं।
 - feedback, fixes और बेहतर examples हमेशा welcome हैं।
 - यह repo crypto या trading workflows accept नहीं करता।

@@ -338,6 +338,12 @@ function renderSourceDocs(data) {
       external: false,
     },
     {
+      title: "GitHub metadata proposal",
+      description: "A reviewable repository description and focused topic set.",
+      href: data.docs.metadata.rawPath,
+      external: false,
+    },
+    {
       title: "Full catalog",
       description: "Every starter with its skill stack, status, and inspectable source files.",
       href: data.docs.catalog.rawPath,
@@ -421,6 +427,7 @@ function renderCatalogList(filtered, state, quickWinIds, onSelect) {
     const button = document.createElement("button");
     button.type = "button";
     button.className = `catalog-item${example.id === state.selectedId ? " is-active" : ""}`;
+    button.setAttribute("aria-pressed", String(example.id === state.selectedId));
     button.innerHTML = `
       <h3>${formatId(example.id)}. ${escapeHtml(example.title)}</h3>
       <p>${escapeHtml(example.description)}</p>
@@ -510,9 +517,29 @@ function renderTabs(target, tabs, activeTab, onSelect) {
   tabs.forEach((tab) => {
     const button = document.createElement("button");
     button.type = "button";
+    button.id = `tab-${tab.id}`;
+    button.setAttribute("role", "tab");
+    button.setAttribute("aria-selected", String(tab.id === activeTab));
+    button.setAttribute("aria-controls", `panel-${tab.id}`);
+    button.tabIndex = tab.id === activeTab ? 0 : -1;
     button.className = `tab-button${tab.id === activeTab ? " is-active" : ""}`;
     button.textContent = tab.label;
     button.addEventListener("click", () => onSelect(tab.id));
+    button.addEventListener("keydown", (event) => {
+      const currentIndex = tabs.findIndex((entry) => entry.id === tab.id);
+      const direction = event.key === "ArrowRight" || event.key === "ArrowDown" ? 1 :
+        event.key === "ArrowLeft" || event.key === "ArrowUp" ? -1 : 0;
+      if (!direction && event.key !== "Home" && event.key !== "End") return;
+      event.preventDefault();
+      const nextIndex = event.key === "Home"
+        ? 0
+        : event.key === "End"
+          ? tabs.length - 1
+          : (currentIndex + direction + tabs.length) % tabs.length;
+      const nextTab = tabs[nextIndex];
+      onSelect(nextTab.id);
+      requestAnimationFrame(() => document.getElementById(`tab-${nextTab.id}`)?.focus());
+    });
     target.appendChild(button);
   });
 }
@@ -522,6 +549,8 @@ function setActivePanel(activeTab) {
   panels.forEach((panelId) => {
     const panel = document.getElementById(`panel-${panelId}`);
     panel.hidden = panelId !== activeTab;
+    panel.setAttribute("aria-hidden", String(panelId !== activeTab));
+    panel.setAttribute("aria-labelledby", `tab-${panelId}`);
   });
 }
 

@@ -5,9 +5,9 @@ Builds a recurring maintenance backlog queue from stale branches, issues, and ne
 ## Skill Stack
 
 ```bash
-npx clawhub@latest install github
-npx clawhub@latest install summarize
-npx clawhub@latest install todoist
+openclaw skills install github
+openclaw skills install summarize
+openclaw skills install todoist
 ```
 
 ## What It Does
