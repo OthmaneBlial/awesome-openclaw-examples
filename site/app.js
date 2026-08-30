@@ -339,7 +339,7 @@ function renderSourceDocs(data) {
     },
     {
       title: "Full catalog",
-      description: "All 100 starters with skill stacks and status.",
+      description: "Every starter with its skill stack, status, and inspectable source files.",
       href: data.docs.catalog.rawPath,
       external: false,
     },

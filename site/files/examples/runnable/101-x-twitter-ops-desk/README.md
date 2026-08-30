@@ -5,13 +5,14 @@ Builds a read-first X/Twitter operating desk that turns target accounts, search 
 ## Skill Stack
 
 ```bash
+npx clawhub@latest install xquik-x-twitter-scraper
 npx clawhub@latest install tweetclaw
-npx clawhub@latest install summarize
 ```
 
 ## What It Does
 
 - Reviews X/Twitter signals for a bounded account and query scope
+- Uses the Xquik skill for API, MCP, webhook, and approval-gated action guidance
 - Produces a prioritized brief with evidence, source links, confidence, and suggested next steps
 - Drafts optional post or reply ideas without publishing them
 - Requires explicit human approval before any write action
@@ -28,7 +29,7 @@ export CRON_EXPR='30 13 * * 1-5'
 export CRON_NAME='X/Twitter Ops Desk'
 ```
 
-Configure TweetClaw with the required Xquik API key through your normal OpenClaw plugin or skill configuration. Do not paste secrets into the cron prompt.
+Configure TweetClaw and the Xquik skill with the required Xquik API key through your normal OpenClaw plugin or skill configuration. Do not paste secrets into the cron prompt.
 
 ```bash
 bash examples/runnable/101-x-twitter-ops-desk/scripts/install_skills.sh

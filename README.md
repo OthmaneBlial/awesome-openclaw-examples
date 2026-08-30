@@ -1,164 +1,163 @@
-# Awesome OpenClaw Examples: 101 Runnable OpenClaw Use Cases
+# Awesome OpenClaw Examples: 151 runnable workflows
 
-![Awesome OpenClaw Use Cases and Examples Logo](logo.png)
+![Awesome OpenClaw Examples logo](logo.png)
 
 Read this README in: [English](README.md) · [Español](docs/readmes/README.es.md) · [Deutsch](docs/readmes/README.de.md) · [日本語](docs/readmes/README.ja.md) · [Français](docs/readmes/README.fr.md) · [Português](docs/readmes/README.pt.md) · [Русский](docs/readmes/README.ru.md) · [Italiano](docs/readmes/README.it.md) · [Nederlands](docs/readmes/README.nl.md) · [Polski](docs/readmes/README.pl.md) · [中文 (简体)](docs/readmes/README.zh-CN.md) · [中文 (繁體)](docs/readmes/README.zh-TW.md) · [한국어](docs/readmes/README.ko.md) · [Türkçe](docs/readmes/README.tr.md) · [العربية](docs/readmes/README.ar.md) · [Tiếng Việt](docs/readmes/README.vi.md) · [ไทย](docs/readmes/README.th.md) · [Bahasa Indonesia](docs/readmes/README.id.md) · [हिन्दी](docs/readmes/README.hi.md) · [Čeština](docs/readmes/README.cs.md)
 
-If you searched for `openclaw usecases` or `openclaw examples`, you are probably trying to answer a simple question: what can I actually do with OpenClaw without building everything from scratch? This repo is my answer. It collects 101 runnable starter packs built on public ClawHub skills, each with setup steps, prompts, sample outputs, KPIs, security notes, and rollback guidance.
+If you searched for `openclaw examples` or `openclaw usecases`, this is a practical starting point: 151 inspectable workflow starters built around the repository's documented ClawHub skill stack. Each pack includes a scoped setup, a prompt, a smoke test, a measurable KPI, security notes, failure modes, rollback guidance, and an illustrative output contract.
 
-[![Live Docs Explorer](https://img.shields.io/badge/live-docs%20explorer-0a6b6b?style=for-the-badge)](https://othmaneblial.github.io/awesome-openclaw-examples)
-![101 Runnable Starters](https://img.shields.io/badge/101-runnable%20starters-201811?style=for-the-badge)
-![10 Quick Wins](https://img.shields.io/badge/10-quick%20wins-bb5b2c?style=for-the-badge)
-![Maintainer Tested](https://img.shields.io/badge/reviewed-maintainer%20tested-244f78?style=for-the-badge)
+[![Live Docs Explorer](https://img.shields.io/badge/live-docs%20explorer-0b6f68?style=for-the-badge)](https://othmaneblial.github.io/awesome-openclaw-examples) [![151 Runnable Starters](https://img.shields.io/badge/151-runnable%20starters-17252b?style=for-the-badge)](examples/catalog.md) [![10 Quick Wins](https://img.shields.io/badge/10-quick%20wins-cb5b36?style=for-the-badge)](examples/catalog.md)
 
-[Live Docs Explorer](https://othmaneblial.github.io/awesome-openclaw-examples) · [Browse Full Catalog](examples/catalog.md) · [Runnable Starters](examples/runnable/README.md) · [Contributing](CONTRIBUTING.md)
+[Live Docs Explorer](https://othmaneblial.github.io/awesome-openclaw-examples) · [Full catalog](examples/catalog.md) · [Runnable starter index](examples/runnable/README.md) · [Contributing](CONTRIBUTING.md)
 
-> A lot of AI example repos look good right up until you try to run them.
+> The useful unit here is not a clever prompt. It is a small workflow with a clear input, an inspectable output, a human checkpoint, and a way to tell whether it helped.
 
-I built this for teams that want something they can test, inspect, and steal parts from. Instead of vague demos, you get OpenClaw use cases tied to real jobs: triaging PRs, cleaning up inboxes, watching SEO drift, summarizing redlines, surfacing security issues, and turning noisy source material into something useful.
+## Table of contents
 
-## Why people keep this repo around
+- [What is in the repo](#what-is-in-the-repo)
+- [Start by outcome](#start-by-outcome)
+- [Browse by team](#browse-by-team)
+- [Top 10 quick wins](#top-10-quick-wins)
+- [Quality contract](#quality-contract)
+- [Start safely](#start-safely)
+- [Catalog map](#catalog-map)
+- [Languages](#languages)
+- [Contributing](#contributing)
+- [FAQ](#faq)
 
-- The examples are runnable, not just described
-- The repo sticks to public ClawHub skills you can inspect before installing
-- Sample output for every example so you can judge quality before setup
-- Setup, KPI, security notes, failure modes, and rollback are part of the template
-- The catalog covers real work across engineering, support, research, content, revenue, finance, security, and internal ops
-- I only want examples here if they are useful enough to justify the setup time
+## What is in the repo
 
-## Start here by goal
+The catalog covers engineering, customer operations, research, content, revenue, data, people operations, finance, security, governance, personal admin, learning, and media workflows. It is intentionally biased toward reviewable read-and-draft flows: the starter can prepare a recommendation or artifact, but it does not silently send, edit, delete, purchase, or approve anything.
 
-If you want a first win quickly, pick the row that sounds closest to an annoyance you already have.
+The live [Docs Explorer](https://othmaneblial.github.io/awesome-openclaw-examples/docs.html) makes the library searchable by title, collection, skill, and quick-win status. Open an example to inspect the guide, sample output, prompt, and helper scripts without leaving the browser.
 
-| Goal | Start Here | Why |
+## Start by outcome
+
+| If you want to... | Start with | Why it is a good first run |
 | --- | --- | --- |
-| Unblock engineering work faster | [01 - PR Radar](examples/runnable/01-pr-radar/README.md) | PR state is easy to understand, so you can tell in one run whether the workflow is useful |
-| Ship cleaner release communication | [03 - Release Notes Pilot](examples/runnable/03-release-notes-pilot/README.md) | Release notes are visible to everyone, which makes this an easy pilot with clear before-and-after output |
-| Process documents and voice input faster | [06 - PDF Ops Desk](examples/runnable/06-pdf-ops-desk/README.md) | Messy PDFs and transcripts are painful enough that even one decent run saves time |
-| Catch AI spend drift early | [10 - Model Cost Command Center](examples/runnable/10-model-cost-command-center/README.md) | If you are already paying for models, cost drift is a problem people recognize immediately |
-| Turn search drift into content opportunities | [66 - SEO Drift Watcher](examples/runnable/66-seo-drift-watcher/README.md) | Good marketing use case because ranking drift and refresh opportunities are concrete, not hand-wavy |
-| Give leadership a weekly pulse without status-chasing | [96 - Executive Weekly Wins Digest](examples/runnable/96-executive-weekly-wins-digest/README.md) | Converts scattered updates into a clean executive summary |
+| Reduce engineering review lag | [01 - PR Radar](examples/runnable/01-pr-radar/README.md) | PR state and CI results are easy to compare before and after. |
+| Turn documents into reviewable evidence | [06 - PDF Ops Desk](examples/runnable/06-pdf-ops-desk/README.md) | The sample makes quality and missing citations visible quickly. |
+| Make inbox work actionable | [11 - Inbox to Action](examples/runnable/11-inbox-to-action/README.md) | It creates a bounded queue instead of taking action on your behalf. |
+| Understand customer evidence | [102 - Customer Research Repository](examples/runnable/102-customer-research-repository/README.md) | Sources, tags, and confidence can be reviewed independently. |
+| Improve customer onboarding visibility | [127 - Customer Onboarding Risk Radar](examples/runnable/127-customer-onboarding-risk-radar/README.md) | Blockers and owners have a concrete review cadence. |
+| Catch content or search drift | [66 - SEO Drift Watcher](examples/runnable/66-seo-drift-watcher/README.md) | The output is a short queue of pages and evidence to verify. |
 
-## OpenClaw usecases by team
+## Browse by team
 
-If your search was literally `openclaw usecases`, start here. These are not random prompt dumps. They line up with the kinds of repeat work teams already do.
-
-| Team | Strong Examples | What You Can Automate |
+| Team or job | Strong entry points | Typical output |
 | --- | --- | --- |
-| Engineering | [01 - PR Radar](examples/runnable/01-pr-radar/README.md), [07 - CI Flake Doctor](examples/runnable/07-ci-flake-doctor/README.md), [37 - Repo Hygiene Janitor](examples/runnable/37-repo-hygiene-janitor/README.md), [84 - Secrets Leak Triage Digest](examples/runnable/84-secrets-leak-triage-digest/README.md) | PR visibility, flaky test review, repo cleanup, security triage |
-| Support and Inbox Ops | [02 - SLA Guardian](examples/runnable/02-sla-guardian/README.md), [11 - Inbox to Action](examples/runnable/11-inbox-to-action/README.md), [54 - VIP Inbox Watchdog](examples/runnable/54-vip-inbox-watchdog/README.md), [99 - Internal FAQ Router](examples/runnable/99-internal-faq-router/README.md) | Escalation digests, queue cleanup, VIP follow-up, internal request routing |
-| Research and Content | [14 - Weekly Research Digest](examples/runnable/14-weekly-research-digest/README.md), [63 - Competitor Launch Explainer](examples/runnable/63-competitor-launch-explainer/README.md), [65 - Webinar Repurposing Desk](examples/runnable/65-webinar-repurposing-desk/README.md), [69 - Market FAQ Synthesizer](examples/runnable/69-market-faq-synthesizer/README.md) | Monitoring, competitor tracking, repurposing, FAQ generation |
-| Marketing and SEO | [05 - Content Idea Miner](examples/runnable/05-content-idea-miner/README.md), [66 - SEO Drift Watcher](examples/runnable/66-seo-drift-watcher/README.md), [68 - Social Proof Collector](examples/runnable/68-social-proof-collector/README.md), [101 - X/Twitter Ops Desk](examples/runnable/101-x-twitter-ops-desk/README.md) | Topic discovery, search drift monitoring, proof gathering, social signal triage |
-| Revenue and Customer Success | [43 - Renewal Risk Explainer](examples/runnable/43-renewal-risk-explainer/README.md), [48 - Meeting Follow-up Enforcer](examples/runnable/48-meeting-follow-up-enforcer/README.md), [93 - Customer Renewal Meeting Prep](examples/runnable/93-customer-renewal-meeting-prep/README.md) | Renewal risk, follow-up ownership, meeting prep |
-| People and Recruiting | [72 - Hiring Pipeline Stall Radar](examples/runnable/72-hiring-pipeline-stall-radar/README.md), [73 - Onboarding Checklist Concierge](examples/runnable/73-onboarding-checklist-concierge/README.md), [75 - Interview Prep Brief](examples/runnable/75-interview-prep-brief/README.md) | Hiring bottlenecks, onboarding flow, interview context |
-| Finance and Legal | [78 - Contract Redline Summary Board](examples/runnable/78-contract-redline-summary-board/README.md), [80 - Overdue PO Follow-up Queue](examples/runnable/80-overdue-po-follow-up-queue/README.md), [82 - Board Packet Evidence Collector](examples/runnable/82-board-packet-evidence-collector/README.md) | Redline review, procurement follow-up, board prep |
-| Leadership and Operations | [30 - Founder Daily Control Room](examples/runnable/30-founder-daily-control-room/README.md), [62 - Daily Operating Memo](examples/runnable/62-daily-operating-memo/README.md), [94 - Product Launch Readiness Board](examples/runnable/94-product-launch-readiness-board/README.md), [96 - Executive Weekly Wins Digest](examples/runnable/96-executive-weekly-wins-digest/README.md) | Daily alignment, operating cadence, launch readiness, weekly reporting |
+| Engineering and release | [01 - PR Radar](examples/runnable/01-pr-radar/README.md), [07 - CI Flake Doctor](examples/runnable/07-ci-flake-doctor/README.md), [33 - Release Train Risk Board](examples/runnable/33-release-train-risk-board/README.md), [31 - Dependency Drift Watchtower](examples/runnable/31-dependency-drift-watchtower/README.md) | Triage queues, risk briefs, ownership maps, and evidence-linked checks |
+| Data and knowledge | [102 - Customer Research Repository](examples/runnable/102-customer-research-repository/README.md), [107 - Metric Anomaly Narrator](examples/runnable/107-metric-anomaly-narrator/README.md), [119 - FAQ Coverage Gap Finder](examples/runnable/119-faq-coverage-gap-finder/README.md) | Evidence indexes, anomaly narratives, definitions, and gap lists |
+| Customer success and sales | [43 - Renewal Risk Explainer](examples/runnable/43-renewal-risk-explainer/README.md), [127 - Customer Onboarding Risk Radar](examples/runnable/127-customer-onboarding-risk-radar/README.md), [148 - Forecast Commit Evidence Pack](examples/runnable/148-forecast-commit-evidence-pack/README.md) | Account briefs, milestone digests, and draft-only review queues |
+| Marketing and content | [05 - Content Idea Miner](examples/runnable/05-content-idea-miner/README.md), [66 - SEO Drift Watcher](examples/runnable/66-seo-drift-watcher/README.md), [65 - Webinar Repurposing Desk](examples/runnable/65-webinar-repurposing-desk/README.md) | Source-backed briefs, drift queues, and review checklists |
+| People and collaboration | [71 - Candidate Debrief Compiler](examples/runnable/71-candidate-debrief-compiler/README.md), [73 - Onboarding Checklist Concierge](examples/runnable/73-onboarding-checklist-concierge/README.md), [48 - Meeting Follow-up Enforcer](examples/runnable/48-meeting-follow-up-enforcer/README.md) | Handoffs, checklists, agendas, and aging action lists |
+| Finance, legal, security | [78 - Contract Redline Summary Board](examples/runnable/78-contract-redline-summary-board/README.md), [84 - Secrets Leak Triage Digest](examples/runnable/84-secrets-leak-triage-digest/README.md), [98 - Security Exception Register](examples/runnable/98-security-exception-register/README.md) | Evidence packs, exception queues, and escalation-ready summaries |
+| Personal, learning, and media | [30 - Founder Daily Control Room](examples/runnable/30-founder-daily-control-room/README.md), [16 - Voice Notes to Tasks](examples/runnable/16-voice-notes-to-tasks/README.md), [15 - YouTube Research Desk](examples/runnable/15-youtube-research-desk/README.md) | Private review notes, study plans, and draft media artifacts |
 
 ## Top 10 Quick Wins
 
-I went through the full 101-example catalog for this list. These are the ones I would hand someone first because the value shows up quickly and the output is easy to judge.
+These are the first workflows to try when you want a small, observable pilot. A quick win is not a promise of ROI; it is a workflow where the input, output, and review criteria are easy to inspect.
 
 | ID | Example | Why It Is A Quick Win | Links |
 | --- | --- | --- | --- |
-| 01 | PR Radar | PRs already have clear states, so you can tell fast whether the ranking is helpful and whether anyone will use it | [Guide](examples/runnable/01-pr-radar/README.md) · [Sample](examples/runnable/01-pr-radar/sample-output.md) |
-| 03 | Release Notes Pilot | Release notes are easy to review, easy to share, and a good way to get buy-in without touching anything sensitive | [Guide](examples/runnable/03-release-notes-pilot/README.md) · [Sample](examples/runnable/03-release-notes-pilot/sample-output.md) |
-| 06 | PDF Ops Desk | PDFs and transcripts get messy quickly, so even a decent summary can save real time on day one | [Guide](examples/runnable/06-pdf-ops-desk/README.md) · [Sample](examples/runnable/06-pdf-ops-desk/sample-output.md) |
-| 10 | Model Cost Command Center | If your team already spends on models, cost drift is one of the easiest problems to explain and justify fixing | [Guide](examples/runnable/10-model-cost-command-center/README.md) · [Sample](examples/runnable/10-model-cost-command-center/sample-output.md) |
-| 11 | Inbox to Action | Inbox triage is universal, and this turns vague email weight into a task list someone can actually work through | [Guide](examples/runnable/11-inbox-to-action/README.md) · [Sample](examples/runnable/11-inbox-to-action/sample-output.md) |
-| 54 | VIP Inbox Watchdog | Same appeal as inbox triage, but tighter and higher stakes because it focuses on the threads you really cannot miss | [Guide](examples/runnable/54-vip-inbox-watchdog/README.md) · [Sample](examples/runnable/54-vip-inbox-watchdog/sample-output.md) |
-| 66 | SEO Drift Watcher | Good marketing workflow because ranking drift and refresh opportunities show up as concrete work, not vague strategy talk | [Guide](examples/runnable/66-seo-drift-watcher/README.md) · [Sample](examples/runnable/66-seo-drift-watcher/sample-output.md) |
-| 84 | Secrets Leak Triage Digest | Security teams can judge this one quickly because it surfaces evidence, not abstract risk language | [Guide](examples/runnable/84-secrets-leak-triage-digest/README.md) · [Sample](examples/runnable/84-secrets-leak-triage-digest/sample-output.md) |
-| 96 | Executive Weekly Wins Digest | Weekly summaries are tedious to assemble by hand, so the time saved is obvious almost immediately | [Guide](examples/runnable/96-executive-weekly-wins-digest/README.md) · [Sample](examples/runnable/96-executive-weekly-wins-digest/sample-output.md) |
-| 99 | Internal FAQ Router | Internal questions repeat all the time, so routing and answer reuse make this useful faster than most workflow ideas | [Guide](examples/runnable/99-internal-faq-router/README.md) · [Sample](examples/runnable/99-internal-faq-router/sample-output.md) |
+| 01 | PR Radar | PRs have clear states, so ranking quality is easy to judge in one run. | [Guide](examples/runnable/01-pr-radar/README.md) · [Sample](examples/runnable/01-pr-radar/sample-output.md) |
+| 03 | Release Notes Pilot | The result is visible and reviewable before it reaches customers. | [Guide](examples/runnable/03-release-notes-pilot/README.md) · [Sample](examples/runnable/03-release-notes-pilot/sample-output.md) |
+| 06 | PDF Ops Desk | Messy documents reveal missing evidence and summary quality quickly. | [Guide](examples/runnable/06-pdf-ops-desk/README.md) · [Sample](examples/runnable/06-pdf-ops-desk/sample-output.md) |
+| 10 | Model Cost Command Center | Cost changes have concrete baselines and thresholds. | [Guide](examples/runnable/10-model-cost-command-center/README.md) · [Sample](examples/runnable/10-model-cost-command-center/sample-output.md) |
+| 11 | Inbox to Action | It turns an inbox into a queue while keeping sends behind review. | [Guide](examples/runnable/11-inbox-to-action/README.md) · [Sample](examples/runnable/11-inbox-to-action/sample-output.md) |
+| 54 | VIP Inbox Watchdog | The scope is narrow enough to validate alerts without ingesting everything. | [Guide](examples/runnable/54-vip-inbox-watchdog/README.md) · [Sample](examples/runnable/54-vip-inbox-watchdog/sample-output.md) |
+| 66 | SEO Drift Watcher | Ranking changes become a concrete list of pages to verify. | [Guide](examples/runnable/66-seo-drift-watcher/README.md) · [Sample](examples/runnable/66-seo-drift-watcher/sample-output.md) |
+| 84 | Secrets Leak Triage Digest | It surfaces evidence and keeps remediation behind a human gate. | [Guide](examples/runnable/84-secrets-leak-triage-digest/README.md) · [Sample](examples/runnable/84-secrets-leak-triage-digest/sample-output.md) |
+| 102 | Customer Research Repository | Source links and confidence labels make the output auditable. | [Guide](examples/runnable/102-customer-research-repository/README.md) · [Sample](examples/runnable/102-customer-research-repository/sample-output.md) |
+| 127 | Customer Onboarding Risk Radar | Milestones, owners, and blockers map cleanly to a weekly review. | [Guide](examples/runnable/127-customer-onboarding-risk-radar/README.md) · [Sample](examples/runnable/127-customer-onboarding-risk-radar/sample-output.md) |
 
-## Example Quality Standard
+## Quality contract
 
-Every accepted starter in this repo is expected to include:
+Every runnable pack must make these details visible:
 
-- A clear problem definition and scope
-- Skill stack and install commands
-- Setup steps and prompt files
-- Sample output (`sample-output.md`)
-- A smoke test and KPI
-- Security notes
-- Failure modes
-- Rollback guidance
+- a clear problem, scope, input, and expected output;
+- real ClawHub skill references and current installation/verification commands;
+- setup steps with a narrow first-run scope;
+- a prompt with an explicit output contract and no invented evidence;
+- a smoke test and a KPI that a human can measure;
+- security notes for credentials, untrusted content, permissions, and delivery;
+- failure modes, escalation rules, and a reversible rollback path;
+- a clearly labelled illustrative sample output, unless a contributor has documented a real run.
 
-Typical starter layout:
+Typical layout:
 
 ```text
 examples/runnable/<id>-<slug>/
   README.md
-  prompts/
-  scripts/
   sample-output.md
+  prompts/cron_prompt.txt
+  scripts/check_prereqs.sh
+  scripts/install_cron.sh
+  scripts/install_skills.sh
 ```
 
-## Fast Start
+## Start safely
 
-1. Pick the example closest to an existing weekly problem, not the one with the flashiest title.
-2. Install the required skills with `npx clawhub@latest install <skill-slug>`.
-3. Run the example's `scripts/check_prereqs.sh`.
-4. Review `sample-output.md` so you know what good output should look like.
-5. Apply the prompt and cron setup from that example.
-6. Start with narrow scope, draft-only delivery, and human review before wider rollout.
+1. Install OpenClaw and connect only the channel or account needed for the pilot.
+2. Pick one workflow with a bounded source and a measurable outcome.
+3. Review each listed skill and its trust/status information before installing it:
 
-## Runnable Starters (101 Total)
+   ```bash
+   openclaw skills verify <skill-slug>
+   openclaw skills install <skill-slug>
+   ```
 
-The repo currently includes 101 runnable OpenClaw starter packs, grouped by the kind of job they help teams get done.
+4. Use an isolated session, read-only permissions where possible, a trusted delivery target, and draft-only output.
+5. Compare the sample contract with the real run. Keep source links and unknowns visible.
+6. Add a standing order or broader automation only after a human has reviewed several runs. OpenClaw's official docs are the authority for current CLI and policy details.
 
-| Range | Focus | Notes |
-| --- | --- | --- |
-| 01-30 | Foundation set | The original starter library across engineering, support, research, and founder workflows. |
-| 31-42 | Engineering quality and release operations | Dependency, CI, ownership, release, hotfix, and model-behavior control loops. |
-| 43-52 | Revenue, renewals, and pipeline control | Renewal risk, expansion signals, trials, collections, and partner motion. |
-| 53-62 | Support, inbox, and operator workflows | Bug intake, VIP attention, calendar prep, handoffs, and operating memos. |
-| 63-70 | Research, content, and market signals | Competitive intelligence, quote mining, webinar repurposing, SEO, and request routing. |
-| 71-76 | People, recruiting, and onboarding | Candidate briefs, stall tracking, onboarding, policy, and source-quality workflows. |
-| 77-82 | Finance, procurement, and board prep | Renewals, redlines, procurement, PO follow-up, expense exceptions, and board evidence. |
-| 83-101 | Security, IT, governance, internal operations, and social ops | Access review, secrets, audits, exceptions, IT intake, asset return, meeting hygiene, and X/Twitter signal triage. |
+This repository does not claim that a starter has been validated against every provider, channel, account, or model. The packs are inspectable starting points; validate integrations and permissions in your own environment.
 
-See the full list in [examples/catalog.md](examples/catalog.md).
+## Runnable Starters (151 Total)
 
-## Who this repo is for
+### Catalog map
 
-- Teams evaluating real OpenClaw use cases before building custom workflows
-- OpenClaw users who want runnable examples instead of vague prompts
-- Founders, operators, and ICs looking for one high-signal automation to ship first
-- Anyone who wants to inspect output quality before connecting production systems
+| Range | Focus |
+| --- | --- |
+| 01-30 | Foundation workflows |
+| 31-42 | Engineering quality and release operations |
+| 43-52 | Revenue, renewals, and pipeline control |
+| 53-62 | Support, inbox, and operator workflows |
+| 63-70 | Research, content, and market signals |
+| 71-76 | People, recruiting, and onboarding |
+| 77-82 | Finance, procurement, and board prep |
+| 83-101 | Security, IT, governance, and internal operations |
+| 102-126 | Data, metrics, and knowledge operations |
+| 127-151 | Customer success, sales, and revenue execution |
 
-## Important notes
+Browse all rows in the [full catalog](examples/catalog.md), or use the [Docs Explorer](https://othmaneblial.github.io/awesome-openclaw-examples/docs.html) to filter by skill and collection.
 
-- These examples are reviewed and tested by the maintainer before inclusion.
-- This is a maintainer-run repository, not an official OpenClaw program.
-- Feedback, fixes, and better examples are welcome.
-- This repo does not accept crypto or trading workflows.
-- This repo does not accept custom skills that are not published through ClawHub.
-- ClawHub is a public registry for OpenClaw skills, so inspect third-party skills before enabling them.
-- Default to least privilege, trusted delivery targets, human review for outbound actions, and clear rollback paths.
+## Languages
 
-## OpenClaw FAQ
-
-### What kind of openclaw usecases are in this repo?
-
-This repo covers engineering, support, research, content, revenue, people ops, finance, security, and internal operations. If you searched for `openclaw usecases` with clear business value, start with the quick wins table or the by-goal section above.
-
-### Are these OpenClaw examples actually runnable?
-
-Yes. Every runnable starter is expected to include scripts, prompts, setup steps, and a sample output. You should still validate each workflow in your own environment before production use.
-
-### Why only ClawHub skills?
-
-Because reproducibility matters. Limiting the repo to public ClawHub skills makes these OpenClaw examples easier to inspect, install, compare, and trust.
-
-### Is this an official OpenClaw repository?
-
-No. This is an independent, maintainer-run collection of OpenClaw examples built to help people find useful OpenClaw workflows faster.
-
-### Which example should I start with first?
-
-If you want the safest first run, start with [01 - PR Radar](examples/runnable/01-pr-radar/README.md), [06 - PDF Ops Desk](examples/runnable/06-pdf-ops-desk/README.md), [11 - Inbox to Action](examples/runnable/11-inbox-to-action/README.md), or [66 - SEO Drift Watcher](examples/runnable/66-seo-drift-watcher/README.md), depending on your team.
+The localized README entry points are kept in `docs/readmes/` and remain linked above. The English README and [full catalog](examples/catalog.md) are canonical for the complete example list; localized files preserve the multilingual overview and may trail the English catalog between translation updates.
 
 ## Contributing
 
-If you want to add or improve a starter, read [CONTRIBUTING.md](CONTRIBUTING.md). The bar is simple: be reproducible, be honest, be safe by default, and show measurable value.
+Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request. Good additions are concrete, scoped, source-backed, measurable, safe by default, and honest about what was actually tested. Crypto and trading workflows are intentionally out of scope.
+
+## FAQ
+
+### Is this an official OpenClaw repository?
+
+No. This is an independent, maintainer-run collection. Use the [official OpenClaw documentation](https://docs.openclaw.ai/) for the current product, CLI, channel, skill, and security contract.
+
+### Are all examples production-ready?
+
+No. They are runnable starter contracts, not a certification. Each one gives you a setup path, a smoke test, a KPI, safety boundaries, and an illustrative output so you can validate it before production use.
+
+### Why use ClawHub skills?
+
+The repository keeps its skill dependencies inspectable and discoverable. Verify every third-party skill before installation, pin versions when your deployment requires reproducibility, and keep secrets out of prompts and logs.
+
+### How should I choose an example?
+
+Start with the smallest recurring problem you can measure. Use the [quick wins](#top-10-quick-wins), search the [Docs Explorer](https://othmaneblial.github.io/awesome-openclaw-examples/docs.html), then run one narrow pilot before adding more authority or integrations.
+
+### Where did the new workflow categories come from?
+
+The expansion is informed by the official OpenClaw capability, automation, security, memory, media, and showcase documentation. The working notes are in [research_openclaw_examples](research_openclaw_examples/findings_openclaw_patterns.md).

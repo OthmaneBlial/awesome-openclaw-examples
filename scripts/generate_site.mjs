@@ -94,11 +94,27 @@ const COLLECTIONS = [
   },
   {
     range: "83-101",
-    focus: "Security, IT, governance, internal operations, and social ops",
+    focus: "Security, IT, governance, and internal operations",
     notes:
-      "Access review, secrets, audits, exceptions, IT intake, asset return, meeting hygiene, and X/Twitter signal triage.",
+      "Access review, secrets, audits, exceptions, IT intake, asset return, meeting hygiene, and social operations.",
     min: 83,
     max: 101,
+  },
+  {
+    range: "102-126",
+    focus: "Data, metrics, and knowledge operations",
+    notes:
+      "Evidence indexes, data quality, KPI definitions, research archives, taxonomy, retention, and analyst handoffs.",
+    min: 102,
+    max: 126,
+  },
+  {
+    range: "127-151",
+    focus: "Customer success, sales, and revenue execution",
+    notes:
+      "Onboarding, support capacity, customer health, references, deal review, pipeline evidence, and renewal preparation.",
+    min: 127,
+    max: 151,
   },
 ];
 const VERIFIED_SOURCES = [
@@ -111,6 +127,7 @@ const VERIFIED_SOURCES = [
     url: "https://clawhub.com/",
   },
 ];
+let fallbackMarkdownWarningShown = false;
 
 function listRootReadmes() {
   return readdirSync(path.join(ROOT, "docs", "readmes"))
@@ -186,8 +203,11 @@ function loadRepoDocs() {
       };
     },
   );
+  const collectionHeading = readme
+    .split(/\r?\n/)
+    .find((line) => /^## Runnable Starters \(\d+ Total\)$/.test(line.trim()));
   const collections = parseMarkdownTable(
-    extractSection(readme, "## Runnable Starters (101 Total)"),
+    extractSection(readme, collectionHeading || "## Runnable Starters (101 Total)"),
   ).map((row) => ({
     range: row.Range,
     focus: row.Focus,
@@ -388,6 +408,9 @@ function auditRepo(repoDocs, examples) {
   }
 
   for (const example of examples) {
+    if (!example.collection) {
+      errors.push(`${example.dirName} is outside the configured collection ranges.`);
+    }
     const exampleRoot = path.join(RUNNABLE_DIR, example.dirName);
     for (const requiredFile of REQUIRED_FILES) {
       const target = path.join(exampleRoot, requiredFile);
@@ -448,6 +471,7 @@ function auditRepo(repoDocs, examples) {
   }
 
   const brokenLinks = findBrokenMarkdownLinks([
+    path.join(ROOT, "README.md"),
     ...listRootReadmes().map((name) => path.join(ROOT, "docs", "readmes", name)),
     path.join(ROOT, "CONTRIBUTING.md"),
     path.join(ROOT, "examples", "README.md"),
@@ -521,6 +545,12 @@ function copySourceFiles() {
   cpSync(path.join(ROOT, "examples"), path.join(FILES_DIR, "examples"), {
     recursive: true,
   });
+  const researchDir = path.join(ROOT, "research_openclaw_examples");
+  if (existsSync(researchDir)) {
+    cpSync(researchDir, path.join(FILES_DIR, "research_openclaw_examples"), {
+      recursive: true,
+    });
+  }
 }
 
 function markdownToHtml(markdown) {
@@ -535,8 +565,125 @@ function markdownToHtml(markdown) {
       },
     ).trim();
   } catch (error) {
-    throw new Error(`pandoc is required to build the site: ${error.message}`);
+    if (!fallbackMarkdownWarningShown) {
+      console.warn("pandoc is unavailable; using the built-in Markdown fallback.");
+      fallbackMarkdownWarningShown = true;
+    }
+    return simpleMarkdownToHtml(markdown);
   }
+}
+
+function simpleMarkdownToHtml(markdown) {
+  const lines = markdown.split(/\r?\n/);
+  const html = [];
+  let paragraph = [];
+  let listType = null;
+  let inCode = false;
+  let codeLines = [];
+  let tableRows = [];
+
+  const flushParagraph = () => {
+    if (paragraph.length > 0) {
+      html.push(`<p>${inlineMarkdown(paragraph.join(" "))}</p>`);
+      paragraph = [];
+    }
+  };
+  const closeList = () => {
+    if (listType) {
+      html.push(`</${listType}>`);
+      listType = null;
+    }
+  };
+  const flushTable = () => {
+    if (tableRows.length < 2) {
+      tableRows = [];
+      return;
+    }
+    const cells = (row) => row.replace(/^\||\|$/g, "").split("|").map((cell) => cell.trim());
+    const header = cells(tableRows[0]);
+    const body = tableRows.slice(2).map(cells);
+    html.push(`<table><thead><tr>${header.map((cell) => `<th>${inlineMarkdown(cell)}</th>`).join("")}</tr></thead>`);
+    html.push(`<tbody>${body.map((row) => `<tr>${row.map((cell) => `<td>${inlineMarkdown(cell)}</td>`).join("")}</tr>`).join("")}</tbody></table>`);
+    tableRows = [];
+  };
+
+  for (const line of lines) {
+    if (line.trim().startsWith("```")) {
+      flushParagraph();
+      closeList();
+      flushTable();
+      if (inCode) {
+        html.push(`<pre><code>${escapeHtml(codeLines.join("\n"))}</code></pre>`);
+        codeLines = [];
+      }
+      inCode = !inCode;
+      continue;
+    }
+    if (inCode) {
+      codeLines.push(line);
+      continue;
+    }
+
+    const trimmed = line.trim();
+    if (trimmed.startsWith("|")) {
+      flushParagraph();
+      closeList();
+      tableRows.push(trimmed);
+      continue;
+    }
+    if (tableRows.length > 0) {
+      flushTable();
+    }
+    if (!trimmed) {
+      flushParagraph();
+      closeList();
+      continue;
+    }
+    const heading = trimmed.match(/^(#{1,6})\s+(.+)$/);
+    if (heading) {
+      flushParagraph();
+      closeList();
+      html.push(`<h${heading[1].length}>${inlineMarkdown(heading[2])}</h${heading[1].length}>`);
+      continue;
+    }
+    const unordered = trimmed.match(/^[-*]\s+(.+)$/);
+    const ordered = trimmed.match(/^\d+[.)]\s+(.+)$/);
+    if (unordered || ordered) {
+      flushParagraph();
+      const nextType = unordered ? "ul" : "ol";
+      if (listType !== nextType) {
+        closeList();
+        html.push(`<${nextType}>`);
+        listType = nextType;
+      }
+      html.push(`<li>${inlineMarkdown((unordered || ordered)[1])}</li>`);
+      continue;
+    }
+    if (trimmed.startsWith("> ")) {
+      flushParagraph();
+      closeList();
+      html.push(`<blockquote><p>${inlineMarkdown(trimmed.slice(2))}</p></blockquote>`);
+      continue;
+    }
+    paragraph.push(trimmed);
+  }
+
+  if (inCode) {
+    html.push(`<pre><code>${escapeHtml(codeLines.join("\n"))}</code></pre>`);
+  }
+  flushParagraph();
+  closeList();
+  flushTable();
+  return html.join("");
+}
+
+function inlineMarkdown(value) {
+  let html = escapeHtml(value);
+  html = html.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img alt="$1" src="$2">');
+  html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
+  html = html.replace(/`([^`]+)`/g, "<code>$1</code>");
+  html = html.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+  return html;
 }
 
 function rewriteRelativeTargets(html, sourceRelativePath) {
@@ -784,6 +931,15 @@ function slugify(value) {
 
 function normalizeLabel(value) {
   return slugify(value).replace(/-/g, "");
+}
+
+function escapeHtml(value) {
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
 }
 
 function toPosix(value) {

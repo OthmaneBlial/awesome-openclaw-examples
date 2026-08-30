@@ -1,46 +1,52 @@
-# Examples Catalog
+# Runnable Starters
 
-## Runnable Starters
+This folder contains 151 runnable OpenClaw starter packs. Each pack keeps the workflow contract inspectable: skill install commands, setup, a prompt, smoke test, KPI, security notes, failure modes, rollback, and an illustrative sample output.
 
-- Every runnable example includes a `sample-output.md` reference artifact.
+## Start with a small, reviewable workflow
 
-- `examples/runnable/01-pr-radar/`
-- `examples/runnable/02-sla-guardian/`
-- `examples/runnable/03-release-notes-pilot/`
-- `examples/runnable/04-meeting-briefing-concierge/`
-- `examples/runnable/05-content-idea-miner/`
-- `examples/runnable/06-pdf-ops-desk/`
-- `examples/runnable/07-ci-flake-doctor/`
-- `examples/runnable/08-docs-drift-sentinel/`
-- `examples/runnable/09-weekly-incident-brief/`
-- `examples/runnable/10-model-cost-command-center/`
-- `examples/runnable/11-inbox-to-action/`
-- `examples/runnable/12-calendar-conflict-resolver/`
-- `examples/runnable/13-personal-crm-lite/`
-- `examples/runnable/14-weekly-research-digest/`
-- `examples/runnable/15-youtube-research-desk/`
-- `examples/runnable/16-voice-notes-to-tasks/`
-- `examples/runnable/17-sales-call-prep-bot/`
-- `examples/runnable/18-customer-feedback-miner/`
-- `examples/runnable/19-support-escalation-digest/`
-- `examples/runnable/20-product-changelog-curator/`
-- `examples/runnable/21-partner-update-generator/`
-- `examples/runnable/22-account-health-snapshot/`
-- `examples/runnable/23-invoice-follow-up-copilot/`
-- `examples/runnable/24-lead-intake-router/`
-- `examples/runnable/25-feature-request-triage/`
-- `examples/runnable/26-roadmap-signal-board/`
-- `examples/runnable/27-design-sprint-assistant/`
-- `examples/runnable/28-on-call-handoff-builder/`
-- `examples/runnable/29-competitive-monitor/`
-- `examples/runnable/30-founder-daily-control-room/`
+1. Choose a problem with a clear source and a measurable outcome.
+2. Install only the listed ClawHub skills and use a narrow scope.
+3. Run the prerequisite check, then inspect the sample output before connecting production data.
+4. Deliver to a trusted destination in draft-only mode and add a human approval step before any external write.
 
-## Full 101-Example Catalog
+## A few good entry points
 
-- `examples/catalog.md`
+- [102 - Customer Research Repository](runnable/102-customer-research-repository/README.md)
+- [103 - Data Quality Incident Brief](runnable/103-data-quality-incident-brief/README.md)
+- [104 - KPI Definition Librarian](runnable/104-kpi-definition-librarian/README.md)
+- [105 - Spreadsheet Formula Explainer](runnable/105-spreadsheet-formula-explainer/README.md)
+- [106 - Database Query Review Desk](runnable/106-database-query-review-desk/README.md)
+- [107 - Metric Anomaly Narrator](runnable/107-metric-anomaly-narrator/README.md)
+- [108 - Experiment Results Interpreter](runnable/108-experiment-results-interpreter/README.md)
+- [109 - Survey Theme Mapper](runnable/109-survey-theme-mapper/README.md)
+- [110 - User Interview Evidence Index](runnable/110-user-interview-evidence-index/README.md)
+- [111 - Research Source Credibility Check](runnable/111-research-source-credibility-check/README.md)
+- [112 - Market Sizing Workbook Reviewer](runnable/112-market-sizing-workbook-reviewer/README.md)
+- [113 - Data Dictionary Steward](runnable/113-data-dictionary-steward/README.md)
+
+## Browse by Collection
+
+| Range | Focus |
+| --- | --- |
+| 01-30 | Foundation set |
+| 31-42 | Engineering quality and release operations |
+| 43-52 | Revenue, renewals, and pipeline control |
+| 53-62 | Support, inbox, and operator workflows |
+| 63-70 | Research, content, and market signals |
+| 71-76 | People, recruiting, and onboarding |
+| 77-82 | Finance, procurement, and board prep |
+| 83-101 | Security, IT, governance, and internal operations |
+| 102-126 | Data, metrics, and knowledge operations |
+| 127-151 | Customer success, sales, and revenue execution |
+
+## Full Catalog
+
+- [Full catalog](catalog.md)
+- [Contributing rules](../CONTRIBUTING.md)
 
 ## Skill Install Pattern
 
 ```bash
-npx clawhub@latest install <skill-slug>
+openclaw skills verify <skill-slug>
+openclaw skills install <skill-slug>
 ```

@@ -1,4 +1,6 @@
-# Full Catalog (101 Examples)
+# Full Catalog (151 Examples)
+
+Every row links to a runnable starter pack with a guide, prompt, scripts, smoke test, KPI, security notes, and illustrative sample output.
 
 | # | Example | Skills | Status |
 | --- | --- | --- | --- |
@@ -103,3 +105,53 @@
 | 99 | Internal FAQ Router | slack, summarize, notion | Runnable |
 | 100 | Team Ritual Planner | caldav-calendar, gog, summarize, slack | Runnable |
 | 101 | X/Twitter Ops Desk | xquik-x-twitter-scraper, tweetclaw | Runnable |
+| 102 | Customer Research Repository | gog, summarize, notion | Runnable |
+| 103 | Data Quality Incident Brief | api-gateway, summarize, slack | Runnable |
+| 104 | KPI Definition Librarian | notion, summarize, gog | Runnable |
+| 105 | Spreadsheet Formula Explainer | gog, summarize | Runnable |
+| 106 | Database Query Review Desk | github, summarize, notion | Runnable |
+| 107 | Metric Anomaly Narrator | api-gateway, summarize, slack | Runnable |
+| 108 | Experiment Results Interpreter | notion, summarize, gog | Runnable |
+| 109 | Survey Theme Mapper | typeform, summarize, notion | Runnable |
+| 110 | User Interview Evidence Index | gog, summarize, notion | Runnable |
+| 111 | Research Source Credibility Check | tavily-search, summarize, notion | Runnable |
+| 112 | Market Sizing Workbook Reviewer | gog, summarize, notion | Runnable |
+| 113 | Data Dictionary Steward | notion, github, summarize | Runnable |
+| 114 | Dashboard Change Digest | github, api-gateway, slack | Runnable |
+| 115 | Privacy Request Evidence Pack | gog, notion, summarize | Runnable |
+| 116 | Knowledge Graph Link Curator | notion, summarize, gog | Runnable |
+| 117 | Taxonomy Governance Queue | notion, typeform, summarize | Runnable |
+| 118 | Search Synonym Curator | api-gateway, summarize, notion | Runnable |
+| 119 | FAQ Coverage Gap Finder | notion, summarize, slack | Runnable |
+| 120 | Document Retention Review | gog, nano-pdf, notion | Runnable |
+| 121 | Meeting Decision Archive | gog, summarize, notion | Runnable |
+| 122 | Duplicate Record Detector | gog, summarize, notion | Runnable |
+| 123 | Data Import Readiness Check | gog, api-gateway, summarize | Runnable |
+| 124 | Quarterly Metrics Pack Builder | api-gateway, gog, summarize | Runnable |
+| 125 | Forecast Assumption Register | gog, notion, summarize | Runnable |
+| 126 | Analyst Handoff Brief | gog, summarize, slack | Runnable |
+| 127 | Customer Onboarding Risk Radar | gog, notion, slack | Runnable |
+| 128 | Implementation Milestone Digest | notion, summarize, slack | Runnable |
+| 129 | Customer Health Signal Splitter | api-gateway, summarize, notion | Runnable |
+| 130 | Support Queue Capacity Planner | gog, todoist, summarize | Runnable |
+| 131 | SLA Breach Root Cause Brief | gog, summarize, slack | Runnable |
+| 132 | Escalation Ownership Tracker | slack, notion, todoist | Runnable |
+| 133 | Feature Adoption Nudge Planner | api-gateway, gog, summarize | Runnable |
+| 134 | Customer Training Agenda Builder | gog, notion, summarize | Runnable |
+| 135 | QBR Storyboard Builder | api-gateway, gog, summarize | Runnable |
+| 136 | Voice of Customer Digest | slack, summarize, notion | Runnable |
+| 137 | Reference Customer Candidate Finder | api-gateway, gog, notion | Runnable |
+| 138 | Case Study Evidence Pack | gog, summarize, notion | Runnable |
+| 139 | Customer Advisory Board Agenda | gog, notion, summarize | Runnable |
+| 140 | Win-Loss Interview Scheduler | gog, caldav-calendar, todoist | Runnable |
+| 141 | Deal Desk Exception Reviewer | gog, notion, summarize | Runnable |
+| 142 | Proposal Assumption Checker | gog, summarize, notion | Runnable |
+| 143 | Discount Approval Packet | gog, notion, summarize | Runnable |
+| 144 | Sales Territory Handoff | gog, summarize, slack | Runnable |
+| 145 | Lead Response Time Watch | typeform, gog, slack | Runnable |
+| 146 | Demo Request Readiness Brief | typeform, gog, summarize | Runnable |
+| 147 | Pipeline Coverage Narrator | gog, summarize, notion | Runnable |
+| 148 | Forecast Commit Evidence Pack | gog, notion, summarize | Runnable |
+| 149 | Channel Partner Pipeline Digest | gog, summarize, slack | Runnable |
+| 150 | Renewal Notice Draft Queue | gog, notion, summarize | Runnable |
+| 151 | Churn Save Playbook Brief | api-gateway, notion, summarize | Runnable |
