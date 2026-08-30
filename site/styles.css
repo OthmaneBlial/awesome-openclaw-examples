@@ -201,6 +201,19 @@ pre {
   color: var(--teal);
 }
 
+.nav-link {
+  flex: none;
+  color: rgba(243, 239, 231, 0.78);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  color: var(--paper-bright);
+}
+
 .nav-cta {
   display: inline-flex;
   align-items: center;
