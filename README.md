@@ -10,6 +10,21 @@ Read this README in: [English](README.md) · [Español](docs/readmes/README.es.m
 
 > OpenClaw becomes useful at the moment an idea turns into a bounded workflow: a clear input, an inspectable draft, a measurable signal, and a human checkpoint.
 
+## Table of contents
+
+- [Why this repo exists](#why-this-repo-exists)
+- [The fastest path to value](#the-fastest-path-to-value)
+- [Top 10 Quick Wins](#top-10-quick-wins)
+- [Runnable Starters (300 Total)](#runnable-starters-300-total)
+- [Example Quality Standard](#example-quality-standard)
+- [Research and editorial standard](#research-and-editorial-standard)
+- [Safety by default](#safety-by-default)
+- [Languages](#languages)
+- [GitHub metadata](#github-metadata)
+- [Contributing](#contributing)
+- [FAQ](#faq)
+- [License](#license)
+
 ## Why this repo exists
 
 Search for `openclaw examples`, `openclaw use cases`, or `ClawHub skills` and you will find plenty of prompts. The hard part is deciding what to run, what permissions it needs, what a good result looks like, and how to stop safely.
