@@ -116,6 +116,22 @@ const COLLECTIONS = [
     min: 127,
     max: 151,
   },
+  {
+    range: "152-176",
+    focus: "Product, marketing, and content operations",
+    notes:
+      "Product feedback, launch readiness, content planning, accessibility, community signals, and campaign hygiene.",
+    min: 152,
+    max: 176,
+  },
+  {
+    range: "177-201",
+    focus: "Engineering, platform, and reliability operations",
+    notes:
+      "Ownership, issue triage, API contracts, deployments, cost, observability, SLOs, dependencies, and test quality.",
+    min: 177,
+    max: 201,
+  },
 ];
 const VERIFIED_SOURCES = [
   {

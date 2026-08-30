@@ -1,6 +1,6 @@
 # Runnable Starters
 
-This folder contains 151 runnable OpenClaw starter packs. Each pack keeps the workflow contract inspectable: skill install commands, setup, a prompt, smoke test, KPI, security notes, failure modes, rollback, and an illustrative sample output.
+This folder contains 201 runnable OpenClaw starter packs. Each pack keeps the workflow contract inspectable: skill install commands, setup, a prompt, smoke test, KPI, security notes, failure modes, rollback, and an illustrative sample output.
 
 ## Start with a small, reviewable workflow
 
@@ -38,6 +38,8 @@ This folder contains 151 runnable OpenClaw starter packs. Each pack keeps the wo
 | 83-101 | Security, IT, governance, and internal operations |
 | 102-126 | Data, metrics, and knowledge operations |
 | 127-151 | Customer success, sales, and revenue execution |
+| 152-176 | Product, marketing, and content operations |
+| 177-201 | Engineering, platform, and reliability operations |
 
 ## Full Catalog
 

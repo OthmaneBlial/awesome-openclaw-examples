@@ -1,4 +1,4 @@
-# Full Catalog (151 Examples)
+# Full Catalog (201 Examples)
 
 Every row links to a runnable starter pack with a guide, prompt, scripts, smoke test, KPI, security notes, and illustrative sample output.
 
@@ -155,3 +155,53 @@ Every row links to a runnable starter pack with a guide, prompt, scripts, smoke 
 | 149 | Channel Partner Pipeline Digest | gog, summarize, slack | Runnable |
 | 150 | Renewal Notice Draft Queue | gog, notion, summarize | Runnable |
 | 151 | Churn Save Playbook Brief | api-gateway, notion, summarize | Runnable |
+| 152 | Product Feedback Evidence Board | slack, summarize, notion | Runnable |
+| 153 | Roadmap Dependency Brief | github, notion, summarize | Runnable |
+| 154 | Launch Messaging Consistency Check | gog, summarize, notion | Runnable |
+| 155 | Feature Naming Review Desk | gog, summarize, tavily-search | Runnable |
+| 156 | Product Release FAQ Builder | github, summarize, notion | Runnable |
+| 157 | Beta Cohort Pulse | api-gateway, summarize, slack | Runnable |
+| 158 | Product Tour Content Planner | gog, notion, summarize | Runnable |
+| 159 | Pricing Page Change Watch | tavily-search, summarize, slack | Runnable |
+| 160 | Landing Page Claim Verifier | tavily-search, summarize, notion | Runnable |
+| 161 | Content Brief Quality Gate | notion, summarize, tavily-search | Runnable |
+| 162 | Editorial Calendar Balancer | notion, gog, summarize | Runnable |
+| 163 | Brief-to-Draft Handoff | notion, gog, summarize | Runnable |
+| 164 | Brand Voice Consistency Review | gog, summarize, notion | Runnable |
+| 165 | Newsletter Issue Planner | gog, summarize, notion | Runnable |
+| 166 | Podcast Guest Research Pack | tavily-search, summarize, notion | Runnable |
+| 167 | Webinar Speaker Prep | gog, notion, summarize | Runnable |
+| 168 | Event Follow-up Signal Digest | gog, summarize, slack | Runnable |
+| 169 | Community Question Roundup | slack, summarize, notion | Runnable |
+| 170 | Social Content Reuse Planner | gog, summarize, notion | Runnable |
+| 171 | Campaign UTM Hygiene Check | gog, api-gateway, summarize | Runnable |
+| 172 | Creative Review Queue | notion, gog, slack | Runnable |
+| 173 | Image Alt-Text Batch Draft | gog, summarize, notion | Runnable |
+| 174 | Case Study Interview Guide | gog, notion, summarize | Runnable |
+| 175 | Press Mention Context Pack | tavily-search, summarize, slack | Runnable |
+| 176 | Product Launch Checklist | notion, gog, slack | Runnable |
+| 177 | Repository Ownership Map | github, notion, summarize | Runnable |
+| 178 | Open Issues Triage Board | github, summarize, todoist | Runnable |
+| 179 | Security Advisory Impact Check | github, summarize, slack | Runnable |
+| 180 | API Contract Drift Watch | github, summarize, notion | Runnable |
+| 181 | Build Duration Regression Brief | github, api-gateway, summarize | Runnable |
+| 182 | Deployment Frequency Digest | github, summarize, slack | Runnable |
+| 183 | Environment Configuration Diff | github, summarize, notion | Runnable |
+| 184 | Infrastructure Cost Anomaly Brief | api-gateway, summarize, slack | Runnable |
+| 185 | Cloud Incident Timeline | api-gateway, summarize, notion | Runnable |
+| 186 | Service Dependency Map | github, notion, summarize | Runnable |
+| 187 | Runbook Coverage Finder | notion, github, summarize | Runnable |
+| 188 | Observability Gap Queue | github, api-gateway, notion | Runnable |
+| 189 | Error Budget Update | api-gateway, summarize, slack | Runnable |
+| 190 | SLO Exception Register | notion, summarize, slack | Runnable |
+| 191 | Access Token Rotation Tracker | notion, gog, todoist | Runnable |
+| 192 | Package License Review | github, summarize, notion | Runnable |
+| 193 | Container Image Freshness | api-gateway, summarize, slack | Runnable |
+| 194 | Database Migration Readiness | github, notion, summarize | Runnable |
+| 195 | Feature Flag Cleanup Queue | github, notion, todoist | Runnable |
+| 196 | Test Coverage Opportunity Map | github, summarize, notion | Runnable |
+| 197 | Load Test Result Digest | github, api-gateway, summarize | Runnable |
+| 198 | Log Pattern Triage | api-gateway, summarize, slack | Runnable |
+| 199 | Performance Budget Review | github, summarize, notion | Runnable |
+| 200 | Architecture Decision Archive | notion, github, summarize | Runnable |
+| 201 | Backport Candidate Brief | github, summarize, slack | Runnable |
